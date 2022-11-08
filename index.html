@@ -5,22 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Course Catalog</title>
+
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+
+    <style>
+        body {
+            background-color: #000210;
+        }
+        .section1 {
+            height: 100vh;
+            background:#000210;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .section2
+        {
+            height: 100vh;
+            background: #1A1A1A;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .search-bar
+        {
+            background-color: white; 
+            width: 50%; 
+            height: 2rem; 
+            border-radius: 8px; 
+            border: 3px solid #CDCDCD; 
+            text-align: left; 
+            font-family: 'Quicksand', sans-serif; 
+            font-size: 20px; 
+            padding: 6px; 
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        img {
+            width: 12rem;
+            align-self: center;
+            padding: 5px;
+        }
+        .header {
+            font-family: 'Quicksand', sans-serif; 
+            font-size: 5rem; 
+            text-align: center; 
+            color: white; 
+            font-weight: bold; 
+            padding-top: 30px; 
+            text-shadow: 2px 2px 1px #515151;
+        }
+
+        .pad-5 {
+            padding: 5px;
+        }
+
+        .zoom {
+            transition: transform .2s, filter .2s;
+        }
+
+        .zoom:hover {
+            filter: brightness(130%);
+            transform: scale(1.02);
+        }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+    </style>
 </head>
 
-<header style="padding-bottom: 8px;">
-    <div style="font-weight: bold;"> WOODLAND REGIONAL HIGH SCHOOL </div>
-    <div class="italics" style="font-size: 1.4rem; padding-bottom: 8px"> COURSE CATALOG REFERENCE </div>
-    <div style="font-size: 1rem;"> By Ervin Owusu</div>
-</header>
 
 <body>
-    <Br>
-    <center>
-        <div style="color: white; display: flex; justify-content: center;">
-            <div style="padding: 0 10px 0 10px;" class="card"> Test 1 </div>
-            <div style="padding: 0 10px 0 10px" class="card"> Test 2 </div>
-            <div style="padding: 0 10px 0 10px" class="card"> Test 3 </div>
+
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 4rem;">
+        <!-- Logo -->
+    <div class="logo"> <img src="images/hawkLogo1.png" style="width: 11rem;"> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+                    
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                         <!-- Link #2 -->
+                         <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                         <!-- Link #3 -->
+                         <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
         </div>
-    </center>
+    </nav>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <section class="section1">
+        <div class="header"> <div style="font-size: 1.5rem;"> WOODLAND REGIONAL HIGH SCHOOL </div> COURSE CATALOG </div>
+        
+        <center>
+            <div style="padding: 20px 0 20px 0;">
+            <div class="search-bar"> <i> Search a class...</i> </div>
+            </div>
+            <div style="font-family: 'Quicksand', sans-serif; color: rgba(255, 255, 255, 0.3); font-size: 1.2rem; padding-bottom: 10px;"> Or Select a Category Below</div> 
+        </center>
+
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <img class="zoom" src="images/fineArts.png"> <!-- Fine Arts -->
+            <img class="zoom" src="images/english.png">  <!-- English -->
+            <img class="zoom" src="images/history.png"> <!-- History -->
+            <img class="zoom" src="images/mathetmatics.png"> <!-- Mathematics & Applied Tech -->
+            <img class="zoom" src="images/science.png"> <!-- Science --> 
+        </div>
+        
+    </section>
+    <section class="section2">
+        
+        <div style="text-shadow: 4px 4px 0px #515151; padding: 50px 50px 10px 50px; color: white; font-size: 4rem; font-family: 'Quicksand', sans-serif; font-weight: bold; text-align: left;"> 
+            <i> Welcome to the <br> WRHS Course Catalog Site!</i> </div>
+        <div style="display: flex; flex-direction: row;">
+            <div style="padding: 30px 20px 0 120px; color: white; font-size: 2rem; font-family: 'Quicksand', sans-serif; text-align: left;
+            margin-right: 100px"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam nulla facilisi cras fermentum odio eu. Mattis vulputate enim nulla aliquet. 
+                Amet nulla facilisi morbi tempus iaculis urna. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. In mollis nunc sed id semper.
+                 Est ullamcorper eget nulla facilisi etiam dignissim. Amet commodo nulla facilisi nullam. Pharetra convallis posuere morbi leo urna molestie. 
+                 Ut tellus elementum sagittis vitae. Pulvinar mattis nunc sed blandit libero volutpat. Condimentum id venenatis a condimentum vitae sapien 
+                 pellentesque habitant. </div>
+                 <img src="images/icons/course-catalog.png" style="width: 460px; padding-right: 70px;">
+        </div>
+    </section>
+
+
 </body>
