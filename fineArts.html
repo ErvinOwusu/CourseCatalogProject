@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+
+    <style>
+        .header{
+            padding: 20px 0 0 20px; 
+            font-family: 'Rubik', sans-serif; 
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: bold; 
+            font-size: 4rem; 
+            text-align: left;
+
+        }
+
+        .text {
+            font-family: 'Quicksand', sans-serif; 
+            font-size: 1.7rem; color: #FFF; 
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        .section {
+            height: 100vh; 
+            width: 100%; 
+            padding-left: 20px;
+        }
+
+        .class-card {
+            background-color: rgba(255, 255, 255, 0.04); 
+            width: 30%; 
+            padding: 20px; 
+            text-align: center; 
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .course {
+            font-family: 'Quicksand', sans-serif; 
+            font-size: 1.7rem; color: #FFF; 
+            font-weight: bold; 
+            padding-bottom: 12px;
+        }
+
+        .grade {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            max-width: 32%; 
+            margin: auto; 
+            padding-bottom: 12px;
+        }
+
+        .green { background: #19967D; border: 3px solid #116857; width: 22px; height: 22px; }
+        .yellow { background: #FCC438; border: 3px solid #C99C2D; width: 22px; height: 22px; }
+        .blue { background: #0C7CBA; border: 3px solid #0A6597; width: 22px; height: 22px; }
+        .red { background: #C92D39; border: 3px solid #99242D; width: 22px; height: 22px; }
+
+        #more {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+    <div class="logo"> <img src="images/hawkLogo1.png" style="width: 11rem; filter: brightness(0%);"> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+                    
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                         <!-- Link #2 -->
+                         <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                         <!-- Link #3 -->
+                         <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="images/Untitled(3).png" width="100%">
+        <div style="color: #FFF; font-size: 5rem; text-align: center; font-family: 'Rubik', sans-serif; font-weight: 600; text-shadow: 5px 6px 0 #000; -webkit-text-stroke: 2px black;
+
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> FINE ARTS </div>
+    </div>
+
+    <!-------------------------------------------------------------------- Art Skills, Concepts, and Design (600) -------------------------------------------------------------------->
+    <div style="padding: 40px 40px 0 40px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
+            <div style="display: flex; flex-direction: row; padding-left: 40px;">
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+            </div>
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+        </div>
+
+
+        <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in 
+            Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will<span id="dots">...</span> 
+            <span id="more">
+            study how the
+            elements and principles of design are used to communicate visual ideas. In a studio art setting,
+            students will use their knowledge of the elements and principles of art to create their own two and
+            three dimensional artwork. Students will experiment with different media and use a wide variety of
+            artistic techniques. Students will also view and analyze different artistic styles.
+            </span>
+        </div>
+        
+    </div>
+    <button onclick="myFunction()" id="myBtn" style="background-color:rgba(255, 255, 255, 0.0); color: #FFF; font-size: 1.5rem; border: 0px; padding: 10px 40px;"> 
+        <i> <u>Read More</u></i> 
+    </button>
+
+    <div style="padding: 40px 40px 0 40px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
+            <div style="display: flex; flex-direction: row; padding-left: 40px;">
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+            </div>
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+        </div>
+
+
+        <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in 
+            Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will study how the
+            elements and principles of design are used to communicate visual ideas. In a studio art setting,
+            students will use their knowledge of the elements and principles of art to create their own two and
+            three dimensional artwork. Students will experiment with different media and use a wide variety of
+            artistic techniques. Students will also view and analyze different artistic styles.</
+        </div>
+        
+    </div>
+
+    <div style="padding: 40px 40px 0 40px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
+            <div style="display: flex; flex-direction: row; padding-left: 40px;">
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+            </div>
+            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+        </div>
+
+
+        <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in 
+            Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will study how the
+            elements and principles of design are used to communicate visual ideas. In a studio art setting,
+            students will use their knowledge of the elements and principles of art to create their own two and
+            three dimensional artwork. Students will experiment with different media and use a wide variety of
+            artistic techniques. Students will also view and analyze different artistic styles.</
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+</body>
+
+<!--
+    padding: 100px; width: 100%; background-color: #3D3D3D; 
+-->

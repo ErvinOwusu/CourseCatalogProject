@@ -1,0 +1,75 @@
+<!-- Flex for Sections -->
+    <div style="display: flex; flex-direction: row; padding: 50px;">
+            <section style="background-color: rgba(63, 63, 63, 0.5); height: 100vh; width: 30%; padding: 20px;">
+
+            </section>
+        <section class="section">
+            <!-- Flex for Classes -->
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <!-------------------------------------------------- ART SKILLS, CONCEPTS, AND DESIGN -------------------------------------------------->
+                <div class="class-card">
+                    <div class="course"> <i> 600 - Art Skills, Concepts, and Design </i> </div>
+        
+                    <div class="text grade"> 
+                        <div class="green"></div> 
+                        <div class="yellow"></div> 
+                        <div class="blue"></div> 
+                        <div class="red"></div> 
+                    </div>
+                    
+                    <div class="text"> Credits: 0.5 </div>
+                </div>
+
+            <!-------------------------------------------------- ART SKILLS, CONCEPTS, AND DESIGN -------------------------------------------------->
+                <div class="class-card">
+                    <div class="course"> <i> 600 - Art Skills, Concepts, and Design </i> </div>
+        
+                    <div class="text grade"> 
+                        <div class="green"></div> 
+                        <div class="yellow"></div> 
+                        <div class="blue"></div> 
+                        <div class="red"></div> 
+                    </div>
+                    
+                    <div class="text"> Credits: 0.5 </div>
+                </div>
+
+            <!-------------------------------------------------- ART SKILLS, CONCEPTS, AND DESIGN -------------------------------------------------->
+                <div class="class-card">
+                    <div class="course"> <i> 600 - Art Skills, Concepts, and Design </i> </div>
+        
+                    <div class="text grade"> 
+                        <div class="green"></div> 
+                        <div class="yellow"></div> 
+                        <div class="blue"></div> 
+                        <div class="red"></div> 
+                    </div>
+                    
+                    <div class="text"> Credits: 0.5 </div>
+                </div>
+
+            <!-------------------------------------------------- ART SKILLS, CONCEPTS, AND DESIGN -------------------------------------------------->
+                <div class="class-card">
+                    <div class="course"> <i> 600 - Art Skills, Concepts, and Design </i> </div>
+        
+                    <div class="text grade"> 
+                        <div class="green"></div> 
+                        <div class="yellow"></div> 
+                        <div class="blue"></div> 
+                        <div class="red"></div> 
+                    </div>
+                    
+                    <div class="text"> Credits: 0.5 </div>
+                </div>
+                
+            </div>
+            
+        
+        </section>
+    </div>
+
+    
+
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+
+    </div>
