@@ -67,6 +67,115 @@
         #more {
             display: none;
         }
+        
+        .header1 {
+            color: #FFF; 
+            font-size: 5rem; 
+            text-align: center; 
+            font-family: 'Rubik', sans-serif; 
+            font-weight: 600; 
+            text-shadow: 5px 6px 0 #000;
+            -webkit-text-stroke: 2px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .flex-row {
+            display: flex; 
+            flex-direction: row;
+        }
+        
+        .color-container {
+            display: flex; 
+            flex-direction: row;
+            padding-left: 40px;
+        }
+        
+        .credit-container {
+            font-family: 'Ruibk', sans-serif;
+            font-weight: 600;
+            color: white;
+            font-size: 2rem;
+            padding-left: 40px;
+            -webkit-text-stroke: 1.5px #CFA912;
+        }
+        
+        .class-container {
+            font-family: 'Ruibk', sans-serif;
+            font-weight: 600;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .read-more {
+            background-color: rgba(255, 255, 255, 0.0);
+            color: #FFF;
+            font-size: 1.5rem;
+            border: 0px;
+            padding: 10px 40px;
+        }
+        
+        .description {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 200;
+            color: white; 
+            font-size: 1.5rem;
+        }
+        
+        @media (max-width: 800px)
+        {
+            .header1 {
+            color: #FFF; 
+            font-size: 3.5rem; 
+            text-align: center; 
+            font-family: 'Rubik', sans-serif; 
+            font-weight: 600; 
+            text-shadow: 3px 4px 0 #000;
+            -webkit-text-stroke: 2px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .class-container {
+            padding-bottom: 5px;
+        }
+        
+        .flex-row {
+            display: flex; 
+            flex-direction: column;
+        }
+        
+        .color-container {
+            display: flex; 
+            flex-direction: row;
+            padding-left: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5px;
+        }
+        
+        .credit-container {
+            font-family: 'Ruibk', sans-serif;
+            font-weight: 600;
+            color: white;
+            font-size: 2rem;
+            -webkit-text-stroke: 1.5px #CFA912;
+            text-align: center;
+            padding-left: 0px;
+        }
+        
+        .class-container {
+            font-family: 'Ruibk', sans-serif;
+            font-weight: 600;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
     </style>
 
 </head>
@@ -134,30 +243,28 @@
 
     <div style="position: relative; text-align: center;">
         <img src="images/Untitled(3).png" width="100%">
-        <div style="color: #FFF; font-size: 5rem; text-align: center; font-family: 'Rubik', sans-serif; font-weight: 600; text-shadow: 5px 6px 0 #000; -webkit-text-stroke: 2px black;
-
-        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"> FINE ARTS </div>
+        <div class="header1"> FINE ARTS </div>
     </div>
 
     <!-------------------------------------------------------------------- Art Skills, Concepts, and Design (600) -------------------------------------------------------------------->
     <div style="padding: 40px 40px 0 40px;">
-        <div style="display: flex; flex-direction: row;">
-            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
-            <div style="display: flex; flex-direction: row; padding-left: 40px;">
+        <div class="flex-row">
+            
+            <div class="class-container"> Art Skills, Concepts, and Design (600)</div>
+            <div class="color-container">
                 <div class="green"></div>
                 <div class="yellow"></div>
                 <div class="blue"></div>
                 <div class="red"></div>
             </div>
-            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+            <div class="credit-container"> <i>C 0.5</i></div>
+            
         </div>
 
 
-        <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in 
+        <div class="description"> Beginning art students at WRHS may enroll in 
             Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will<span id="dots">...</span> 
-            <span id="more">
-            study how the
-            elements and principles of design are used to communicate visual ideas. In a studio art setting,
+            <span id="more"> study how the elements and principles of design are used to communicate visual ideas. In a studio art setting,
             students will use their knowledge of the elements and principles of art to create their own two and
             three dimensional artwork. Students will experiment with different media and use a wide variety of
             artistic techniques. Students will also view and analyze different artistic styles.
@@ -165,24 +272,24 @@
         </div>
         
     </div>
-    <button onclick="myFunction()" id="myBtn" style="background-color:rgba(255, 255, 255, 0.0); color: #FFF; font-size: 1.5rem; border: 0px; padding: 10px 40px;"> 
+    <button onclick="myFunction()" id="myBtn" class="read-more"> 
         <i> <u>Read More</u></i> 
     </button>
 
     <div style="padding: 40px 40px 0 40px;">
-        <div style="display: flex; flex-direction: row;">
-            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
-            <div style="display: flex; flex-direction: row; padding-left: 40px;">
+        <div class="flex-row">
+            <div class="class-container"> Art Skills, Concepts, and Design (600)</div>
+            <div class="color-container">
                 <div class="green"></div>
                 <div class="yellow"></div>
                 <div class="blue"></div>
                 <div class="red"></div>
             </div>
-            <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+            <div class="credit-container"> <i>C 0.5</i></div>
         </div>
 
 
-        <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in 
+        <div class="description"> Beginning art students at WRHS may enroll in 
             Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will study how the
             elements and principles of design are used to communicate visual ideas. In a studio art setting,
             students will use their knowledge of the elements and principles of art to create their own two and
@@ -192,7 +299,7 @@
         
     </div>
 
-    <div style="padding: 40px 40px 0 40px;">
+    <div style="padding: 40px 0;">
         <div style="display: flex; flex-direction: row;">
             <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
             <div style="display: flex; flex-direction: row; padding-left: 40px;">
