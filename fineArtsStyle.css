@@ -1,0 +1,232 @@
+.header {
+    padding: 20px 0 0 20px; 
+    font-family: 'Rubik', sans-serif; 
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold; 
+    font-size: 4rem; 
+    text-align: left;
+
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 1.7rem; color: #FFF; 
+}
+
+td {
+    padding: 20px;
+}
+
+.section {
+    height: 100vh; 
+    width: 100%; 
+    padding-left: 20px;
+}
+
+.class-card {
+    background-color: rgba(255, 255, 255, 0.04); 
+    width: 30%; 
+    padding: 20px; 
+    text-align: center; 
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.course {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 1.7rem; color: #FFF; 
+    font-weight: bold; 
+    padding-bottom: 12px;
+}
+
+.grade {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    max-width: 32%; 
+    margin: auto; 
+    padding-bottom: 12px;
+}
+
+.green { background: #19967D; border: 3px solid #116857; width: 22px; height: 22px; }
+.yellow { background: #FCC438; border: 3px solid #C99C2D; width: 22px; height: 22px; }
+.blue { background: #0C7CBA; border: 3px solid #0A6597; width: 22px; height: 22px; }
+.red { background: #C92D39; border: 3px solid #99242D; width: 22px; height: 22px; }
+
+#more {
+    display: none;
+}
+
+.header1 {
+    color: #FFF; 
+    font-size: 5rem; 
+    text-align: center; 
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600; 
+    text-shadow: 5px 6px 0 #000;
+    -webkit-text-stroke: 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-row {
+    display: flex; 
+    flex-direction: row;
+}
+
+.color-container {
+    display: flex; 
+    flex-direction: row;
+    padding-left: 40px;
+}
+
+.credit-container {
+    font-family: 'Ruibk', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    padding-left: 40px;
+    -webkit-text-stroke: 1.5px #CFA912;
+}
+
+.class-container {
+    font-family: 'Ruibk', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+}
+
+.read-more {
+    background-color: rgba(255, 255, 255, 0.0);
+    color: #FFF;
+    font-size: 1.5rem;
+    border: 0px;
+    padding: 10px 40px;
+}
+
+.description {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    color: white; 
+    font-size: 1.5rem;
+}
+
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color: white;
+font-family: 'Rubik', sans-serif;
+text-transform: uppercase;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 22px;
+width: 22px;
+background-color: rgba(0, 0, 0, 0);
+border: 1px solid white;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 7px;
+top: 3px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2.3px 2.3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+@media (max-width: 800px)
+{
+    .header1 {
+    color: #FFF; 
+    font-size: 3.5rem; 
+    text-align: center; 
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600; 
+    text-shadow: 3px 4px 0 #000;
+    -webkit-text-stroke: 2px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.class-container {
+    padding-bottom: 5px;
+}
+
+.flex-row {
+    display: flex; 
+    flex-direction: column;
+}
+
+.color-container {
+    display: flex; 
+    flex-direction: row;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+.credit-container {
+    font-family: 'Ruibk', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    -webkit-text-stroke: 1.5px #CFA912;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.class-container {
+    font-family: 'Ruibk', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+}
