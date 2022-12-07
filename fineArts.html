@@ -8,242 +8,8 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="nav.css" type="text/css" />
+    <link rel="stylesheet" href="fineArtsStyle.css" type="text/css">
 
-    <style>
-        .header{
-            padding: 20px 0 0 20px; 
-            font-family: 'Rubik', sans-serif; 
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: bold; 
-            font-size: 4rem; 
-            text-align: left;
-
-        }
-
-        .text {
-            font-family: 'Quicksand', sans-serif; 
-            font-size: 1.7rem; color: #FFF; 
-        }
-
-        td {
-            padding: 20px;
-        }
-
-        .section {
-            height: 100vh; 
-            width: 100%; 
-            padding-left: 20px;
-        }
-
-        .class-card {
-            background-color: rgba(255, 255, 255, 0.04); 
-            width: 30%; 
-            padding: 20px; 
-            text-align: center; 
-            border: 3px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .course {
-            font-family: 'Quicksand', sans-serif; 
-            font-size: 1.7rem; color: #FFF; 
-            font-weight: bold; 
-            padding-bottom: 12px;
-        }
-
-        .grade {
-            display: flex; 
-            flex-direction: row; 
-            justify-content: space-between; 
-            max-width: 32%; 
-            margin: auto; 
-            padding-bottom: 12px;
-        }
-
-        .green { background: #19967D; border: 3px solid #116857; width: 22px; height: 22px; }
-        .yellow { background: #FCC438; border: 3px solid #C99C2D; width: 22px; height: 22px; }
-        .blue { background: #0C7CBA; border: 3px solid #0A6597; width: 22px; height: 22px; }
-        .red { background: #C92D39; border: 3px solid #99242D; width: 22px; height: 22px; }
-
-        #more {
-            display: none;
-        }
-        
-        .header1 {
-            color: #FFF; 
-            font-size: 5rem; 
-            text-align: center; 
-            font-family: 'Rubik', sans-serif; 
-            font-weight: 600; 
-            text-shadow: 5px 6px 0 #000;
-            -webkit-text-stroke: 2px black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .flex-row {
-            display: flex; 
-            flex-direction: row;
-        }
-        
-        .color-container {
-            display: flex; 
-            flex-direction: row;
-            padding-left: 40px;
-        }
-        
-        .credit-container {
-            font-family: 'Ruibk', sans-serif;
-            font-weight: 600;
-            color: white;
-            font-size: 2rem;
-            padding-left: 40px;
-            -webkit-text-stroke: 1.5px #CFA912;
-        }
-        
-        .class-container {
-            font-family: 'Ruibk', sans-serif;
-            font-weight: 600;
-            color: white;
-            font-size: 2rem;
-        }
-        
-        .read-more {
-            background-color: rgba(255, 255, 255, 0.0);
-            color: #FFF;
-            font-size: 1.5rem;
-            border: 0px;
-            padding: 10px 40px;
-        }
-        
-        .description {
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 200;
-            color: white; 
-            font-size: 1.5rem;
-        }
-        
-        .container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 22px;
-  width: 22px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid white;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 7px;
-  top: 3px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2.3px 2.3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-        @media (max-width: 800px)
-        {
-            .header1 {
-            color: #FFF; 
-            font-size: 3.5rem; 
-            text-align: center; 
-            font-family: 'Rubik', sans-serif; 
-            font-weight: 600; 
-            text-shadow: 3px 4px 0 #000;
-            -webkit-text-stroke: 2px black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .class-container {
-            padding-bottom: 5px;
-        }
-        
-        .flex-row {
-            display: flex; 
-            flex-direction: column;
-        }
-        
-        .color-container {
-            display: flex; 
-            flex-direction: row;
-            padding-left: 0px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 5px;
-        }
-        
-        .credit-container {
-            font-family: 'Ruibk', sans-serif;
-            font-weight: 600;
-            color: white;
-            font-size: 2rem;
-            -webkit-text-stroke: 1.5px #CFA912;
-            text-align: center;
-            padding-left: 0px;
-        }
-        
-        .class-container {
-            font-family: 'Ruibk', sans-serif;
-            font-weight: 600;
-            color: white;
-            font-size: 2rem;
-            text-align: center;
-        }
-    }
-
-    </style>
 
 </head>
 
@@ -314,15 +80,8 @@
     </div>
 
     <div style="display: flex; flex-direction: row; padding: 40px 0 0 20px;">
- 
-        <!-- ************************************************************************************************************** -->
-        <!-- ************************************************************************************************************** -->
-        <!-- ************************************************************************************************************** -->
-        <!-- ************************************************************************************************************** -->
-        <!-- ************************************************************************************************************** -->
-        <!-- ************************************************************************************************************** -->
-        
-        <section style="background-color: rgba(255, 255, 255, 0.02); width: 90%; padding: 30px;">
+
+        <section style="background-color: rgba(255, 255, 255, 0.02); width: 90%; padding: 40px;">
             <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>FINE ARTS</i> </div>
             <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS FILTER </div>
 
@@ -331,12 +90,12 @@
 
             <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;"> CREDIT VALUE</div>
 
-            <label class="container"> 1 Credit
-                <input type="checkbox">
+            <label class="container"> 0.5 CREDIT
+                <input type="checkbox" id="check1" onclick="halfCredit()">
                 <span class="checkmark"></span>
               </label>
-              <label class="container"> 2 Credit
-                <input type="checkbox">
+              <label class="container" > 1 Credit
+                <input type="checkbox" id="check2" onclick="fullCredit()">
                 <span class="checkmark"></span>
               </label>
 
@@ -370,68 +129,77 @@
         </section>
 
     <section>
-        <div style="padding: 40px 40px 0 40px;">
-            <div class="flex-row">
     <!-------------------------------------------------------------------- Art Skills, Concepts, and Design (600) -------------------------------------------------------------------->
-                <div class="class-container"> Art Skills, Concepts, and Design (600)</div>
-                <div class="color-container">
-                    <div class="green"></div>
-                    <div class="yellow"></div>
-                    <div class="blue"></div>
-                    <div class="red"></div>
-                </div>
-                <div class="credit-container"> <i>C 0.5</i></div>
-            </div>
-            <div class="description"> Beginning art students at WRHS may enroll in
-                Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will<span id="dots">...</span>
-                <span id="more"> study how the elements and principles of design are used to communicate visual ideas. In a studio art setting,
-                students will use their knowledge of the elements and principles of art to create their own two and
-                three dimensional artwork. Students will experiment with different media and use a wide variety of
-                artistic techniques. Students will also view and analyze different artistic styles.
-                </span>
-            </div>
         
-        </div>
-        <button onclick="myFunction()" id="myBtn" class="read-more">
-            <i> <u>Read More</u></i>
-        </button>
-        <div style="padding: 40px 40px 0 40px;">
-            <div class="flex-row">
-                <div class="class-container"> Art Skills, Concepts, and Design (600)</div>
-                <div class="color-container">
-                    <div class="green"></div>
-                    <div class="yellow"></div>
-                    <div class="blue"></div>
-                    <div class="red"></div>
+
+        <div id="600">
+            <div style="padding: 40px 40px 0 40px;">
+                <div class="flex-row">
+                    <div class="class-container"> Art Skills, Concepts, and Design (600)</div>
+                    <div class="color-container">
+                        <div class="green"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                    <div class="credit-container"> <i>C 0.5</i></div>
                 </div>
-                <div class="credit-container"> <i>C 0.5</i></div>
+                <div class="description"> Beginning art students at WRHS may enroll in
+                    Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will
+                    study how the elements and principles of design are used to communicate visual ideas. In a studio art setting,
+                    students will use their knowledge of the elements and principles of art to create their own two and
+                    three dimensional artwork. Students will experiment with different media and use a wide variety of
+                    artistic techniques. Students will also view and analyze different artistic styles.
+                </div>
             </div>
-            <div class="description"> Beginning art students at WRHS may enroll in
-                Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will study how the
-                elements and principles of design are used to communicate visual ideas. In a studio art setting,
-                students will use their knowledge of the elements and principles of art to create their own two and
-                three dimensional artwork. Students will experiment with different media and use a wide variety of
-                artistic techniques. Students will also view and analyze different artistic styles.</
-            </div>
+        </div>
         
-        </div>
-        <div style="padding: 40px 0;">
-            <div style="display: flex; flex-direction: row;">
-                <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Skills, Concepts, and Design (600)</div>
-                <div style="display: flex; flex-direction: row; padding-left: 40px;">
-                    <div class="green"></div>
-                    <div class="yellow"></div>
-                    <div class="blue"></div>
-                    <div class="red"></div>
+        <div id="639">
+            <div style="padding: 40px 40px 0 40px;">
+                <div style="display: flex; flex-direction: row;">
+                    <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem;"> Art Peer Tutors (639)</div>
+                    <div style="display: flex; flex-direction: row; padding-left: 40px;">
+                        <div class="green"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                    <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;">
+                        <i>C 0.5</i>
+                    </div>
                 </div>
-                <div style="font-family: 'Ruibk', sans-serif; font-weight: 600; color: white; font-size: 2rem; padding-left: 40px; -webkit-text-stroke: 1.5px #CFA912;"> <i>C 0.5</i></div>
+                <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;">
+                    While it may be helpful for students to have successfullycompleted Art Skills, Conceptsand Design it is more critical that
+                    they have an interest in the field of teaching or working with people with special needs to enroll in Art Peer Tutors.
+                    Students will investigate teaching methodology,study special needs issues, and gain practical experienceas a peer teacher in visual art making.
+                    Art Peer Tutors is similar to a student teaching experiencein college.  Students will prepare and implement art lessons for students with special needs.
+                    Each peer tutor will work with a partner: the ratio of two peer tutors to one special needs student is desired.  This is a half -year course and will
+                    include working in two- and three-dimensionalart media on projects that are age and ability appropriate for students with special needs.  Tutors will
+                    meet with course instructors for a portion of class time to study teaching methods, examine educational issues and class room management techniques.
+                    Students with special needs will attend scheduled classes and participate in creating visual art. Peer tutors will teach several of the art lessons; a visual
+                    art teacher will fa
+                </div>
             </div>
-            <div style="font-family: 'Quicksand', sans-serif; font-weight: 200; color: white; font-size: 1.5rem;"> Beginning art students at WRHS may enroll in
-                Art Skills, Concepts, and Design. This course introduces the student to the basic language of the visual artist. Students will study how the
-                elements and principles of design are used to communicate visual ideas. In a studio art setting,
-                students will use their knowledge of the elements and principles of art to create their own two and
-                three dimensional artwork. Students will experiment with different media and use a wide variety of
-                artistic techniques. Students will also view and analyze different artistic styles.
+        </div>
+        
+        <div id="654">
+            <div style="padding: 40px 40px;">
+                <div class="flex-row">
+                    <div class="class-container"> Graphic Design 3 (654)</div>
+                    <div class="color-container">
+                        <div class="green"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                        <div class="red"></div>
+                    </div>
+                    <div class="credit-container"> <i>C 1</i></div>
+                </div>
+                <div class="description"> This elective course is offered to students who show an in-depth interest in the field of graphic design.
+                    Graphic Design 3 will strengthen skills introduced in the previous two graphic design courses. Students will work primarily with
+                    clients in the school, district and surrounding communities. Class projects will also be assigned that bolster the skills they
+                    needs to serve their clients. Elements to be studied will be portfolio design, resume design, and artwork presentation for
+                    shows and everyday postings around ths school.
+                </div>
             </div>
         </div>
     </section>
@@ -456,4 +224,6 @@
           }
         }
         </script>
+
+<script type="text/javascript" src="fineArtsScript.js"></script>
 </body>
