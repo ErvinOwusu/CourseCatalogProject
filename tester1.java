@@ -14,7 +14,7 @@ public class tester1
         {
             String val = course[a];
             
-            System.out.println("<div id=\"" + course[a].substring(0, course[a].indexOf(" -")) + "\">]");
+            System.out.println("<div id=\"" + course[a].substring(0, course[a].indexOf(" -")) + "\">]);
             System.out.println();
             System.out.println();
             System.out.println();
