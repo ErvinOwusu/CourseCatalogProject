@@ -21,7 +21,6 @@ var cMUSI1003 = document.getElementById('MUSI1003');
 
 /* 1 */
 var c654 = document.getElementById('654');
-var c654 = document.getElementById('654');
 var c630 = document.getElementById('630');
 var c638 = document.getElementById('638');
 var c654 = document.getElementById('654');
@@ -38,9 +37,23 @@ var checkFull = document.getElementById('check2');
 function halfCredit() {
     if (checkHalf.checked == true) {
         c654.style.display = "none";
+        c630.style.display = "none";
+        c638.style.display = "none";
+        c654.style.display = "none";
+        c598.style.display = "none";
+        c510.style.display = "none";
+        c511.style.display = "none";
+        c529.style.display = "none";
     }
     else {
         c654.style.display = "block";
+        c630.style.display = "block";
+        c638.style.display = "block";
+        c654.style.display = "block";
+        c598.style.display = "block";
+        c510.style.display = "block";
+        c511.style.display = "block";
+        c529.style.display = "block";
     }
 }
 
@@ -69,22 +82,22 @@ function fullCredit() {
     else {
         c600.style.display = "block";
         c639.style.display = "block";
-        c642.style.display = "block";
-        c648.style.display = "block";
-        c653.style.display = "block";
-        c510.style.display = "block";
-        c511.style.display = "block";
-        c510.style.display = "block";
-        c526.style.display = "block";
-        c518.style.display = "block";
-        c529.style.display = "block";
-        c530.style.display = "block";
-        c540.style.display = "block";
-        c547.style.display = "block";
-        c525.style.display = "block";
-        c546.style.display = "block";
-        cMUSI1011.style.display = "block";
-        cMUSI1012.style.display = "block";
-        cMUSI1003.style.display = "block";
+         c642.style.display = "block";
+         c648.style.display = "block";
+         c653.style.display = "block";
+         c510.style.display = "block";
+         c511.style.display = "block";
+         c510.style.display = "block";
+         c526.style.display = "block";
+         c518.style.display = "block";
+         c529.style.display = "block";
+         c530.style.display = "block";
+         c540.style.display = "block";
+         c547.style.display = "block";
+         c525.style.display = "block";
+         c546.style.display = "block";
+         cMUSI1011.style.display = "block";
+         cMUSI1012.style.display = "block";
+         cMUSI1003.style.display = "block";
     }
 }
