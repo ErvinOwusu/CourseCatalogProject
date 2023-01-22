@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/englishHeader.png" width="100%">
+        <div class="header1"> ENGLISH </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 40px 0 0 20px;">
+
+        <section
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>ENGLISH</i> </div>
+            <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                FILTER </div>
+
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                CREDIT VALUE</div>
+
+            <label class="container"> 0.5 CREDIT
+                <input type="checkbox" id="check1" onclick="halfCredit()">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> 1 Credit
+                <input type="checkbox" id="check2" onclick="fullCredit()">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                GRADE LEVEL</div>
+
+            <label class="container"> FRESHMAN
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SOPHOMORE
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> JUNIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SENIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+        </section>
+
+        <section>
+            <!-------------------------------------------------------------------- Art Skills, Concepts, and Design (600) -------------------------------------------------------------------->
+
+
+            <div id="">
+                <div style="padding: 40px 40px 20px 40px;">
+                    <div class="flex-row">
+                        <div class="class-container" style="font-size: 1.7rem;">
+                            English 9: World Literature (Core) (113) <br>
+                            English 9: World Literature (College Prep) (112)<br>
+                            English 9: World Literature (Honors) (114)
+                        </div>
+                        <div class="color-container">
+                            <div class="green"></div>
+                        </div>
+                        <div class="credit-container"> <i>C 1</i></div>
+                    </div>
+                    <div class="description">
+                        <div style="font-size: 1.3rem; padding: 9px 0 9px 0"> <i>Prerequsite: None</i></div>
+                        This required course uses an historical approach to literature from ancient civilization to
+                        early
+                        modern time. Literary genres will include fiction, non-fiction, drama, poetry, and the short
+                        story. Students will experience reading, writing, listening, viewing, and speaking in this
+                        course. Oral and written communication skills will be developed through vocabulary, spelling,
+                        and grammar usage. This humanities approach facilitates closer monitoring of assessment and
+                        growth with increased opportunities for acquisition, analysis, and application.
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="">
+                <div style="padding: 40px 40px 0px 40px;">
+                    <div class="flex-row">
+                        <div class="class-container" style="font-size: 1.7rem;">
+                            English 10: American Literature 1 (Core) (123) <br>
+                            English 10: American Literature 1 (College Prep) (122) <br>
+                            English 10: American Literature 1 (Honors) (124)
+                        </div>
+                        <div class="color-container">
+                            <div class="yellow"></div>
+                        </div>
+                        <div class="credit-container"> <i>C 1</i></div>
+                    </div>
+                    <div class="description">
+                        <div style="font-size: 1.3rem; padding: 9px 0 9px 0"> <i>Prerequsite: None</i></div>
+                        The second year of this required Humanities course blends the study of American history and
+                        American literature from the discovery of America to the birth of our nation and through the
+                        Civil War. This course examines the impact society has had on writings of specific time periods.
+                        Literary genres will include fiction, non-fiction, drama, poetry, and the short story. Students
+                        will experience reading, writing, listening, viewing, and speaking in this course. Oral and
+                        written communication skills will continue to be developed through vocabulary, spelling, and
+                        grammar usage. This humanities approach facilitates closer monitoring of assessment and growth
+                        across two content areas
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="">
+                <div style="padding: 40px 40px 0px 40px;">
+                    <div class="flex-row">
+                        <div class="class-container" style="font-size: 1.7rem;">
+                            English American Literature & Composition 2 (Core) (133) <br>
+                            English American Literature & Composition 2 (CP) (132) <br>
+                            English American Literature & Composition 2 (H) (134)
+                        </div>
+                        <div class="color-container">
+                            <div class="blue"></div>
+                        </div>
+                        <div class="credit-container"> <i>C 1</i></div>
+                    </div>
+                    <div class="description">
+                        <div style="font-size: 1.3rem; padding: 9px 0 9px 0"> <i>Prerequsite: American Literature 1 <br>
+                                Advanced Placement English Language & Composition or ECE Seminar in Writing Through
+                                Literature may be substituted </i></div>
+
+                        his required course will acquaint students with significant literature from the twentieth
+                        century. As with all the Humanities classes, this class will work in cooperation with the
+                        American History class to coordinate lessons that reflect the philosophical, historical, moral,
+                        and social forces that have defined the American way of life. This course will further develop
+                        communication skills through both written and oral expression. Literary genres will include
+                        fiction, non-fiction, drama, poetry, and the short story.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="">
+                <div style="padding: 40px 40px 0px 40px;">
+                    <div class="flex-row">
+                        <div class="class-container" style="font-size: 1.7rem;">
+                            Advanced Placement English Language & Composition (138)
+                        </div>
+                        <div class="color-container">
+                            <div class="blue"></div>
+                            <div class="red"></div>
+                        </div>
+                        <div class="credit-container"> <i>C 1</i></div>
+                    </div>
+                    <div class="description">
+                        <div style="font-size: 1.3rem; padding: 9px 0 9px 0"> <i>Prerequisite: although this class is
+                                generally recommended for juniors, seniors are also welcome. Students must receive a
+                                recommendation from their current English teacher. The teacher recommendation should
+                                reflect a student's strong background and understanding of English skills and grammar.
+                                Students are expected to pay for and take the AP exam, which may earn college credit.
+                                Students may petition the Humanities Department for an exception to the requirement.
+                            </i></div>
+
+                        This course is designed for students who have proven they have exceptional abilities in English
+                        and who have demonstrated the ability to work independently. The AP English Language and
+                        Composition course requires expository, analytical, and argumentative writing assignments that
+                        are based on readings representing a wide variety of prose styles and genres including, but not
+                        limited to, essays, journalism, political writing, science writing, nature writing,
+                        autobiographies/biographies, diaries, history, and criticism. Representative authors include
+                        Maya Angelou, Benjamin Franklin, Samuel Pepys,James Boswell, John Hope Franklin, Arthur
+                        Schlesinger, Michael Arlen, William Hazlitt, Oscar Wilde,Joseph Addison,Joan Didion, Alice
+                        Walker, Virginia Woolf,John Updike, Elizabeth Drew, H.L. Mencken, Simone de Beauvoir, William F.
+                        Buckley, Thomas Jefferson, Thomas Paine, George Will, Charles Darwin, Annie Dillard, and
+                        Margaret Mead, whose writings are selected to give students opportunities to identify and
+                        explain an author's use of rhetorical strategies and techniques.
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="">
+                <div style="padding: 40px 40px 0px 40px;">
+                    <div class="flex-row">
+                        <div class="class-container" style="font-size: 1.7rem;">
+                            ECE Seminar In Writing Through Literature (139)
+                        </div>
+                        <div class="color-container">
+                            <div class="blue"></div>
+                            <div class="red"></div>
+                        </div>
+                        <div class="credit-container"> <i>C 1</i></div>
+                    </div>
+                    <div class="description">
+                        <div style="font-size: 1.3rem; padding: 9px 0 9px 0"> <i>Prerequisite: Students
+                                must be recommended by their current English teacher and are expected to pay the tuition
+                                to receive a UConn transcript, but this course may be taken for Woodland credit only.
+                            </i></div>
+
+                            <i>This is a four-credit UConn course. Students must earn a 73 average or higher in order to earn UConn credit.</i>
+                            <br>
+                        The main purpose of this course is to develop academic writing skills through the process of
+                        reading, writing, and revision. Students will produce thirty pages of polished academic prose
+                        inspired by the 300-plus pages of required reading. Seminar in Writing Through Literature will
+                        acquaint students with significant literature from the twentieth and twenty-first centuries and
+                        reflect the philosophical, historical, moral, and social forces that helped to define beauty in
+                        the American way of life. This course will examine works and trace our cultural understanding of
+                        how beauty is represented in various media.
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="englishScript.js"></script>
+</body>
