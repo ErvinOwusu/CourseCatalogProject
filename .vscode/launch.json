@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch formatLearningGoal",
+            "request": "launch",
+            "mainClass": "formatLearningGoal",
+            "projectName": "CourseCatalogProject_49193676"
+        },
+        {
+            "type": "java",
             "name": "Launch formatTitle",
             "request": "launch",
             "mainClass": "formatTitle",

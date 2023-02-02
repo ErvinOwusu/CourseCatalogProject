@@ -1,16 +1,47 @@
-.header {
-    padding: 20px 0 0 20px; 
-    font-family: 'Rubik', sans-serif; 
+#learningGoalsBackground {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 2px 2px 2px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#learningGoalsBackground:hover {
+    color: red;
+}
+
+.lg-style {
+    font-size: 1.3rem;
+    padding: 9px 0 9px 0;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lg-desc {
+    font-size: 1.2rem;
+    padding: 9px 0 9px 0;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
-    font-weight: bold; 
-    font-size: 4rem; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    padding: 20px 0 0 20px;
+    font-family: 'Rubik', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    font-size: 4rem;
     text-align: left;
 
 }
 
+
 .text {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 1.7rem; color: #FFF; 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7rem;
+    color: #FFF;
 }
 
 td {
@@ -18,50 +49,74 @@ td {
 }
 
 .section {
-    height: 100vh; 
-    width: 100%; 
+    height: 100vh;
+    width: 100%;
     padding-left: 20px;
 }
 
 .class-card {
-    background-color: rgba(255, 255, 255, 0.04); 
-    width: 30%; 
-    padding: 20px; 
-    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.04);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .course {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 1.7rem; color: #FFF; 
-    font-weight: bold; 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7rem;
+    color: #FFF;
+    font-weight: bold;
     padding-bottom: 12px;
 }
 
 .grade {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    max-width: 32%; 
-    margin: auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 32%;
+    margin: auto;
     padding-bottom: 12px;
 }
 
-.green { background: #19967D; border: 3px solid #116857; width: 22px; height: 22px; }
-.yellow { background: #FCC438; border: 3px solid #C99C2D; width: 22px; height: 22px; }
-.blue { background: #0C7CBA; border: 3px solid #0A6597; width: 22px; height: 22px; }
-.red { background: #C92D39; border: 3px solid #99242D; width: 22px; height: 22px; }
+.green {
+    background: #19967D;
+    border: 3px solid #116857;
+    width: 22px;
+    height: 22px;
+}
+
+.yellow {
+    background: #FCC438;
+    border: 3px solid #C99C2D;
+    width: 22px;
+    height: 22px;
+}
+
+.blue {
+    background: #0C7CBA;
+    border: 3px solid #0A6597;
+    width: 22px;
+    height: 22px;
+}
+
+.red {
+    background: #C92D39;
+    border: 3px solid #99242D;
+    width: 22px;
+    height: 22px;
+}
 
 #more {
     display: none;
 }
 
 .header1 {
-    color: #FFF; 
-    font-size: 5rem; 
-    text-align: center; 
-    font-family: 'Rubik', sans-serif; 
-    font-weight: 600; 
+    color: #FFF;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
     text-shadow: 5px 6px 0 #000;
     -webkit-text-stroke: 2px black;
     position: absolute;
@@ -71,12 +126,12 @@ td {
 }
 
 .flex-row {
-    display: flex; 
+    display: flex;
     flex-direction: row;
 }
 
 .color-container {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     padding-left: 40px;
 }
@@ -108,125 +163,125 @@ td {
 .description {
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
-    color: white; 
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.3rem;
+    padding-bottom: 20px;
 }
 
 .container {
-display: block;
-position: relative;
-padding-left: 35px;
-margin-bottom: 12px;
-cursor: pointer;
-font-size: 22px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-color: white;
-font-family: 'Rubik', sans-serif;
-text-transform: uppercase;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
 }
 
 /* Hide the browser's default checkbox */
 .container input {
-position: absolute;
-opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-position: absolute;
-top: 0;
-left: 0;
-height: 22px;
-width: 22px;
-background-color: rgba(0, 0, 0, 0);
-border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-background-color: rgba(255, 255, 255, 0.1);
+.container:hover input~.checkmark {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-content: "";
-position: absolute;
-display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-display: block;
+.container input:checked~.checkmark:after {
+    display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-left: 7px;
-top: 3px;
-width: 5px;
-height: 10px;
-border: solid white;
-border-width: 0 2.3px 2.3px 0;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2.3px 2.3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-@media (max-width: 800px)
-{
+@media (max-width: 800px) {
     .header1 {
-    color: #FFF; 
-    font-size: 3.5rem; 
-    text-align: center; 
-    font-family: 'Rubik', sans-serif; 
-    font-weight: 600; 
-    text-shadow: 3px 4px 0 #000;
-    -webkit-text-stroke: 2px black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        color: #FFF;
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        text-shadow: 3px 4px 0 #000;
+        -webkit-text-stroke: 2px black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-.class-container {
-    padding-bottom: 5px;
-}
+    .class-container {
+        padding-bottom: 5px;
+    }
 
-.flex-row {
-    display: flex; 
-    flex-direction: column;
-}
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+    }
 
-.color-container {
-    display: flex; 
-    flex-direction: row;
-    padding-left: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
-}
+    .color-container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5px;
+    }
 
-.credit-container {
-    font-family: 'Ruibk', sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 2rem;
-    -webkit-text-stroke: 1.5px #CFA912;
-    text-align: center;
-    padding-left: 0px;
-}
+    .credit-container {
+        font-family: 'Ruibk', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 2rem;
+        -webkit-text-stroke: 1.5px #CFA912;
+        text-align: center;
+        padding-left: 0px;
+    }
 
-.class-container {
-    font-family: 'Ruibk', sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
+    .class-container {
+        font-family: 'Ruibk', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
 }
