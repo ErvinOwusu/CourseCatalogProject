@@ -3,13 +3,24 @@ import java.util.*;
 public class formatLearningGoal {
     public static void main(String[] args) {
         
-        String text = "read and respond thoughtfully to variety of texts and variety of literary forms. - respond in writing using Standard English proficiently to communicate ideas articulately and insightfully for a variety of  purposes and audiences. - speak Standard English proficiently to communicate ideas clearly and logically. - choose and apply strategies that enhance the fluent and proficient use of language arts. - listen and respond actively, critically, and responsibly. - demonstrate the ability to develop as a writer by using the writing process. - utilize a wide-range of text-based vocabulary. - demonstrate Proficiency- level essays in analytical work. - discuss literary merits of traditional and contemporary pieces of fiction, poetry, and drama. - effectively communicate ideas in written and oral presentations regarding the analysis, interpretation, and synthesis of literature. - develop, practice, and write analytical and critical responses for classical and contemporary pieces of fiction, poetry, and drama. - understand, explore, and respond to classical and contemporary literature as a participant in class discussions. - utilize technology to gather, evaluate, and synthesize information and to communicate understanding. - Apply appropriate conventions of grammar for formative and sum";
+        String text = 
+        "- identify the richness and multiplicity of meaning in Shakespeare's plays. - learn to translate the words of particular scenes into performance. - identify Shakespeare's poetry and his use of imagery as a means of revealing character and theme. - derive motivation of pivotal characters by studying and discussing their spoken words and interaction with other characters. - read aloud, with fluidity and understanding, the language of Shakespeare. - critically analyze a variety of media, including film, video, live performance, electronic sources and music. - learn to distinguish nuances of meaning in the way a particular speech is delivered. - make connections between the social and political issues represented in Shakespeare's plays and those issues of press";
         
-        int i = 0;
-        while (i < text.length())
+        text = text + " - ";
+
+        while (true)
         {
-            System.out.println(text.substring(i, text.indexOf(" - ")));
-            i = text.indexOf(" - ");
+            int x = text.indexOf(" - ");
+
+            if (x == -1)
+            {
+                break;
+            }
+            else
+            {
+                System.out.println("<li>" + text.substring(2, x) + "</li>");
+                text = text.substring(x+1);
+            }
         }
         
     }

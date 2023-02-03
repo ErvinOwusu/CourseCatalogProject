@@ -5,9 +5,6 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-#learningGoalsBackground:hover {
-    color: red;
-}
 
 .lg-style {
     font-size: 1.3rem;
@@ -232,6 +229,20 @@ td {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.electiveHeader {
+    border: 2px solid #dfdfdf;
+    background-color: #5c5c5c;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 800px) {

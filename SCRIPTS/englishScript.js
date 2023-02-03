@@ -112,3 +112,58 @@ function learningGoals162() {
         more162.style.display = "inline";
     }
 }
+
+function learningGoals165() {
+    if (more165.style.display === "inline")
+    {
+        more165.style.display = "none";
+    }
+    else
+    {
+        more165.style.display = "inline";
+    }
+}
+
+function learningGoals169() {
+    if (more169.style.display === "inline")
+    {
+        more169.style.display = "none";
+    }
+    else
+    {
+        more169.style.display = "inline";
+    }
+}
+
+function learningGoals147() {
+    if (more147.style.display === "inline")
+    {
+        more147.style.display = "none";
+    }
+    else
+    {
+        more147.style.display = "inline";
+    }
+}
+
+function learningGoals187() {
+    if (more187.style.display === "inline")
+    {
+        more187.style.display = "none";
+    }
+    else
+    {
+        more187.style.display = "inline";
+    }
+}
+
+function learningGoals722() {
+    if (more722.style.display === "inline")
+    {
+        more722.style.display = "none";
+    }
+    else
+    {
+        more722.style.display = "inline";
+    }
+}
