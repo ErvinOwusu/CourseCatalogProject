@@ -45,3 +45,78 @@
 #more722 {
     display: none;
 }
+
+#more170 {
+    display: none;
+}
+
+#grid113 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid123 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid133 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid138 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid139 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid190 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid162 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid165 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid169 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid147 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid187 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+#grid722 {
+    width: 100%;
+    font-size: .7rem;
+}
+
+.four-squares {
+    width: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color .2s;
+}
+
+.four-squares:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
