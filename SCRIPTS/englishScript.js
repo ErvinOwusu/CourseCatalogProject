@@ -167,3 +167,15 @@ function learningGoals722() {
         more722.style.display = "inline";
     }
 }
+
+function learningGoals170() {
+    if (more170.style.display === "inline")
+    {
+        more170.style.display = "none";
+    }
+    else
+    {
+        more170.style.display = "inline";
+    }
+}
+

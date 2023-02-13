@@ -92,3 +92,11 @@ body {
     transform: scale(1.02);
 }
 
+.zoom-bright {
+    transition: transform .2s, background-color .2s;
+}
+
+.zoom-bright:hover {
+    background-color: rgba(255, 255, 255, .7);
+    transform: scale(1.01);
+}
