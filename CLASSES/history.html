@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/historyStyle.css" type="text/css">
+
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/historyHeader.png" width="100%">
+        <div class="header1"> SOCIAL STUDIES </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 40px 0 0 20px;">
+
+        <section
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>SOCIAL STUDIES</i>
+            </div>
+            <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                FILTER </div>
+
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                CREDIT VALUE</div>
+
+            <label class="container"> 0.5 CREDIT
+                <input type="checkbox" id="check1" onclick="halfCredit()">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> 1 Credit
+                <input type="checkbox" id="check2" onclick="fullCredit()">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                GRADE LEVEL</div>
+
+            <label class="container"> FRESHMAN
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SOPHOMORE
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> JUNIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SENIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                DISPLAY</div>
+
+            <label class="container"> GRIDS
+                <input type="checkbox" id="check4" onclick="display2()">
+                <span class="checkmark"></span>
+
+            </label>
+
+        </section>
+
+        <section style="display: flex; flex-direction: row; flex-wrap: wrap;">
+
+            <div id="grid013">
+                <div id="013 012 014">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                Humanities I: World Civilization (Core) (013) <br>
+                                Humanities I: World Civilization (College Prep) (012) <br>
+                                Humanities I: World Civilization (Honors) (014)
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All students
+                                must take World Civilization freshman year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    Core: teacher recommendation required, strong work ethic, need for individual
+                                    teacher
+                                    attention. <br>
+                                    Honors : teacher recommendation paired with a strong academic background
+                                    (recommended 85 minimum average) in grade 8 social studies skills and content.
+                                    </span>
+                                </div>
+                            </div>
+
+                            In this required course, students explore a variety of peoples, events, and movements in
+                            world history with a focus on inquiry-based learning. Students engage in activities that
+                            promote the development of research, reading, writing, speaking, and listening skills as
+                            part of the inquiry cycle. Students build off of their understanding of non-Western and
+                            Western civilizations that they gained during their world regions courses in middle
+                            school.
+                            Students explore previous eras to establish historical causation and better understand
+                            what
+                            makes the world modern, how previous conflict resolutions created future problems, and
+                            how
+                            cultural experiences shaped perspectives. Specifically, students will investigate the
+                            following course essential questions: Who are the winners and losers of Imperialism? How
+                            did
+                            the Industrial Revolution impact the modern world? How have contrasting political
+                            ideologies
+                            influenced the modern era? How will universal human rights ever be realized?
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals013()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more013" class="lg-desc">
+                                As a result of Humanities l: World Civilization the student will:
+                                <ul>
+                                    <li>examine the origins of cultural diversity and commonality around the world.
+                                    </li>
+                                    <li>explain how different cultures express, communicate, and instill their most
+                                        important ideas.</li>
+                                    <li>communicate ideas and information coherently in a variety of circumstances.
+                                    </li>
+                                    <li>analyze primary resource documents (letters, government documents,
+                                        photographs,
+                                        political cartoons, newspaper articles, etc.) read critically in order to
+                                        recognize the difference between fact and conjecture, between evidence and
+                                        assertion.</li>
+                                    <li>critique and weigh the credibility of alternative historical interpretations
+                                        of
+                                        different sources.</li>
+                                    <li>evaluate the validity or bias in opposing viewpoints, and draw and defend
+                                        independent conclusions regarding historical/current events based on an
+                                        analysis
+                                        of different resources.</li>
+                                    <li>formulate a hypotheses and supporting arguments with content based evidence.
+                                    </li>
+                                    <li>write persuasively using Standard English for a variety of purposes and
+                                        audiences.</li>
+                                    <li>utilize historical evidence to formulate positions and demonstrate
+                                        understanding
+                                        of current issues.</li>
+                                    <li>use the language arts to explore and respond to classical texts from many
+                                        cultures and historical periods.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid023">
+                <div id="023 022 024">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                Humanities II: American History, part 1 (Core) (023)<br>
+                                Humanities II: American History, part 1 (College Prep) (022)<br>
+                                Humanities II: American History, part 1 (Honors) (024)
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Successful completion of Humanities l: World Civilization </i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    Core Level: teacher recommendation required, strong work ethic, need for
+                                    individual
+                                    teacher attention. <br>
+                                    Honors Level: teacher recommendation paired with a strong <br>
+                                    background (recommended 85 minimum average) and understanding of grade 9 skills
+                                    and
+                                    content.
+                                </div>
+                            </div>
+
+                            American History, part 1 covers the period from European exploration of America and the
+                            birth of the United States through the Civil War period. Student examine history from
+                            multiple lenses to ensure that they gain a comprehensive and fuller understanding of
+                            what it
+                            means to be an American. Student examine howideals set forth in The United States
+                            Constitution have been challenged and upheld. Student will examine course essential
+                            questions such as : Whatjustifies a revolution? What is the ideal balance between
+                            government
+                            and the governed? Was Manifest Destiny helpful or harmful to all Americans? Was the
+                            pre-Civil War era dominated by conflict or compromise? Did the Civil War have the same
+                            meaning for all Americans?
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals023()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more023" class="lg-desc">
+                                As a result of Humanities II: American History, the student will:
+                                <ul>
+                                    <li>explain how different cultures express, communicate and promote their most
+                                        important ideas.</li>
+                                    <li>communicate ideas and information coherently in a variety of circumstances.
+                                    </li>
+                                    <li>analyze primary resource documents (letters, government documents, photos,
+                                        political cartoons, newspaper articles, etc.).</li>
+                                    <li>read critically in order to recognize the difference between fact and
+                                        conjecture, between evidence and assertion.</li>
+                                    <li>critique alternative interpretations of history as to weigh the credibility
+                                        of
+                                        different historical sources.</li>
+                                    <li>evaluate the validity or bias in opposing viewpoints, and draw and defend
+                                        independent conclusions regarding historical/current events based on an
+                                        analysis
+                                        of different resources.</li>
+                                    <li>formulate a hypotheses and supporting arguments with content based evidence.
+                                    </li>
+                                    <li>write persuasively using Standard English for a variety of purposes and
+                                        audiences.</li>
+                                    <li>critique and weigh the credibility of alternative historical interpretations
+                                        of
+                                        different sources.</li>
+                                    <li>use the language arts to explore and respond to classical texts from many
+                                        cultures and historical periods.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid033">
+                <div id="033 032 034">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                (Humanities III: American History, part 2) (Core) (033) <br>
+                                (Humanities III: American History, part 2) (College Prep) (032) <br>
+                                (Humanities III: American History, part 2) (Honors) (034)
+                            </div>
+                            <div class="color-container">
+                                <div class="blue"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Successful completion of Humanities II: American History, part 1</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students must take American History, part 2 junior year
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    Note: ECE US History satisfies American History, part 1 and 2 requirement <br>
+                                    Core: teacher recommendation required, strong work ethic, need for individual
+                                    teacher attention. <br>
+                                    Honors: teacher recommendation paired with a strong academic
+                                    background (recommended 85 minimum average) and understanding of grade 10
+                                    American History part 1 skills and content.
+                                </div>
+                            </div>
+
+                            This required course will acquaint students with significant historical events that occurred
+                            between 1865 and the present. Curriculum units reflect the philosophical, historical, moral,
+                            and social forces that have defined the American way of life. Specifically students will
+                            examine essential questions such as: What were the short and long-term consequences of
+                            Reconstruction for black and white Americans? How did the Depression lead to fundamental
+                            economic, social, and political changes in American society? In what ways did the events of
+                            World War I help set the scene for World War II? How did the Cold Warimpact America's
+                            domestic and foreign policy? To what degree did the United States live up to its founding
+                            principles? A research experience will be a required component of this course.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals033()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more033" class="lg-desc">
+                                As a result of Humanities III: American History, the student will:
+                                <ul>
+                                    <li>critically analyze important historical events that influenced the development
+                                        of the United States.</li>
+                                    <li>research religious, political, social, environmental, and economic issues from
+                                        multiple perspectives.</li>
+                                    <li>analyze primary resource documents (letters, government documents, photographs,
+                                        political cartoons, newspaper articles, etc.).</li>
+                                    <li>read critically in order to recognize the difference between fact and
+                                        conjecture, between evidence and assertion.</li>
+                                    <li>critique and weigh the credibility of alternative historical interpretations of
+                                        different sources.</li>
+                                    <li>evaluate the validity or bias in opposing viewpoints, and draw and defend
+                                        independent conclusions regarding historical/current events based on an analysis
+                                        of different resources.</li>
+                                    <li>formulate a hypotheses and supporting arguments with content based evidence.
+                                    </li>
+                                    <li>utilize historical evidence to formulate positions, write persuasively, and
+                                        demonstrate understanding of current issues.</li>
+                                    <li>provide an understanding of the American way of life.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: 500;">
+                                <!-- Title Here -->
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: 500; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: 500;"> Required Course: All
+                                students
+                                must take American History, part 1 sophomore year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    <!-- Extra info here-->
+                                </div>
+                            </div>
+
+                            <!-- desc here -->
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ___, the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="../SCRIPTS/historyScript.js"></script>
+
+</body>
