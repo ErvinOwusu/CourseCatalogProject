@@ -1,7 +1,7 @@
 /* FULL */
 var c113 = document.getElementById('113 112 114');
 var c123 = document.getElementById('123 122 124');
-var c133 = document.getElementById('133 132 134');
+var c133 = document.getElementById('133 133 134');
 var c138 = document.getElementById('138');
 var c139 = document.getElementById('139');
 
@@ -76,18 +76,18 @@ function fullCredit() {
 
 function display2() {
     if (check4.checked == true) {
-        grid113.style.width = "32%";
-        grid123.style.width = "32%";
-        grid133.style.width = "32%";
-        grid138.style.width = "32%";
-        grid139.style.width = "32%";
-        grid190.style.width = "32%";
-        grid162.style.width = "32%";
-        grid165.style.width = "32%";
-        grid169.style.width = "32%";
-        grid147.style.width = "32%";
-        grid187.style.width = "32%";
-        grid722.style.width = "32%";
+        grid113.style.width = "33%";
+        grid123.style.width = "33%";
+        grid133.style.width = "33%";
+        grid138.style.width = "33%";
+        grid139.style.width = "33%";
+        grid190.style.width = "33%";
+        grid162.style.width = "33%";
+        grid165.style.width = "33%";
+        grid169.style.width = "33%";
+        grid147.style.width = "33%";
+        grid187.style.width = "33%";
+        grid722.style.width = "33%";
     }
     else {
         grid113.style.width = "100%";
