@@ -76,18 +76,18 @@ function fullCredit() {
 
 function display2() {
     if (check4.checked == true) {
-        grid113.style.width = "33%";
-        grid123.style.width = "33%";
-        grid133.style.width = "33%";
-        grid138.style.width = "33%";
-        grid139.style.width = "33%";
-        grid190.style.width = "33%";
-        grid162.style.width = "33%";
-        grid165.style.width = "33%";
-        grid169.style.width = "33%";
-        grid147.style.width = "33%";
-        grid187.style.width = "33%";
-        grid722.style.width = "33%";
+        grid113.style.width = "50%";
+        grid123.style.width = "50%";
+        grid133.style.width = "50%";
+        grid138.style.width = "50%";
+        grid139.style.width = "50%";
+        grid190.style.width = "50%";
+        grid162.style.width = "50%";
+        grid165.style.width = "50%";
+        grid169.style.width = "50%";
+        grid147.style.width = "50%";
+        grid187.style.width = "50%";
+        grid722.style.width = "50%";
     }
     else {
         grid113.style.width = "100%";
