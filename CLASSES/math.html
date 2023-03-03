@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/mathStyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/mathBanner.png" width="100%">
+        <div class="header1"> MATHEMATICS </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; padding: 40px 0 0 20px;">
+
+        <section
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>MATHEMATICS</i>
+            </div>
+            <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                FILTER </div>
+
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                CREDIT VALUE</div>
+
+            <label class="container"> 0.5 CREDIT
+                <input type="checkbox" id="check1" onclick="halfCredit()">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> 1 Credit
+                <input type="checkbox" id="check2" onclick="fullCredit()">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                GRADE LEVEL</div>
+
+            <label class="container"> FRESHMAN
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SOPHOMORE
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> JUNIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container"> SENIORS
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <br>
+            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+            <br>
+
+            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                DISPLAY</div>
+
+            <label class="container"> GRIDS
+                <input type="checkbox" id="check4" onclick="display2()">
+                <span class="checkmark"></span>
+
+            </label>
+
+        </section>
+
+
+        <section class="class-flex">
+            <!--
+            <div style="padding: 30px 0;"></div>
+            <div class="electiveHeader"> MATH COURSES </div>
+            -->
+
+            <div id="grid210">
+                <div id="210">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container"
+                                style="font-size: 1.5rem; font-weight: bolder; background-color: #CEB43A; color: black; padding: 4px;">
+                                Basic Algebra 1 (210)
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Teacher Recommendation</i>
+                            </div>
+                            <div style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px;">
+                                This course is not approved by the NCAA It will not count toward the NCAA three credit
+                                math requirement <br>
+                            </div>
+
+
+                            This is a one year basic Algebra 1 class. Students will learn algebraic topics through
+                            discovery at a slower pace than students enrolled in Algebra 1. Topics include simplifying
+                            algebraic expressions, math modeling, linear functions, variable manipulation, function
+                            analysis, graphing techniques, and solving real-world problems. Students will be expected to
+                            read mathematical texts, complete problem sets, and submit some written work for open-ended
+                            problems. Students interested in technical careers or community college, but lacking strong
+                            math skills required for intense college preparatory mathematics should tak
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals210()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more210" class="lg-desc">
+                                As a result of Basic Algebra 1 the student will:
+                                <ul>
+                                    <li>estimate solutions and justify reasonableness of answers.</li>
+                                    <li>write and simplify appropriate expressions to model real-world problems.</li>
+                                    <li>create and analyze tables, equations and graphs.</li>
+                                    <li>use software to graph, write equations and manipulate data.</li>
+                                    <li>set up and solve multi-step equations.</li>
+                                    <li>graph with technology and by hand.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid212">
+                <div id="212">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Algebra 1 (212)
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Teacher Recommendation</i>
+                            </div>
+
+                            In this exploratory, college preparatory course, students will learn algebraic concepts.
+                            Topics include logic and conjecture, simplifying algebraic expressions, math modeling,
+                            linear functions, variable manipulation, and function analysis. Students will be expected to
+                            read mathematical texts, complete lengthy problem sets, and submit numerous wri
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals212()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more212" class="lg-desc">
+                                As a result of Algebra 1, the student will:
+                                <ul>
+                                    <li>estimate solutions and justify reasonableness of answers.</li>
+                                    <li>investigate and discover patterns through research and application.</li>
+                                    <li>develop and use formulas to represent real-world modeling.</li>
+                                    <li>create and analyze graphs with technology and by hand.</li>
+                                    <li>write and simplify appropriate expressions.</li>
+                                    <li>set up and solve multi-step equations.</li>
+                                    <li>set up and solve systems of equations with technology and by hand.</li>
+                                    <li>apply algebraic reasoning to real-world contexts.</li>
+                                    <li>use software to graph and write equations, and manipulate data.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid214">
+                <div id="214">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Algebra 1 Honors (214)
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of 90 or better
+                                    in 8th grade math and receive a teacher? s recommendation </i>
+                            </div>
+
+                            This is an intensive course that examines the concepts from Algebra 1 with greater depth and
+                            breadth. In addition to the concepts covered in Algebra 1, students in Algebra 1 Honors will
+                            also explore direct and inverse variation, matrices, systems of multiple non-linear
+                            equations, and power functions. Students in honors math courses must be able to read
+                            mathematical text and solve problems independently based on the text? s theory. Students
+                            must complete challenging nightly problem sets, investigations, and written respons
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals214()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more214" class="lg-desc">
+                                As a result of Algebra 1 Honors the student will:
+                                <ul>
+                                    <li>make conjectures.</li>
+                                    <li>prove using induction and deduction.</li>
+                                    <li>justify reasonableness of answers.</li>
+                                    <li>graph with technology and by hand.</li>
+                                    <li>simplify appropriate expressions.</li>
+                                    <li>solve appropriate problems.</li>
+                                    <li>analyze graphs.</li>
+                                    <li>use software to make conjectures and solve problems.</li>
+                                    <li>apply algebraic reasoning to real-world contexts.</li>
+                                    <li>investigate and discover patterns through research and application.</li>
+                                    <li>develop and use formulae to represent real-world modeling.</li>
+                                    <li>use the relationships among tables, graphs, and equations, and select the
+                                        appropriate methods to explore.</li>
+                                    <li>set up and solve contextual systems of equations with technology and by hand.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid220">
+                <div id="220">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Basic Geometry (220)
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Successful completion of Basic Algebra 1 or Algebra 1 and teacher
+                                    recommendation.</i>
+                            </div>
+                            <div style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px;">
+                                This course is not approved by the NCAA It will not count toward the NCAA three credit
+                                math requirement <br>
+                            </div>
+
+                            This is an algebra based geometry course. Students will learn geometric concepts through
+                            discovery at a slower pace than students in Geometry. Topics include geometric logic and
+                            conjecture, area, perimeter, volume, congruency, quadrilaterals, circles, and coordinate
+                            geometry. Students will be expected to read mathematical texts, and complete problem sets.
+                            Students interested in technical careers or community college, but lacking strong math
+                            skills required for intense college preparatory mathematics, should take this course. This
+                            course has been updated to include further review of algebraic concepts and data analysis
+                            that are often used in the application of geometry, in subsequent math courses and on
+                            various assessments.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals220()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more220" class="lg-desc">
+                                As a result of Basic Geometry the student will:
+                                <ul>
+                                    <li>Define geometric terms.</li>
+                                    <li>Solve geometric problems.</li>
+                                    <li>Create and explain conjectures.</li>
+                                    <li>Prove shapes and parts of shapes congruent.</li>
+                                    <li>Apply laws, theorems, postulates, and corollaries to problem solving situations.
+                                    </li>
+                                    <li>Apply algebraic and statistical concepts to geometry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid222">
+                <div id="222">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Geometry (222)
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                                <div class="red"></div>
+                                <div class="blue"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Completion of Algebra 1 and teacher recommendation or average of 80 or
+                                    better in Basic Algebra and teacher recommendation. </i>
+                            </div>
+
+                            In this algebra-based, college preparatory course, students will learn geometric concepts.
+                            Topics include quadratic equations, systems of equations and their applications to geometric
+                            concepts. Additional topics are area, perimeter, volume, congruency, quadrilaterals,
+                            circles, and coordinate geometry. Students will be expected to read mathematical texts,
+                            complete problem sets, and submit written assignments. This course has been updated to
+                            include further review of algebraic concepts and data analysis that are often used in the
+                            application of geometry,in subsequent math courses and on various assessments.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals222()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more222" class="lg-desc">
+                                As a result of Geometry the student will:
+                                <ul>
+                                    <li>Define geometric terms.</li>
+                                    <li>Solve geometric problems.</li>
+                                    <li>Create and explain conjectures.</li>
+                                    <li>Prove theorems with induction and deduction.</li>
+                                    <li>Prove shapes and parts of shapes congruent.</li>
+                                    <li>Apply laws, theorems, postulates, and corollaries to problem solving situations.
+                                    </li>
+                                    <li>Apply algebraic and statistical concepts to geometry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid224">
+                <div id="224">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Geometry Honors (224)
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                                <div class="yellow"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of 80 or better
+                                    in Algebra 1 Honors and receives the teacher's recommendation.</i>
+                            </div>
+
+                            This is an intensive algebra-based course that examines the concepts from Geometry with
+                            greater depth and breadth. In addition to the concepts covered in Geometry, students in
+                            Geometry Honors will also explore quadratic equations, systems of equations and their
+                            applications to geometric concepts. Additional topics are similar polygons, spatial
+                            relations, and proofs of Euclidean congruence theorems. Students in honors math courses must
+                            be able to read mathematical text and solve problems independently based on the text's
+                            theory. Students must complete intensive nightly problem sets, laboratory investigations,
+                            written response assignments, and proofs. This course has been updated to include further
+                            review of algebraic concepts and data analysis that are often used in the application of
+                            geometry, in subsequent math courses and on various assessments.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals224()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more224" class="lg-desc">
+                                As a result of Geometry Honors the student will:
+                                <ul>
+                                    <li>Define geometric terms.</li>
+                                    <li>Model and solve challenging geometric problems.</li>
+                                    <li>Create and explain conjectures.</li>
+                                    <li>Prove theorems using a variety of methods including charts, paragraphs, and oral
+                                        arguments.</li>
+                                    <li>Prove shapes and parts of intricate and often real-world shapes congruent.</li>
+                                    <li>Apply laws, theorems, postulates, and corollaries to problem-solving situations.
+                                    </li>
+                                    <li>Draw, label and analyze diagrams to represent contextual problems.</li>
+                                    <li>Apply algebraic and statistical concepts to geometry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid230">
+                <div id="230">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Basic Algebra 2 (230)
+                            </div>
+                            <div class="color-container">
+                                <div class="blue"></div>
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student completes Basic Geometry or Geometry
+                                    and receives the teacher's recommendation. </i>
+                            </div>
+                            <div style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px;">
+                                This course is not approved by the NCAA It will not count toward the NCAA three credit
+                                math requirement <br>
+                            </div>
+
+                            Students will learn advanced algebraic concepts at a slower pace than students in Algebra 2.
+                            Topics include quadratic functions, power functions, rational functions, radical functions,
+                            sequences, series, and math modeling. Students will be expected to read mathematical texts,
+                            complete problem sets, and submit numerous writing assignments. Students lacking strong math
+                            skills required for intense college preparatory mathematics should take this course.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals230()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more230" class="lg-desc">
+                                As a result of Basic Algebra 2 the student will:
+                                <ul>
+                                    <li>Create algebraic models from real world situations.</li>
+                                    <li>Solve problems using algebraic skills.</li>
+                                    <li>Construct graphs of functions using technology and by hand.</li>
+                                    <li>Solve linear and non-linear systems and equations.</li>
+                                    <li>Explore linear and nonlinear functions.</li>
+                                    <li>Design and carry out an algebraic experiment.</li>
+                                    <li>Use appropriate algebraic terminology.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid232">
+                <div id="232">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Algebra 2 (232)
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                                <div class="blue"></div>
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of 80 or better
+                                    in Geometry and receives the teacher's recommendation </i>
+                            </div>
+
+                            In this exploratory, college preparatory course, students will learn advanced algebraic
+                            concepts. Topics include quadratic functions, power functions, rational functions, radical
+                            functions, sequences, series, and math modeling. Students will be expected to read
+                            mathematical texts, complete lengthy problem sets, and other written assignments.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals232()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more232" class="lg-desc">
+                                As a result of Algebra 2 the student will:
+                                <ul>
+                                    <li>Create algebraic models from real world situations.</li>
+                                    <li>Solve problems using algebraic skills.</li>
+                                    <li>Construct graphs of functions using technology and by hand.</li>
+                                    <li>Solve linear and non-linear systems and equations.</li>
+                                    <li>Design and carry out an algebraic experiment.</li>
+                                    <li>Use appropriate algebraic terminology.</li>
+                                    <li>Explore linear and nonlinear systems, equations, and relations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid234">
+                <div id="234">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Algebra 2 Honors (234)
+                            </div>
+                            <div class="color-container">
+                                <div class="yellow"></div>
+                                <div class="blue"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of an 80 or
+                                    better in Geometry Honors and receives the teacher's recommendation </i>
+                            </div>
+
+                            This is an intensive course that examines the concepts from Algebra 2 with greater depth and
+                            breadth. In addition to the concepts covered in Algebra 2, students in Algebra 2 Honors will
+                            also explore exponential functions, logarithmic functions, trigonometry, conic sections and
+                            combinatorics. Students in honors math courses must be able to read mathematical text and
+                            solve problems independently based on the text's theory. Students must complete challenging
+                            nightly problem sets, investigations, essays, and proofs.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals234()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more234" class="lg-desc">
+                                As a result of Algebra 2 Honors the student will:
+                                <ul>
+                                    <li>Create algebraic models from real world situations.</li>
+                                    <li>Solve problems using algebraic skills.</li>
+                                    <li>Construct graphs of functions using technology and by hand.</li>
+                                    <li>Solve linear and non-linear systems and equations.</li>
+                                    <li>Design and carry out an algebraic experiment.</li>
+                                    <li>Use appropriate algebraic terminology.</li>
+                                    <li>Explore trigonometric functions.</li>
+                                    <li>Solve problems using trigonometry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid242">
+                <div id="242">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Precalculus (242)
+                            </div>
+                            <div class="color-container">
+                                <div class="blue"></div>
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: Recommended that student earns a final average of 80 or better in
+                                    Algebra 2 and receives the teacher's recommendation. </i>
+                            </div>
+
+                            This course includes a thorough investigation of trigonometry and its functions,
+                            applications, and graphs. Students will then explore the functions, equations and systems of
+                            exponents,logarithms, and polynomials. Later topics include parametrics, polar coordinates,
+                            conic sections, trigonometry, sequences and series. This is a college preparatory course in
+                            which students will be required to complete nightly problem sets, laboratory investigations
+                            and essays.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals242()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more242" class="lg-desc">
+                                As a result of Precalculus the student will:
+                                <ul>
+                                    <li>Graph many types of functions.</li>
+                                    <li>Distinguish among the graphs of functions and identify their properties.</li>
+                                    <li>Solve trajectory problems.</li>
+                                    <li>Graph and identify properties of conic sections.</li>
+                                    <li>Prove laws, theorems and identities.</li>
+                                    <li>Apply function theory to real world problems and solve them.</li>
+                                    <li>Explore trigonometric functions.</li>
+                                    <li>Solve problems using trigonometry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid244">
+                <div id="244">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Precalculus Honors (244)
+                            </div>
+                            <div class="color-container">
+                                <div class="blue"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of 80 or better
+                                    in Algebra 2 Honors and receives the teacher's recommendation. </i>
+                            </div>
+
+                            This is an intensive course that examines the concepts from Precalculus with greater depth
+                            and breadth. In addition to the concepts covered in Precalculus, students in Precalculus
+                            Honors will also explore function theory, proof of laws and identities, and limits. Students
+                            in honors math courses must be able to read mathematical text and solve problems
+                            independently based on the text's theory. Students must complete intensive nightly problem
+                            sets, laboratory investigations, essays, and proofs.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals244()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more244" class="lg-desc">
+                                As a result of Precalculus Honors the student will:
+                                <ul>
+                                    <li>Graph many types of functions.</li>
+                                    <li>Distinguish among the graphs of functions and identify their properties.</li>
+                                    <li>Explore polar, rectangular and complex coordinates.</li>
+                                    <li>Graph and identify properties of conic sections.</li>
+                                    <li>Prove laws, theorems and identities.</li>
+                                    <li>Apply function theory to real world problems and solve them.</li>
+                                    <li>Calculate limits and apply them to problem-solving situations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid255">
+                <div id="255">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Calculus (255)
+                            </div>
+                            <div class="color-container">
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student earns a final average of 80 or better
+                                    in Precalculus Honors or 85 or better in Precalculus and receives the teacher's
+                                    recommendation. </i>
+                            </div>
+
+                            Topics in this course include function analysis, limits, derivatives, integrals, sequences,
+                            series, and Taylor polynomials. Students may opt to take this course if they seek the rigor
+                            of honors mathematics and calculus, but do not feel sufficiently prepared to face the
+                            challenge of Advanced Placement Calculus.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals255()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more255" class="lg-desc">
+                                As a result of Calculus the student will:
+                                <ul>
+                                    <li>analyze functions and their graphs.</li>
+                                    <li>calculate limits and apply them to the definition of derivative.</li>
+                                    <li>calculate derivatives.</li>
+                                    <li>use derivatives to solve problems.</li>
+                                    <li>calculate integrals.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid260">
+                <div id="260">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Advanced Placement Calculus (260)
+                            </div>
+                            <div class="color-container">
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student successfully completes Honors
+                                    Precalculus and receives the teacher's recommendation. </i>
+                            </div>
+
+                            Advanced Placement mathematics courses are college level courses in which students receive
+                            college credit upon successfully passing a standardized exam. Topics in this course include
+                            function analysis, limits, derivatives, integrals, sequences, series, and Taylor
+                            polynomials. Students will be expected to take the AP Calculus exam (based on teacher
+                            recommendation) in May of the school year. There is a fee for this exam which may earn the
+                            student college credit.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals260()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of AP Calculus the student will:
+                                <ul>
+                                    <li>analyze functions and their graphs.</li>
+                                    <li>calculate limits and apply them to the definition of derivative.</li>
+                                    <li>calculate derivatives.</li>
+                                    <li>use derivatives to solve problems.</li>
+                                    <li>calculate integrals.</li>
+                                    <li>use integrals to solve problems.</li>
+                                    <li>solve problems involving sequences, series and Taylor polynomials.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid238">
+                <div id="238">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                Advanced Algebra/Trigonometry (238)
+                            </div>
+                            <div class="color-container">
+                                <div class="red"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: It is recommended that a student passes Algebra 2 but scores below the
+                                    prerequisite level needed for Precalculus, and receives the teacher's
+                                    recommendation. </i>
+                            </div>
+
+                            This is an algebra-based math course in which students extend and apply their knowledge of
+                            Algebra 2. This course includes topics such as trigonometry, polynomial, exponential and
+                            logarithmic functions, sequences and series and the binomial theorem, and probability.
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals238()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more238" class="lg-desc">
+                                As a result of Advanced Algebra/Trigonometry the student will:
+                                <ul>
+                                    <li>Explore trigonometric functions.</li>
+                                    <li>Distinguish among the graphs of trigonometric functions and identify their
+                                        properties.</li>
+                                    <li>Solve problems using trigonometry.</li>
+                                    <li>Graph and use trigonometric functions to model situations.</li>
+                                    <li>Solve sequence and series problems including arithmetic and geometric patterns.
+                                    </li>
+                                    <li>Examine exponential and logarithmic functions and equations.</li>
+                                    <li>Solve exponential growth and decay problems.</li>
+                                    <li>Explore polynomial functions and the behavior of their graphs.</li>
+                                    <li>Investigate different types of sequences and series and their applications.</li>
+                                    <li>Explore the counting and probability principles including permutations,
+                                        combinations and conditional probability.</li>
+                                    <li>Construct probability models to represent real-world situations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div id="grid">
+                <div id="">
+                    <div style="padding: 40px 40px 20px 40px;">
+                        <div class="flex-row">
+                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
+                                TITLE
+                            </div>
+                            <div class="color-container">
+                                <div class="green"></div>
+                            </div>
+                            <div class="credit-container"> <i>C 1</i></div>
+                        </div>
+                        <div class="description">
+                            <div
+                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                <i>Prerequsite: None</i>
+                            </div>
+                            <div style="color:rgba(255, 255, 255, 1); font-weight: bolder;"> Required Course: All students
+                                must take World Civilization freshman year <br>
+
+                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                    Core: teacher recommendation required, strong work ethic, need for individual
+                                    teacher
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            DESC
+
+                        </div>
+                        <div id="learningGoalsBackground" class="zoom-bright">
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                onclick="learningGoals()">
+                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
+                                </div>
+                            </div>
+                            <div id="more" class="lg-desc">
+                                As a result of ____ the student will:
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+
+        </section>
+
+        <script type="text/javascript" src="../SCRIPTS/mathScript.js"></script>
+        <script type="text/javascript" src="../SCRIPTS/mathScript2.js"></script>
+
+    </div>
+    </div>
+
+
+</body>
