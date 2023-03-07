@@ -34,6 +34,7 @@
 #more232 {
     display: none;
 }
+
 #more234 {
     display: none;
 }
@@ -112,6 +113,10 @@
     font-size: .7rem;
 }
 #grid238 {
+    width: 50%;
+    font-size: .7rem;
+}
+#grid232 {
     width: 50%;
     font-size: .7rem;
 }
