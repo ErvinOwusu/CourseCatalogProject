@@ -15,23 +15,6 @@ var grid238 = document.getElementById('grid238');
 
 function display2() {
     if (check4.checked == true) {
-        grid210.style.width = "50%";
-        grid212.style.width = "50%";
-        grid214.style.width = "50%";
-        grid220.style.width = "50%";
-        grid222.style.width = "50%";
-        grid224.style.width = "50%";
-        grid230.style.width = "50%";
-        grid232.style.width = "50%";
-        grid234.style.width = "50%";
-        grid242.style.width = "50%";
-        grid244.style.width = "50%";
-        grid255.style.width = "50%";
-        grid260.style.width = "50%";
-        grid238.style.width = "50%";
-    }
-    else 
-    {
         grid210.style.width = "100%";
         grid212.style.width = "100%";
         grid214.style.width = "100%";
@@ -46,5 +29,22 @@ function display2() {
         grid255.style.width = "100%";
         grid260.style.width = "100%";
         grid238.style.width = "100%";
+    }
+    else 
+    {
+        grid210.style.width = "50%";
+        grid212.style.width = "50%";
+        grid214.style.width = "50%";
+        grid220.style.width = "50%";
+        grid222.style.width = "50%";
+        grid224.style.width = "50%";
+        grid230.style.width = "50%";
+        grid232.style.width = "50%";
+        grid234.style.width = "50%";
+        grid242.style.width = "50%";
+        grid244.style.width = "50%";
+        grid255.style.width = "50%";
+        grid260.style.width = "50%";
+        grid238.style.width = "50%";
     }
 }

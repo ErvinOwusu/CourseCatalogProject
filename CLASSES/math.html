@@ -81,75 +81,77 @@
         <div class="header1"> MATHEMATICS </div>
     </div>
 
-    <div style="display: flex; flex-direction: row; padding: 40px 0 0 20px;">
+    <div class="flex-a">
+
 
         <section
+        class="display-class-filter"
             style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
-            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>MATHEMATICS</i>
+
+            <div class="display-class-filter">
+                <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>MATHEMATICS</i>
+                </div>
+                <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                    FILTER </div>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    CREDIT VALUE</div>
+                <label class="container"> 0.5 CREDIT
+                    <input type="checkbox" id="check1" onclick="halfCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 1 Credit
+                    <input type="checkbox" id="check2" onclick="fullCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    GRADE LEVEL</div>
+                <label class="container"> FRESHMAN
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SOPHOMORE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> JUNIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SENIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    DISPLAY</div>
+                <label class="container"> GRIDS
+                    <input type="checkbox" id="check4" onclick="display2()">
+                    <span class="checkmark"></span>
+                </label>
             </div>
-            <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
-                FILTER </div>
-
-            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
-            <br>
-
-            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
-                CREDIT VALUE</div>
-
-            <label class="container"> 0.5 CREDIT
-                <input type="checkbox" id="check1" onclick="halfCredit()">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container"> 1 Credit
-                <input type="checkbox" id="check2" onclick="fullCredit()">
-                <span class="checkmark"></span>
-            </label>
-
-            <br>
-            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
-            <br>
-
-            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
-                GRADE LEVEL</div>
-
-            <label class="container"> FRESHMAN
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container"> SOPHOMORE
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container"> JUNIORS
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container"> SENIORS
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </label>
-
-            <br>
-            <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
-            <br>
-
-            <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
-                DISPLAY</div>
-
-            <label class="container"> GRIDS
-                <input type="checkbox" id="check4" onclick="display2()">
-                <span class="checkmark"></span>
-
-            </label>
-
         </section>
-
 
         <section class="class-flex">
             <!--
             <div style="padding: 30px 0;"></div>
             <div class="electiveHeader"> MATH COURSES </div>
             -->
+
+            <div class="header-style">MATH COURSES</div>
+
+            <div style="padding: 0px 40px;">
+                <hr style="width: 40%;" align="left">
+            </div>
 
             <div id="grid210">
                 <div id="210">
@@ -909,60 +911,14 @@
                     </div>
                 </div>
             </div>
-
-            <!--
-            <div id="grid">
-                <div id="">
-                    <div style="padding: 40px 40px 20px 40px;">
-                        <div class="flex-row">
-                            <div class="class-container" style="font-size: 1.5rem; font-weight: bolder;">
-                                TITLE
-                            </div>
-                            <div class="color-container">
-                                <div class="green"></div>
-                            </div>
-                            <div class="credit-container"> <i>C 1</i></div>
-                        </div>
-                        <div class="description">
-                            <div
-                                style="font-size: 1.3rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
-                                <i>Prerequsite: None</i>
-                            </div>
-                            <div style="color:rgba(255, 255, 255, 1); font-weight: bolder;"> Required Course: All students
-                                must take World Civilization freshman year <br>
-
-                                <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
-                                    Core: teacher recommendation required, strong work ethic, need for individual
-                                    teacher
-
-                                    </span>
-                                </div>
-                            </div>
-
-                            DESC
-
-                        </div>
-                        <div id="learningGoalsBackground" class="zoom-bright">
-                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
-                                onclick="learningGoals()">
-                                <div class="lg-style"> <i>Learning Goals</i></div>
-                                <div style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">+
-                                </div>
-                            </div>
-                            <div id="more" class="lg-desc">
-                                As a result of ____ the student will:
-                                <ul>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
--->
-
+    
+                
         </section>
 
+        
+
+
+        
         <script type="text/javascript" src="../SCRIPTS/mathScript.js"></script>
         <script type="text/javascript" src="../SCRIPTS/mathScript2.js"></script>
 
