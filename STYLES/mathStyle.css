@@ -61,62 +61,190 @@
 
 
 #grid210 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid212 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid214 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid220 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid222 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid224 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid230 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid250 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid234 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid242 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid244 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid255 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid260 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid238 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
 }
 #grid232 {
-    width: 50%;
+    width: 100%;
     font-size: .7rem;
+}
+
+@media (min-width: 1920px)
+{
+    #grid210 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid212 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid214 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid220 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid222 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid224 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid230 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid250 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid234 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid242 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid244 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid255 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid260 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid238 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid232 {
+        width: 50%;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 1920px)
+{
+    #grid210 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid212 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid214 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid220 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid222 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid224 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid230 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid250 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid234 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid242 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid244 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid255 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid260 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid238 {
+        width: 50%;
+        font-size: .7rem;
+    }
+    #grid232 {
+        width: 50%;
+        font-size: .7rem;
+    }
 }

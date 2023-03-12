@@ -16,13 +16,43 @@
     padding: 40px 0 0 20px;
 }
 
+/*
+.class-flex {
+    display: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+@media (min-width: 1920px) {
+    .class-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 350vh;
+    }
+}
+*/
+
 .class-flex {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 350vh;
-
 }
+
+@media (min-width: 1745px) {
+    .class-flex {
+        height: 400vh;
+    }
+}
+
+@media (min-width: 1536px) {
+    .class-flex {
+        height: 475vh;
+    }
+}
+
 
 .journalism-border {
     background-color: rgba(255, 255, 255, 0.1);
