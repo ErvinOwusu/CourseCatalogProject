@@ -1,5 +1,6 @@
 var mathCourses = document.getElementById('mathCourse');
- 
+var math = document.getElementById('index-content');
+
 
 function hideMathCourses() {
     if (mathCourses.display == "none")
@@ -12,7 +13,16 @@ function hideMathCourses() {
     }
 }
 
-
+function mathIndex() {
+    if (math.style.display == "none")
+    {
+        math.style.display = "flex";
+    }
+    else
+    {
+        math.style.display = "none";
+    }
+}
 
 
 
