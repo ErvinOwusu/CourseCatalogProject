@@ -41,6 +41,13 @@
 
 
 
+@media (min-width: 1200px) {
+    .class-flex {
+        height: 700vh;
+    }
+}
+
+
 
 .journalism-border {
     background-color: rgba(255, 255, 255, 0.1);
