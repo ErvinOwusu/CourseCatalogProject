@@ -153,3 +153,91 @@ function learningGoals238() {
         learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
+
+function learningGoals256() {
+    if (more256.style.display === "inline") {
+        more256.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more256.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals252() {
+    if (more252.style.display === "inline") {
+        more252.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more252.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals253() {
+    if (more253.style.display === "inline") {
+        more253.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more253.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals251() {
+    if (more251.style.display === "inline") {
+        more251.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more251.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals700() {
+    if (more700.style.display === "inline") {
+        more700.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more700.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals248() {
+    if (more248.style.display === "inline") {
+        more248.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more248.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals702() {
+    if (more702.style.display === "inline") {
+        more702.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more702.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoalsMathLab() {
+    if (moreMathLab.style.display === "inline") {
+        moreMathLab.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        moreMathLab.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}

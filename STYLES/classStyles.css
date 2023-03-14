@@ -8,6 +8,7 @@
     padding: 40px 40px 5px 40px;
     letter-spacing: 3px;
     text-shadow: 6px 6px 0 #000;
+    cursor: pointer;
 }
 
 .flex-a {
@@ -39,13 +40,6 @@
     flex-direction: row;
 }
 
-
-
-@media (min-width: 1200px) {
-    .class-flex {
-        height: 700vh;
-    }
-}
 
 
 
@@ -206,8 +200,13 @@ td {
 .title {
     font-family: 'Ruibk', sans-serif;
     font-weight: 600;
-    color: white;
     font-size: 1.5rem;
+    style="font-size: 1.5rem; 
+    font-weight: bolder;
+    background-color: rgba(226, 198, 68);
+    color: black;
+    padding: 4px;
+    text-transform: uppercase;
 }
 
 .read-more {
@@ -221,7 +220,7 @@ td {
 .description {
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
     padding-bottom: 20px;
 }
@@ -308,11 +307,7 @@ td {
 
 @media (max-width: 800px) {
 
-    .class-flex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+
 
     .display-class-filter {
         display: none;
