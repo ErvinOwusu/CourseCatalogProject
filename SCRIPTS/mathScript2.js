@@ -1,3 +1,44 @@
+var mathCourses = document.getElementById('mathCourse');
+ 
+
+function hideMathCourses() {
+    if (mathCourses.display == "none")
+    {
+        mathCourses.style.display = "block";
+    }
+    else
+    {
+        mathCourses.style.display = "none";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var grid210 = document.getElementById('grid210');
 var grid212 = document.getElementById('grid212');
 var grid214 = document.getElementById('grid214');
@@ -48,3 +89,4 @@ function display2() {
         grid238.style.width = "50%";
     }
 }
+*/

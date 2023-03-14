@@ -36,22 +36,10 @@
 
 .class-flex {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 350vh;
+    flex-direction: row;
 }
 
-@media (min-width: 1745px) {
-    .class-flex {
-        height: 400vh;
-    }
-}
 
-@media (min-width: 1536px) {
-    .class-flex {
-        height: 475vh;
-    }
-}
 
 
 .journalism-border {
@@ -208,11 +196,11 @@ td {
     display: inline;
 }
 
-.class-container {
+.title {
     font-family: 'Ruibk', sans-serif;
     font-weight: 600;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .read-more {
