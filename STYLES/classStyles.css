@@ -1,3 +1,48 @@
+.math-index {
+    font-size: 1.3rem;
+    font-weight: ;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    color: #BBBBBB;
+
+    transition: color .2s;
+}
+
+.math-index:hover {
+    color: #FFF;
+}
+
+#index-content {
+    display: none;
+    flex-direction: row;
+    flex-wrap: warp;
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: left;
+    padding-top: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#indexStyle {
+    color: #FFF;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-family: 'Quicksand', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    transition: background-color .2s;
+}
+
+.indexStyle:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
 #header-style {
     font-size: 4rem;
     color: #FFF;
@@ -202,7 +247,7 @@ td {
     font-weight: 600;
     font-size: 1.5rem;
     style="font-size: 1.5rem; 
-    font-weight: bolder;
+ font-weight: bolder;
     background-color: rgba(226, 198, 68);
     color: black;
     padding: 4px;

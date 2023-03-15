@@ -1,29 +1,92 @@
 var mathCourses = document.getElementById('mathCourse');
-var math = document.getElementById('index-content');
-
+var indexContent = document.getElementById('index-content');
+var indexStyle = document.getElementById('indexStyle');
+var title = document.getElementById('math-index');
 
 function hideMathCourses() {
-    if (mathCourses.display == "none")
-    {
+    if (mathCourses.display == "none") {
         mathCourses.style.display = "block";
     }
-    else
-    {
+    else {
         mathCourses.style.display = "none";
     }
 }
 
 function mathIndex() {
-    if (math.style.display == "none")
-    {
-        math.style.display = "flex";
+    if (indexContent.style.display == "flex") {
+        indexContent.style.display = "none";
+        indexStyle.style.padding = "2px;"
+        indexStyle.style.width = "20%";
     }
-    else
-    {
-        math.style.display = "none";
+    else {
+        indexContent.style.display = "flex";
+        indexStyle.style.padding = "20px;"
+        indexStyle.style.width = "80%"
     }
 }
 
+
+function halfCredit() {
+    if (check1.checked == true) {
+        grid210.style.display = "none";
+        grid210.style.display = "none";
+        grid212.style.display = "none";
+        grid214.style.display = "none";
+        grid220.style.display = "none";
+        grid222.style.display = "none";
+        grid224.style.display = "none";
+        grid256.style.display = "none";
+        grid252.style.display = "none";
+        grid253.style.display = "none";
+        grid232.style.display = "none";
+        grid234.style.display = "none";
+        grid242.style.display = "none";
+        grid244.style.display = "none";
+        grid255.style.display = "none";
+        grid260.style.display = "none";
+        grid238.style.display = "none";
+        grid230.style.display = "none";
+        grid700.style.display = "none";
+        grid702.style.display = "none";
+        gridMathLab.style.display = "none";
+        grid251.style.display = "none";
+    }
+    else {
+        grid210.style.display = "block";
+        grid210.style.display = "block";
+        grid212.style.display = "block";
+        grid214.style.display = "block";
+        grid220.style.display = "block";
+        grid222.style.display = "block";
+        grid224.style.display = "block";
+        grid256.style.display = "block";
+        grid252.style.display = "block";
+        grid253.style.display = "block";
+        grid232.style.display = "block";
+        grid234.style.display = "block";
+        grid242.style.display = "block";
+        grid244.style.display = "block";
+        grid255.style.display = "block";
+        grid260.style.display = "block";
+        grid238.style.display = "block";
+        grid230.style.display = "block";
+        grid700.style.display = "block";
+        grid702.style.display = "block";
+        gridMathLab.style.display = "block";
+        grid251.style.display = "block";
+    }
+}
+
+function fullCredit() {
+    if (check2.checked == true)
+    {
+        grid248.style.display = "none";
+    }
+    else
+    {
+        grid248.style.display = "block";
+    }
+}
 
 
 

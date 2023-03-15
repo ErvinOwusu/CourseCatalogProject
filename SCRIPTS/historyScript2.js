@@ -61,3 +61,17 @@ function display2() {
         grid045.style.width = "100%";
     }
 }
+
+
+var grid210 = document.getElementById('grid210');
+var check1 = document.getElementById('check1');
+
+function halfCredit() {
+    if (check1.checked == true) {
+        grid210.style.display = "none";
+    }
+    else
+    {
+        grid210.style.display = "block";
+    }
+}
