@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/appliedTechStyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/appliedTechHeader.png" width="100%">
+        <div class="header1"> APPLIED TECHNOLOGY </div>
+    </div>
+
+    <div class="flex-a">
+        <section class="display-class-filter"
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+
+            <div class="display-class-filter">
+                <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>APPLIED TECH</i>
+                </div>
+                <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                    FILTER </div>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    CREDIT VALUE</div>
+                <label class="container"> 0.5 CREDIT
+                    <input type="checkbox" id="check1" onclick="halfCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 1 Credit
+                    <input type="checkbox" id="check2" onclick="fullCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    GRADE LEVEL</div>
+                <label class="container"> FRESHMAN
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SOPHOMORE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> JUNIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SENIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <!--
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    DISPLAY</div>
+                <label class="container"> GRIDS
+                    <input type="checkbox" id="check4" onclick="display2()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            -->
+        </section>
+
+
+        <div style="display: inline;">
+
+            <section class="class-flex">
+                <div style="width: 50%;">
+
+                    <div id="mathCourse">
+
+                        <div id="grid730">
+                            <div id="730">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Introduction to Business (730)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="green"></div>
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None</i>
+                                        </div>
+
+                                        This course provides a basic understanding of the role of business within our
+                                        social and economic system. This course is designed to acquaint students with
+                                        basic economic functions: small business operation and entrepreneurship; the
+                                        functions of management; production operations; personnel, marketing, and
+                                        accounting overviews; finance and investments; and international business.
+                                        Students will be aware of the importance of business in our economy, the value
+                                        and qualities of well-trained management, and be better prepared to be
+                                        successful participants in the business world.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals730()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more730" class="lg-desc">
+                                            As a result of Introduction to Business the student will:
+                                            <ul>
+                                                <li>identify the basic features of an economic system.</li>
+                                                <li>identify the role of government in business.</li>
+                                                <li>describe the importance of small business in our economy.</li>
+                                                <li>describe the importance of business ethics.</li>
+                                                <li>describe the importance of global economic competition.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grid740">
+                            <div id="740">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Careeer Explorations (740)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="green"></div>
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None</i>
+                                        </div>
+
+                                        The profound business and economic changes now underwayin the United States and
+                                        other industrial countries are radically altering the world of work, greatly
+                                        increasing the need to incorporate career exploration and development in the
+                                        education of today's high school student. The Career Exploration course is
+                                        designed to prepare our students for these changes and challenges. A major goal
+                                        of this course is for students to examine their talents, aptitudes and interests
+                                        and begin to identify careers which would be suitable for them. Students will be
+                                        exposed to various guest speakers in order to become aware of the many different
+                                        careers and opportunities available to them. Students will be required to
+                                        prepare to do mockjob searches, prepare resumes, cover letters and follow-up
+                                        letters.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals740()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more740" class="lg-desc">
+                                            As a result of Career Explorations the student will:
+                                            <ul>
+                                                <li>examine talents, aptitudes and interests in careers.</li>
+                                                <li>develop effective business communication skills.</li>
+                                                <li>research future employment and economic trends.</li>
+                                                <li>evaluate how to read job classified ads and Internet sites.</li>
+                                                <li>develop interview skills.</li>
+                                                <li>understand the expectations of employers and their rights as
+                                                    employees.</li>
+                                                <li>explain how to interpret a paycheck stub, deductions, and filing of
+                                                    income tax.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grid722">
+                            <div id="722">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Communcations English (722)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="yellow"></div>
+                                            <div class="red"></div>
+                                            <div class="blue"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None</i>
+                                        </div>
+
+                                        <div style="color:rgba(255, 255, 255, 0.7); padding: 23px;">
+                                            This course fulfills the English credit requirement OR the applied
+                                            technology/practical arts credit requirement.
+                                        </div>
+
+                                        Students electing the Communications English course will learn to think
+                                        critically and communicate clearly and appropriately. The course will address
+                                        the five modes of language: reading, writing, listening, speaking, and viewing.
+                                        Writing assignments will introduce a number of motives for writing: to explore
+                                        an idea, to report information, to interpret, to evaluate, to amuse, and to
+                                        persuade. Assignments will most always be from personal response with each
+                                        assignment emphasizing traditional rhetorical patterns such as description,
+                                        narration, comparison/contrast, definition, and argumentation. Students will
+                                        produce and revise multiple drafts of essays, practice essential skills of
+                                        paragraph organization, and complete exercises and assignments which emphasize
+                                        the process of editing and revision. Through viewing, reading, and writing,
+                                        students will develop techniques for discovering their purpose in writing,
+                                        finding a topic, planning and outlining, and drafting and revising. Students in
+                                        this course will also spend a great deal of time learning about effective oral
+                                        communication and developing/delivering effective oral presentations. These will
+                                        include speech preparation, developing support material, creating visual aids,
+                                        conducting research, organizing, delivery, and use of voice and audience.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals722()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more722" class="lg-desc">
+                                            As a result of Communications English the student will:
+                                            <ul>
+                                                <li>understand the role of communications and develop effective skills
+                                                    and strategies for success.</li>
+                                                <li>learn how to listen and speak effectively using both verbal and
+                                                    nonverbal methods.</li>
+                                                <li>write using standard English for a variety of purposes and
+                                                    audiences.</li>
+                                                <li>speak standard English proficiently to communicate ideas clearly and
+                                                    logically.</li>
+                                                <li>demonstrate the ability to develop as a writer by using the writing
+                                                    process.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grid726">
+                            <div id="726">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Economics (726)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None</i>
+                                        </div>
+
+                                        Students in this Economics course are exposed to the basic principles of
+                                        economics with emphasis on the United States economy, macroeconomics, taxation,
+                                        money and banking.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals726()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more726" class="lg-desc">
+                                            As a result of Economics the student will:
+                                            <ul>
+                                                <li>identify opportunity costs and trade-offs involved in making choices
+                                                    regarding the use of scarce economic resources.</li>
+                                                <li>explain how specialization, division of labor, savings, investment
+                                                    in capital goods, human resources, and technological change affect
+                                                    productivity.</li>
+                                                <li>identify the basic features of different economic systems and
+                                                    discuss the major features of the U.S. economy.</li>
+                                                <li>explain the importance of economic relationships among nations.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grid700">
+                            <div id="700">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Accounting 1 (700)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="yellow"></div>
+                                            <div class="red"></div>
+                                            <div class="blue"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 1</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None</i>
+                                        </div>
+
+                                        Knowledge of accounting is vital as a background for a business career or as a
+                                        major
+                                        in
+                                        business administration or management. The fundamentals of accounting are
+                                        presented
+                                        in
+                                        this course. Students will learn the accounting cycle, including journals,
+                                        posting,
+                                        trial balance, income statement, and balance sheet by the manual method, and
+                                        will be
+                                        introduced to computerized accounting during the second semester. Simulation of
+                                        a
+                                        realistic business situation is presented in an automated practice set.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals700()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more700" class="lg-desc">
+                                            As a result of Accounting 1 the student will:
+                                            <ul>
+                                                <li>identify accounting vocabulary.</li>
+                                                <li>identify and use the basic accounting equation.</li>
+                                                <li>perform simulated banking functions.</li>
+                                                <li>complete advanced accounting applications on the computer.</li>
+                                                <li>demonstrate qualities necessary for successful interpersonal
+                                                    relationships
+                                                    in accounting when interacting with a multicultural society.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grid702">
+                            <div id="702">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Accounting 2 (702)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="yellow"></div>
+                                            <div class="red"></div>
+                                            <div class="blue"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 1</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: Accounting 1</i>
+                                        </div>
+
+                                        This course focuses on advanced accounting systems and procedures that are
+                                        applied
+                                        to
+                                        accounting records kept for profit-oriented businesses organized as publicly
+                                        held
+                                        corporations. Advanced concepts in merchandising corporations are featured.
+                                        Students
+                                        will use manual and computer methods to maintain corporate accounting records
+                                        and to
+                                        experience the types of on-the-job activities that are required in advanced
+                                        accounting
+                                        careers.
+
+                                    </div>
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals702()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more702" class="lg-desc">
+                                            As a result of Accounting 2 the student will:
+                                            <ul>
+                                                <li>identify specialized accounting vocabulary.</li>
+                                                <li>correlate differences in the accounting cycle for a service
+                                                    business,
+                                                    merchandising business, and corporation.</li>
+                                                <li>review the basic accounting equation for advanced applications in
+                                                    corporations.</li>
+                                                <li>demonstrate qualities necessary for successful interpersonal
+                                                    relationships
+                                                    in accounting.</li>
+                                                <li>employ intuitive problem-solving skills when completing tasks.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="grid718">
+                                <div id="718">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                Principles of Marketing (718)
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="yellow"></div>
+                                                <div class="red"></div>
+                                                <div class="blue"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 0.5</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: None</i>
+                                            </div>
+
+                                            This class focuses on all aspects of the basic principles of marketing. From
+                                            product/service development, pricing, promotion and distribution this class
+                                            takes an exciting look at the various activities involved in getting the
+                                            word and product out to the consumer. Topics covered include, 'What Is
+                                            Marketing", "Why Business Needs Marketing", "How Does Marketing Impact
+                                            Society", "What is Marketing Research and Why Is It Important", and
+                                            "Understanding Consumer Behavior".
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals718()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more718" class="lg-desc">
+                                                As a result of Principles of Marketing the student will:
+                                                <ul>
+                                                    <li>demonstrate skill in identifying the 4 P's of the marketing mix.
+                                                    </li>
+                                                    <li>demonstrate competency in developing opportunities for the new
+                                                        product offering.</li>
+                                                    <li>evidence ability to work responsibly in the marketing field.
+                                                    </li>
+                                                    <li>integrate ideas studied in the classroom to develop a thorough
+                                                        marketing plan.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid724">
+                                <div id="724">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                Personal Finance (724)
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="yellow"></div>
+                                                <div class="red"></div>
+                                                <div class="blue"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 0.5</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: None</i>
+                                            </div>
+
+                                            his one-semester course covers such topics as: checking accounts; payroll
+                                            deductions; income taxes; purchasing and maintaining a car; life, health and
+                                            homeowner's insurance; credit and credit cards; savings and investments; and
+                                            inflation and recession, which the student would be encountering in his or
+                                            her daily life at the present time or in the near future.
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals724()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more724" class="lg-desc">
+                                                As a result of Personal Finance the student will:
+                                                <ul>
+                                                    <li>determine personal resources for meeting needs and wants.</li>
+                                                    <li>evaluate available buying options given personal financial
+                                                        resources.</li>
+                                                    <li>explain credit and why it is used.</li>
+                                                    <li>identify ways in which individuals and families obtain financial
+                                                        resources.</li>
+                                                    <li>describe the advantages and disadvantages of different saving
+                                                        and investment plans.</li>
+                                                    <li>identify services that financial institutions provide to
+                                                        customers.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="grid">
+                                <div id="">
+                                    <div style="padding: 40px 40px 20px 40px;">
+                                        <div class="flex-row">
+                                            <div class="title">
+                                                TITLE
+                                            </div>
+                                            <div class="color-container">
+                                                <div class="green"></div>
+                                                <div class="yellow"></div>
+                                            </div>
+                                            <div class="credit-container"> <i>C 1</i></div>
+                                        </div>
+                                        <div class="description">
+                                            <div
+                                                style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                                <i>Prerequsite: </i>
+                                            </div>
+
+                                            DESC
+
+                                        </div>
+                                        <div id="learningGoalsBackground" class="zoom-bright">
+                                            <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                                onclick="learningGoals()">
+                                                <div class="lg-style"> <i>Learning Goals</i></div>
+                                                <div
+                                                    style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                    +
+                                                </div>
+                                            </div>
+                                            <div id="more" class="lg-desc">
+                                                As a result of ___ the student will:
+                                                <ul>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+            </section>
+
+        </div>
+
+        <script type="text/javascript" src="../SCRIPTS/appliedTechScript1.js"></script>
+        <script type="text/javascript" src="../SCRIPTS/appliedTechScript2.js"></script>
+
+    </div>
+</body>
