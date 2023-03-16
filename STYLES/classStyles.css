@@ -16,7 +16,7 @@
     display: none;
     flex-direction: row;
     flex-wrap: warp;
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-content: center;
     text-align: left;
     padding-top: 25px;
@@ -33,7 +33,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-    padding: 20px;
+    padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     transition: background-color .2s;
@@ -54,6 +54,13 @@
     letter-spacing: 3px;
     text-shadow: 6px 6px 0 #000;
     cursor: pointer;
+}
+
+@media (max-width: 1301px)
+{
+    #header-style {
+        font-size: 3rem;
+    }
 }
 
 .flex-a {
@@ -229,7 +236,7 @@ td {
 .color-container {
     display: flex;
     flex-direction: row;
-    padding-left: 40px;
+    padding: 0 0 0 40px;
 }
 
 .credit-container {
@@ -407,4 +414,13 @@ td {
         font-size: 2rem;
         text-align: center;
     }
+    
+    .color-container {
+        padding: 10px 0 10px 0;
+    }
+    
+    .description {
+        font-size: .8rem;
+    }
+
 }

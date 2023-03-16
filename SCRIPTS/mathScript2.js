@@ -1,14 +1,18 @@
-var mathCourses = document.getElementById('mathCourse');
+var mathCourse = document.getElementById('mathCourse');
+var mathCourse2 = document.getElementById('mathCourse2');
+
 var indexContent = document.getElementById('index-content');
 var indexStyle = document.getElementById('indexStyle');
 var title = document.getElementById('math-index');
 
 function hideMathCourses() {
-    if (mathCourses.display == "none") {
-        mathCourses.style.display = "block";
+    if (mathCourse.style.display == "none") {
+        mathCourse.style.display = "block";
+        mathCourse2.style.display = "block";
     }
     else {
-        mathCourses.style.display = "none";
+        mathCourse.style.display = "none";
+        mathCourse2.style.display = "none";
     }
 }
 
