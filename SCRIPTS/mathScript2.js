@@ -1,6 +1,9 @@
 var mathCourse = document.getElementById('mathCourse');
 var mathCourse2 = document.getElementById('mathCourse2');
 
+var mathElectives = document.getElementById('mathElectives');
+var mathElectives2 = document.getElementById('mathElectives2');
+
 var indexContent = document.getElementById('index-content');
 var indexStyle = document.getElementById('indexStyle');
 var title = document.getElementById('math-index');
@@ -13,6 +16,19 @@ function hideMathCourses() {
     else {
         mathCourse.style.display = "none";
         mathCourse2.style.display = "none";
+    }
+}
+
+function hideMathElectives() {
+    if (mathElectives.style.display == "none")
+    {
+        mathElectives.style.display = "block";
+        mathElectives2.style.display = "block";
+    }
+    else
+    {
+        mathElectives.style.display = "none";
+        mathElectives2.style.display = "none";
     }
 }
 

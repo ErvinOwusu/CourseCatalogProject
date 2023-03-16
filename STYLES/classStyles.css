@@ -44,16 +44,25 @@
 }
 
 #header-style {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: #FFF;
     font-weight: bold;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    font-style: italic;
-    padding: 40px 40px 5px 40px;
+    width: 70%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 3px;
-    text-shadow: 6px 6px 0 #000;
     cursor: pointer;
+    text-align: center;
+    border: 3px solid transparent; 
+    background: linear-gradient(#1B1B1B,#1B1B1B) padding-box, linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(158, 158, 158) 30%, rgb(158, 158, 158) 100%) border-box;
+    transform: filter .2s;
+}
+
+#header-style:hover {
+    filter: brightness(80%);
 }
 
 @media (max-width: 1301px)
