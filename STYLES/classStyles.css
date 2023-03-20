@@ -1,3 +1,9 @@
+.image-A {
+    
+    background: linear-gradient(#1B1B1B, #1B1B1B) padding-box, linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(205, 163, 61) 30%, rgb(205, 163, 61) 100%) border-box;
+    border: 5px solid transparent;
+}
+
 .class-table {
     display: block;
     margin-left: auto;
