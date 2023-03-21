@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/scienceStyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/scienceHeader.png" width="100%">
+        <div class="header1"> SCIENCE </div>
+    </div>
+
+    <div class="flex-a">
+        <section class="display-class-filter"
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+
+            <div class="display-class-filter">
+                <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>SCIENCE</i>
+                </div>
+                <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                    FILTER </div>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    CREDIT VALUE</div>
+                <label class="container"> 0.5 CREDIT
+                    <input type="checkbox" id="check1" onclick="halfCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 1 Credit
+                    <input type="checkbox" id="check2" onclick="fullCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    GRADE LEVEL</div>
+                <label class="container"> FRESHMAN
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SOPHOMORE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> JUNIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SENIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <!--
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    DISPLAY</div>
+                <label class="container"> GRIDS
+                    <input type="checkbox" id="check4" onclick="display2()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            -->
+        </section>
+
+
+        <div style="display: inline;">
+            <!------------------------------------ FUNDEMENTAL SCIENCE COURSES ---------------------------------------->
+            <!------------------------------------ FUNDEMENTAL SCIENCE COURSES ---------------------------------------->
+            <div id="header-style" onclick="hideFundemental()">FUNDEMENTAL SCIENCE COURSES</div>
+
+            <div
+                style="padding-top: 10px; color: #FFF; font-family: 'Quicksand', sans-serif; font-size: 1.1rem; text-align: center; width: 80%; margin-left: auto; margin-right: auto;">
+                * Biology is a state-required graduation requirement.
+                <br>
+                ** Honors Biology may NOT be taken concurrently with AP Biology . Students can double up on science
+                courses in any grade as long as they satisfy prerequisites.
+                <br>
+                *** In order to take AP Physics, the student MUST have taken Honors Physics. Honors Physics may NOT be
+                taken concurrently with AP Physics.
+            </div>
+
+
+            <section class="class-flex">
+                <div style="width: 50%;">
+
+                    <div id="fundemental">
+
+                        <div id="310">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Environmental Earth Science (Conceptual) (310)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Recommendation of 8th grade teacher</i>
+                                    </div>
+
+                                    <div
+                                        style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px; font-size: 1rem;">
+                                        This course is not approved by the NCAA It will not count toward the NCAA
+                                        three
+                                        credit
+                                        math requirement <br>
+                                    </div>
+
+                                    This course is for ninth grade students who need reinforcement in basic science
+                                    skills. This course presents a study of the interconnection between the earth
+                                    sciences and physical sciences and how they affect our everyday lives. The course
+                                    curriculum has been rewritten to reflect the student performance expectations
+                                    outlined in the Next Generation Science Standards (see above). Emphasis is placed on
+                                    problem solving and strengthening scientific and study skills needed to successfully
+                                    understand the earth and impact its environment in a positive manner.
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="312">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Environmental Earth Science (312)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Recommendation of 8th grade teacher</i>
+                                    </div>
+
+                                    This course can be taken at any grade level, but is primarily for ninth grade
+                                    students and is designed for students who plan to attend college. This course
+                                    presents an in-depth study of the interconnection between the earth sciences and
+                                    physical sciences and howthey affect our everyday lives. The course curriculum has
+                                    been rewritten to reflect the student performance expectations outlined in the Next
+                                    Generation Science Standards (see above).
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="314">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Honors Environmental Earth Science (314)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsites: "A" in 8th grade Science, highly recommended that they be
+                                            enrolled in Honors Algebra 1 or Honors Geometry and be recommended by 8th
+                                            grade science teacher. </i>
+                                    </div>
+
+                                    This course is designed for students who have an excellent background in middle
+                                    school science. This course presents an in-depth, rigorous study of the
+                                    interconnection between the earth sciences and physical sciences and how they affect
+                                    our everyday lives. The course curriculum has been rewritten to reflect the student
+                                    performance expectations outlined in the Next Generation Science Standards (see
+                                    above).
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="342">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Phsyics (342)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: es: Precalculus or Trigonometry (may be enrolled concurrently)
+                                            and strong background in Algebra 2 (minimum of 80 average recommended)
+                                            and/or teacher recommendation</i>
+                                    </div>
+
+                                    This course is designed for students who are college-bound. The categories of
+                                    energy, motion, force, rotation, momentum, mechanical energy, thermodynamics, sound,
+                                    atomic, nuclear, radiation, electricity, magnetism, and fluids are studied. Students
+                                    in the physics course use fundamental arithmetic to analyze problems. Technological
+                                    applications are used extensively in this course. Students preparing for college
+                                    will benefit from taking this course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals342()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more342" class="lg-desc">
+                                        As a result of Physics the student will:
+                                        <ul>
+                                            <li>Understand and apply basic concepts, principles, and theories of physics
+                                                and its interrelationships with other sciences.</li>
+                                            <li>Perform sequential mathematical calculations.</li>
+                                            <li>Perform precise measurements in mechanics and heat.</li>
+                                            <li>Interpret and graph data sets in mechanics and heat.</li>
+                                            <li>Collect raw data and interpret the results within experimental error.
+                                            </li>
+                                            <li>Apply vector analysis to forces and distance-time relationships.</li>
+                                            <li>Identify the relationship between energy and matter.</li>
+                                            <li>Perform precise measurements in optics, electricity, and magnetism.</li>
+                                            <li>Interpret and graph data sets in optics, electricity, and magnetism.
+                                            </li>
+                                            <li>Demonstrate basic concepts of waves, sound, light, electricity, and
+                                                magnetism.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="344">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Honors Physcis (344)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Precalculus/ Honors Precalculus (may be enrolled concurrently),
+                                            and a strong background in Honors Algebra 2 (minimum of 80 average
+                                            recommended) and/or teacher recommendation. </i>
+                                    </div>
+
+                                    This course is designed for students who are in the honors program. The categories
+                                    of energy, motion, force, rotation, momentum, mechanical energy, thermodynamics,
+                                    sound, atomic, nuclear, radiation, electricity, magnetism, and fluids are studied.
+                                    Students in the Honors Physics course use algebraic applications to analyze
+                                    problems. Technological applications are used extensively in this course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals344()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more344" class="lg-desc">
+                                        As a result of Honors Physics the student will:
+                                        <ul>
+                                            <li>Understand and apply basic concepts, principles, and theories of physics
+                                                and its interrelationships with other sciences.</li>
+                                            <li>Perform sequential mathematical calculations.</li>
+                                            <li>Perform precise measurements in mechanics and heat.</li>
+                                            <li>Interpret and graph data sets in mechanics and heat.</li>
+                                            <li>Collect raw data and interpret the results within experimental error.
+                                            </li>
+                                            <li>Apply vector analysis to forces and distance-time relationships.</li>
+                                            <li>Identify the relationship between energy and matter.</li>
+                                            <li>Perform precise measurements in optics, electricity, and magnetism.</li>
+                                            <li>Interpret and graph data sets in optics, electricity, and magnetism.
+                                            </li>
+                                            <li>Demonstrate basic concepts of waves, sound, light, electricity and
+                                                magnetism.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 50%;">
+
+                    <div id="fundemental2">
+                        <div id="321">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Biology (Conceptual) (321)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Concepts in Environmental Earth Science and teacher
+                                            recommendation</i>
+                                    </div>
+
+                                    <div
+                                        style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px; font-size: 1rem;">
+                                        This course is not approved by the NCAA It will not count toward the NCAA
+                                        three
+                                        credit
+                                        math requirement <br>
+                                    </div>
+
+
+                                    This course is primarily for tenth grade students who need reinforcement in science
+                                    skills. This course presents a basic study of cell structure and function, genetics,
+                                    evolution, ecology, and human anatomy. It includes laboratory skills and
+                                    foundational information in the area of biology, giving the students a better
+                                    understanding of the role science plays in everyday lives and to enhance performance
+                                    in subsequent science classes. The course curriculum has been rewritten to reflect
+                                    the student performance expectations outlined in the Next Generation Science
+                                    Standards (see above).
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="322">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Biology (322)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Honors Environmental Earth Science, Environmental Earth Science
+                                            and/or teacher recommendation. </i>
+                                    </div>
+
+                                    This course is designed for students who have successfully mastered the skills and
+                                    concepts in 9th grade Environmental Earth Science. This course presents an in-depth
+                                    study of biochemistry, cell structure and function, genetics, evolution, ecology,
+                                    and classification of organisms. Throughout the course the students will explore
+                                    relationships between these sciences rather than differences. The course curriculum
+                                    has been rewritten to reflect the student performance expectations outlined in the
+                                    Next Generation Science Standards (see above).
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="324">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Honors Biology (324)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Grade 9- May double up on science in grade 9 with both Honors
+                                            Earth Science and Honors Biology with the following prerequisite: "A"
+                                            average in 8th grade, top 10% of class, enrolled in Honors Algebra I or
+                                            Honors Geometry, and recommendation of 8th grade teacher.
+
+                                            <br>
+                                            <br>
+
+                                            Grade 10- Recommended 80 average or better in Honors Environmental Earth
+                                            Science and teacher recommendation.
+                                        </i>
+                                    </div>
+
+                                    This course is designed for students who have an outstanding background in 9th grade
+                                    Environmental Earth Science. This course presents a rigorous, in-depth study of
+                                    biochemistry, cell structure and function, genetics, evolution, ecology, and
+                                    classification of organisms. Throughout the course the students will explore
+                                    relationships between these sciences rather than differences. The course curriculum
+                                    has been rewritten to reflect the student performance expectations outlined in the
+                                    Next Generation Science Standards (see above).
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="330">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Consumer Chemistry (330)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Biology teacher recommendation. Student must also be enrolled in
+                                            a math course throughout the year.</i>
+                                    </div>
+
+                                    This course is designed for students who have an interest in chemistry and need
+                                    reinforcement in mathematical skills. Students will study the fundamentals of
+                                    chemistry with emphasis on concepts used to explain phenomena encountered in daily
+                                    activities. Laboratory work is designed to reinforce the concepts and teach the
+                                    process of experimentation, problem solving, and analysis. With the State of
+                                    Connecticut Board of Education adoption of the Next Generation Science Standards
+                                    (NGSS), the course curriculum is aligned with the NGSS expectations and guideline
+                                    (see above).
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="332">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Chemistry (332)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Biology and teacher recommendation. Successful completion of
+                                            Algebra I (Basic is included) is required. </i>
+                                    </div>
+
+                                    This course includes studies in metric measures, physical and chemical properties,
+                                    symbols, and formulas, atomic structure, mole theory, chemical equations, electron
+                                    configurations and the periodic table. Topics covered include chemical bonding,
+                                    thermochemistry, kinetic molecular theory, gas laws, solutions, acids and bases,
+                                    reaction rates, and equilibrium. It is the intent of this course not only to study
+                                    the theories of chemistry, but also to demonstrate the applications of those
+                                    theories through laboratory experiences and relate those theories to everyday uses.
+                                    With the State of Connecticut Board of Education adoption of the Next Generation
+                                    Science Standards (NGSS), the course curriculum is aligned with the NGSS
+                                    expectations and guidelines (see above).
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="334">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Honors Chemistry (334)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C </i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: (May be taken concurrently with Honors Biology) Recommended 80
+                                            average or higher in Honors Biology and teacher recommendation. Student must
+                                            also have taken or be enrolled in Algebra 2, Honors Algebra 2, or have
+                                            passed Geometry with a recommended grade of 90 or better. (Basic Algebra 2
+                                            is not included) </i>
+                                    </div>
+
+                                    Honors Chemistry is designed for students who have had Honors Biology. Emphasis is
+                                    focused on the mathematical solution of problems, as well as laboratory techniques.
+                                    This course gives the student an in-depth background in the theory of chemistry and
+                                    is designed to develop sound scientific attitudes and skills. It is the intent of
+                                    this course not only to study the theories of chemistry, but also to demonstrate the
+                                    applications of those theories through laboratory experiences and relate those
+                                    theories to everyday uses. With the State of Connecticut Board of Education adoption
+                                    of the Next Generation Science Standards (NGSS), the course curriculum is aligned
+                                    with the NGSS expectations and guidelines (see above).
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <div style="padding-top: 30px;"></div>
+            <section class="class-flex">
+                <div style="width: 100%;">
+                    <div id="header-style" onclick="hideAdvanced()">ADVANCED SCIENCE COURSES</div>
+                    <div id="advanced">
+                        <div id="335">
+                            <div id="">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            ECE Environmental Science (335)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C </i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: Strong background in Honors Earth Science (recommended grade
+                                                of
+                                                80 or better), Biology (recommended grade of 90 or better) or Honors
+                                                Biology
+                                                (recommended grade of 80 or better). Recommendation of Honors Earth
+                                                Science
+                                                and Biology teacher (if applicable) is required. Students must also
+                                                submit a
+                                                parent/student/teacher contract. </i>
+                                        </div>
+
+                                        This course is an introduction to basic concepts and areas of environmental
+                                        concern
+                                        and how these problems can be effectively addressed. Topics include: human
+                                        population; ecological principles; conservation of biological resources;
+                                        biodiversity; croplands, rangelands, forestlands; soil and water conservation;
+                                        pollution and water management; and wildlife and fisheries conservation.
+
+                                    </div>
+
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals335()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more335" class="lg-desc">
+                                            Upon completion of ECE Environmental Science, the student should be able to:
+                                            <ul>
+                                                <li>Demonstrate knowledge of natural systems and gain understanding of
+                                                    some
+                                                    of major environmental problems at the local and global level.</li>
+                                                <li>Gain appreciation for and knowledge of various disciplines in
+                                                    natural
+                                                    resource conservation.</li>
+                                                <li>Understand how professionals in the field are involved in coping
+                                                    with
+                                                    and solving problems.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="325">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Placement Biology (325)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C </i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Strong background in Honors Biology (recommended 90
+                                            average).Recommendation of Honors Biology teacher is required. Students must
+                                            also
+                                            submit a parent/student/teacher contract. </i>
+                                    </div>
+
+                                    The AP Biology course uses a national curriculum that is designed to model the first
+                                    year of
+                                    an introductory college biology course (8 credits). The texts and materials used are
+                                    those
+                                    that are commonly employed in colleges and universities throughout the country. This
+                                    course
+                                    involves a rigorous, comprehensive, in-depth study of the field of biology. Students
+                                    who
+                                    enroll in AP Biology should have a keen interest in biology and recognize that this
+                                    course
+                                    will require extensive independent study. The curriculum includes the following
+                                    units;
+                                    Chemistry of Life, Cell Structure and Function, Cellular Energetics, Cell
+                                    Communication
+                                    and
+                                    Cell Cycle, Heredity, Gene Expression and Regulation, Natural Selection, and
+                                    Ecology.
+                                    The
+                                    curriculum also includes six key science practices, which are, concept explanation,
+                                    visual
+                                    representations, questions and methods, representing and describing data,
+                                    statistical
+                                    tests
+                                    and data analysis, and argumentation. It is expected that students enrolled in the
+                                    course
+                                    take the standardized AP exam in Mayfor a fee; depending on their test score, they
+                                    may
+                                    be
+                                    eligible for advanced placement and/or college credits in their respective schools.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals325()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more325" class="lg-desc">
+                                        Learning Goals: Four Big Ideas of AP Biology:
+                                        <ul>
+                                            <li>The process of evolution drives the diversity and unity of life.</li>
+                                            <li>Biological systems use energy and molecular building blocks to grow,
+                                                reproduce,
+                                                and maintain dynamic homeostasis.</li>
+                                            <li>Living systems store, retrieve, transmit, and respond to information
+                                                essential
+                                                to life processes.</li>
+                                            <li>Biological systems interact, and these systems and their interactions
+                                                exhibit
+                                                complex properties.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="345">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Placement Physics (345)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C </i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Honors Physics (recommended 90 average) and Honors Precalculus
+                                            (recommended 90 average). Recommendation of Honors Physics teacher is
+                                            required.
+                                            Students must also submit a parent/teacher/student contract.</i>
+                                    </div>
+
+                                    The AP Physics course uses a national curriculum that is designed to model an
+                                    introductory
+                                    college physics course. The texts and materials used are those that are commonly
+                                    employed in
+                                    colleges and universities throughout the country. This course involves a rigorous,
+                                    comprehensive, in-depth study of the field of physics. Student who enroll in AP
+                                    Physics
+                                    should have a keen interest in physics and recognize that this course will require
+                                    extensive
+                                    independent study. The curriculum includes five major content areas: Newtonian
+                                    mechanics,
+                                    fluid mechanics and thermal physics, electricity and magnetism, waves and optics,
+                                    and
+                                    atomic
+                                    and nuclear physics. The curriculum also includes extensive lab work, which will
+                                    supplement
+                                    class discussions and lectures. It is expected that student enrolled in this course
+                                    take
+                                    the
+                                    standardized AP exam in May for a fee; depending on their test scores, they may
+                                    eligible
+                                    for
+                                    advanced placement and/or college credits in their respective schools.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more" class="lg-desc">
+                                        As a result of AP Physics the student will:
+                                        <ul>
+                                            <li>Understand, apply, and analyze the concepts of Newtonian mechanics.</li>
+                                            <li>Understand, apply, and analyze the concepts of fluid mechanics and
+                                                thermal
+                                                physics.</li>
+                                            <li>Understand, apply, and analyze the concepts included in electricity and
+                                                magnetism.</li>
+                                            <li>Understand, apply, and analyze the concepts included in waves and
+                                                optics.
+                                            </li>
+                                            <li>Understand, apply, and analyze the concepts included in atomic and
+                                                nuclear
+                                                physics.</li>
+                                            <li>Design controlled experiments that are designed to observe and measure
+                                                phenomena
+                                                in order to analyze data (including errors) and effectively communicate
+                                                results.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div style="padding-top: 20px;"></div>
+            <div id="header-style" onclick="hideElectives()"> SCIENCE ELECTIVES</div>
+
+            <setion class="class-flex">
+                <div style="width: 50%;">
+                    <div id="electives">
+                        <div id="353">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Anatomy and Physiology (353)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Successful completion of Honors Biology or Biology </i>
+                                    </div>
+
+                                    This course is designed to develop a comprehensive understanding of the close
+                                    interrelationship between anatomy (which identifies and relates the individual parts
+                                    to
+                                    the
+                                    whole) and physiology (which provides an understanding of the function of the parts
+                                    of
+                                    the
+                                    system). This course is intended for the high school student who wishes to learn
+                                    about
+                                    the
+                                    structure and function of the human bodyin detail.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals353()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more353" class="lg-desc">
+                                        As a result of Anatomy and Physiology the student will:
+                                        <ul>
+                                            <li>Describe, identify, and/or analyze the detailed structure and function
+                                                of
+                                                human
+                                                organ systems (skeletal, muscular, digestive, circulatory, respiratory,
+                                                excretory, nervous, endocrine, and reproductive).</li>
+                                            <li>Explain how the body systems are dependent on each other for survival
+                                                and to
+                                                operate the human body.</li>
+                                            <li>Communicate in anatomical, directional, and medical terminology.</li>
+                                            <li>Explain the relationship of anatomy and physiology to basic health and
+                                                pathology.</li>
+                                            <li>Research and communicate (either through written or oral expression) a
+                                                variety
+                                                of pathological disorders.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="364">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Forensic Science (364)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Honors Biology or Biology </i>
+                                    </div>
+
+                                    This course will enable the student to bridge the gap between scientific theory and
+                                    its
+                                    application to criminology. This course focuses on the activities of the crime lab.
+                                    A
+                                    variety of methods will be explored that are used to link suspect, victim, and crime
+                                    scene. These include laboratory exercises in both trace evidence (paint, glass,
+                                    fibers,
+                                    and hair) and biological evidence (fingerprinting, serology, and DNA) using a
+                                    variety of
+                                    analytical procedures. The majority of student evaluation will be concentrated on
+                                    performance on a variety of laboratory experiments, activities and projects that
+                                    complement the traditional classroom activities of lecture and group work. This
+                                    course
+                                    is designed to enhance student understanding of content and process skills through
+                                    hands-on activities, labs, and projects.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals364()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more364" class="lg-desc">
+                                        As a result of Forensic Science the student will:
+                                        <ul>
+                                            <li>Develop skills in observation and applying the scientific method to real
+                                                world (fictional or case study) situations in forensic science.</li>
+                                            <li>Analyze crime scenes (fictional or case study) by making observations
+                                                and
+                                                hypotheses and developing experiments to link the suspect and victim.
+                                            </li>
+                                            <li>Perform a variety of procedures used in forensic science labs in
+                                                analyzing
+                                                both trace evidence and biological evidence (glass, paint, fibers, hair,
+                                                blood, fingerprints, and DNA).</li>
+                                            <li>Perform DNA fingerprinting using DNA electrophoresis technology and use
+                                                the
+                                                data to solve a fictional forensic case.</li>
+                                            <li>Advance their skills in observation, forming hypotheses, developing
+                                                experiments, forming conclusions, and scientific writing.</li>
+                                            <li>Describe the role of forensic science in the criminal justice system.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="365">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Forensic Science (Conceptual) (365)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Biology or Biology Concepts</i>
+                                    </div>
+
+                                    <div
+                                        style="color:rgba(175, 23, 23, 1); font-weight: bolder; padding-bottom: 17px; font-size: 1rem;">
+                                        This course is not NCAA approved. <br>
+                                    </div>
+
+                                    This is a semester science elective for students who need continuing reinforcement
+                                    in
+                                    science skills. Forensic Science Concepts will enable the student to bridge the gap
+                                    between scientific theory and its application to criminology. This course focuses on
+                                    basic activities of the crime lab. A variety of methods will be explored that are
+                                    used
+                                    to link suspect, victim, and crime scene.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals365()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more365" class="lg-desc">
+                                        As a result of Forensic Science (Conceptual) the student will:
+                                        <ul>
+                                            <li>Relate the use of instrumentation to forensic science.</li>
+                                            <li>Develop skills in observation and applying the scientific method to real
+                                                world (fictional or case study) situations in forensic science.</li>
+                                            <li>Analyze crime scenes (fictional or case study) by making observations
+                                                and
+                                                hypotheses and developing experiments to link the suspect and victim.
+                                            </li>
+                                            <li>Perform a variety of procedures used in forensic science labs in
+                                                analyzing
+                                                both trace evidence and biological evidence (glass, paint, fibers, hair,
+                                                blood, fingerprints, and DNA).</li>
+                                            <li>Advance their skills in observation, forming hypotheses, developing
+                                                experiments, and forming conclusions using instrumentation commonly used
+                                                in
+                                                forensic science, such as microscopes, spectrophotometers,
+                                                chromatography
+                                                instruments, and mass spectrometers.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 50%;">
+                    <div id="electives2">
+                        <div id="375">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Zoology (375)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Successful completion of Honors Biology or Biology (may be taken
+                                            concurrently) . </i>
+                                    </div>
+
+                                    The course covers a survey of invertebrate and vertebrate organisms, with an
+                                    emphasis on
+                                    evolutionary and ecological relationships, aspects of animal organization that unite
+                                    major animal phyla, and animal adaptations. Animal form and function will also be
+                                    presented using a comparative approach. This perspective will help students to
+                                    understand the unifying principles of Zoology and the remarkable diversity within
+                                    the
+                                    animal kingdom.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals375()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more375" class="lg-desc">
+                                        As a result of Zoology the student will:
+                                        <ul>
+                                            <li>Understand and apply the basic principles of ecology and evolution to
+                                                the
+                                                study of animals.</li>
+                                            <li>Communicate the classification of animals through the understanding of
+                                                taxonomy.</li>
+                                            <li>Describe the major animal phyla.</li>
+                                            <li>Use comparative anatomy to describe and compare invertebrate and
+                                                vertebrate
+                                                animals.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="373">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Natural Disasters (373)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None</i>
+                                    </div>
+
+                                    This course presents an in-depth study and scientific data analysis of a variety of
+                                    natural disasters. The course content includes a study of earth's structure, plate
+                                    tectonics, atmospheric conditions, weather patterns, and climate change. Special
+                                    topics
+                                    include: volcanoes, earthquakes, tsunamis, hurricanes, tornadoes, floods, fires,
+                                    drought, and El Nino. The course will also have an emphasis on preparedness,
+                                    mitigation
+                                    and management, with a special focus on engineering. This course will be presented
+                                    with
+                                    several levels of differentiation for a wide range of academic abilities
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals373()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more373" class="lg-desc">
+                                        As a result of Natural Disasters the student will:
+                                        <ul>
+                                            <li>summarize the theory of plate tectonics and the effects of the plates'
+                                                movements.</li>
+                                            <li>compare the formation, structure and location of the different types of
+                                                volcanoes.</li>
+                                            <li>demonstrate a knowledge of the use of scientific data to predict when a
+                                                volcano may erupt.</li>
+                                            <li>analyze earthquake data to locate the epicenter, determine the magnitude
+                                                and
+                                                assess damage of an earthquake.</li>
+                                            <li>explain how tsunamis form.</li>
+                                            <li>explain the formation and strengthening process of hurricanes.</li>
+                                            <li>model the formation of thunderstorms and how tornadoes may form as a
+                                                result.
+                                            </li>
+                                            <li>discuss global warming and subsequent hazards like wildfires, droughts,
+                                                floods, and El Nino.</li>
+                                            <li>with each type of natural disaster, discuss areas most threatened, how
+                                                to
+                                                mitigate damage, and prediction technology.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="362">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Marine Science (362)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Biology, Honors Biology or C oncepts Biology (m</i>
+                                    </div>
+
+                                    This course is designed for students who wish to further their understanding of
+                                    marine
+                                    biology. The underlying theme of this course is "We can't save what we don't
+                                    understand." The course includes an in-depth study of the ecology of a variety of
+                                    marine
+                                    ecosystems (coral reefs, salt marsh, rocky intertidal zone, and mangrove forests).
+                                    The
+                                    course concludes with an overview of resources from the ocean and how humans have
+                                    impacted the ocean realm. The final unit centers around methods of mediation of
+                                    these
+                                    effects both on an individual level and a global level.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals362()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more362" class="lg-desc">
+                                        As a result of Marine Science the student will:
+                                        <ul>
+                                            <li>Demonstrate a knowledge of marine food chains and the flow of energy in
+                                                a
+                                                variety of ecosystems.</li>
+                                            <li>Analyze and explain how the physical, chemical, and biological factors
+                                                affect the diversity of life in a variety of marine ecosystems.</li>
+                                            <li>Explain how man has affected the ocean realm.</li>
+                                            <li>Demonstrate informed judgments about the effects of human activities on
+                                                the
+                                                marine environment.</li>
+                                            <li>Develop an attitude of optimism and empowerment in how to deal with
+                                                remediation of problems and conservation of the marine environment.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="372">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Astronomy (372)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None</i>
+                                    </div>
+
+                                    Students will learn the nature, origin, and evolution of the solar system, stars and
+                                    stellar systems, and the universe itself. Course content is focused on a study of
+                                    the
+                                    physics, chemistry, and astronomical techniques that have allowed us to reach our
+                                    present understanding of the universe. Hands-on work and analysis of astronomical
+                                    data
+                                    are used to enhance understanding of the content. A strong mathematical background
+                                    is
+                                    recommended.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals372()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more372" class="lg-desc">
+                                        As a result of Astronomy the student will:
+                                        <ul>
+                                            <li>Analyze data provided from a variety of instruments.</li>
+                                            <li>Summarize the theory of the formation of the universe.</li>
+                                            <li>Summarize the life cycle of stars and explain why stars change over
+                                                time.</li>
+                                            <li>Organize and analyze stellar data and determine stellar composition,
+                                                approximate age, temperature, and motion.</li>
+                                            <li>Compare and contrast planets and other components of the solar system.
+                                            </li>
+                                            <li>Organize and analyze solar data.</li>
+                                            <li>Identify and chart objects in the night sky, including planets, stars,
+                                                constellations, and Messier objects.</li>
+                                            <li>Advance their ability to hypothesize, theorize, and form conclusions.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </setion>
+
+
+            <script type="text/javascript" src="../SCRIPTS/scienceScript.js"></script>
+            <script type="text/javascript" src="../SCRIPTS/scienceScript2.js"></script>
+
+        </div>
+</body>
