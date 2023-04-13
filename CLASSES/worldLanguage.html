@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/languageStyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/languageHeader.png" width="100%">
+        <div class="header1"> WORLD LANGUAGE </div>
+    </div>
+
+    <div class="flex-a">
+        <section class="display-class-filter"
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+
+            <div class="display-class-filter">
+                <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>SCIENCE</i>
+                </div>
+                <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                    FILTER </div>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    CREDIT VALUE</div>
+                <label class="container"> 0.5 CREDIT
+                    <input type="checkbox" id="check1" onclick="halfCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 1 Credit
+                    <input type="checkbox" id="check2" onclick="fullCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    GRADE LEVEL</div>
+                <label class="container"> FRESHMAN
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SOPHOMORE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> JUNIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SENIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <!--
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    DISPLAY</div>
+                <label class="container"> GRIDS
+                    <input type="checkbox" id="check4" onclick="display2()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            -->
+        </section>
+
+
+
+
+        <div style="display: inline;">
+            <!------------------------------------ FUNDEMENTAL SCIENCE COURSES ---------------------------------------->
+            <!------------------------------------ FUNDEMENTAL SCIENCE COURSES ---------------------------------------->
+            <div id="header-style" onclick="hideRosetta()">ROSETTA STONE PROGRAM </div>
+
+            <div
+                style="padding-top: 10px; color: #FFF; font-family: 'Quicksand', sans-serif; font-size: 1.1rem; text-align: center; width: 80%; margin-left: auto; margin-right: auto;">
+
+            </div>
+
+            <img src="../images/rosettaTable.png" class="class-table">
+
+            <section class="class-flex">
+
+                <div style="width: 50%;">
+
+                    <div id="rosetta">
+
+                        <div id="RS 100">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Rosetta Stone independent Study (RS 100)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Recommendation of school counselor or World Language chair </i>
+                                    </div>
+
+                                    Course may be taken multiple times for additional credit and advanced leveling.
+                                    <br>
+
+                                    The need to produce global citizens is increasing, and proficiency in multiple
+                                    languages is essential for our students to compete in the 21st century. In the R
+                                    osetta Stone course students can choose to study a language identified as a need
+                                    area for global competence or a language of interest due to their heritage. A R
+                                    osetta Stone language study credit is a great addition to a student? s transcript
+                                    and resume, and with recommendation, can be taken to be fulfilled their W orld
+                                    Language graduation requirement. Students will receive guidance from a W orld
+                                    Language teacher; however, considerable self-motivation and drive is necessary to be
+                                    successful in a Rosetta Stone program.
+                                    <br>
+                                    <br>
+                                    ROSETTA STONE LANGUAGES AVAILABLE:
+                                    Arabic, Chinese (Mandarin), Dutch, Filipino (Tagalog), French, G erman, G reek,
+                                    Hebrew, Hindi, Irish, Italian, Japanese, Korean, Latin, Persian (Farsi), Polish,
+                                    Portuguese (Brazil), Russian, Swedish, Turk
+
+                                </div>
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals100()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more100" class="lg-desc">
+                                        In the Rosetta Stone course students will:
+                                        <ul>
+                                            <li>learn and practice common words and concepts through a series of
+                                                carefully
+                                                crafted lessons that build speaking, reading, writing, and comprehension
+                                                skills.
+                                            </li>
+                                            <li>receive immediate feedback on pronunciation through advanced speech-
+                                                recognition
+                                                technology.</li>
+                                            <li>work on language skills at their own pace and still benefit from a
+                                                teacher's
+                                                individualized guidance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 50%;">
+
+                    <div id="rosetta2">
+
+                        <div style="padding: 40px 40px 20px 40px;">
+                            <div style="font-family: 'Quicksand', sans-serif; font-size: 1.2rem; color: #FFF; font-weight: 300; padding: 40px 40px 20px 40px; background-color: rgba(255, 255, 255, 0.05); border: 2px solid rgba(255, 255, 255, 0.1); border-radius: 20px;">
+                                <div style="font-size: 2rem; font-weight: bold; text-transform: uppercase; text-align: center; font-family: 'Rubik', sans-serif; padding-bottom: 20px;">CT Seal of Biliteracy</div>
+                            
+                                The Seal of Biliteracy is an award given in recognition of students
+                                who have attained proficiency in two or more languages by high school graduation. Appearing
+                                on a certificate, the Seal of Biliteracy is a statement of accomplishment for gaining
+                                competencyin two or more languages and is viewed as an asset when applying for a job or
+                                college admission. The Seal serves to certify attainment of biliteracy for students,
+                                employers and institutions of higher education. It is a statement of accomplishment that
+                                helps to signal evidence of a student's readiness for career and college, and for engagement
+                                as a global citizen. To meet the requirements for the Seal students must earn four credits
+                                of WRHS English and score Intermediate (mid/1-3, equivalent to an AP score of 3) or higher
+                                on each of the four components of the AAPPL,Assessment of Performance toward Proficiency in
+                                Languages. This test requires registration with the World Languages Department and will be
+                                administered each March. www.AAPPL.org
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <script type="text/javascript" src="../SCRIPTS/languageScript.js"></script>
+            <script type="text/javascript" src="../SCRIPTS/languageScript2.js"></script>
+
+        </div>
+</body>
