@@ -13,11 +13,13 @@
         body {
             background-color: #000210;
             background-image: url('images/hawkPattern2.png');
+            
         }
         .section1 {
             padding: 100px;
             box-sizing: border-box;
             margin: 0;
+            
         }
         .section2
         {
@@ -143,6 +145,79 @@
             <img class="zoom" style="cursor: pointer; width: 26rem;" src="images/appliedTechnology.png">
         </div>
         
+    </section>
+    
+    <section style="background-image: url('images/line background.png'); padding: 100px 200px;">
+        <style>
+            .schedule-container {
+                display: flex; 
+                flex-direction: row; 
+                color: #FFF; 
+                font-family: 'Quicksand', sans-serif; 
+                justify-content: space-evenly; 
+                font-size: 1.4rem;
+            }
+            
+            #a {
+                display: block;
+            }
+            #b {
+                display: none;
+            }
+            #c {
+                display: none;
+            }
+            #d {
+                display: none;
+            }
+            
+            .schedule-header {
+                border: 2px solid #FFF; 
+                border-radius: 20px; 
+                padding: 10px 20px;
+            }
+        </style>
+        
+        <div class="schedule-container">
+            <div class="schedule-header" onclick="a()">A/B Day</div>
+            <div class="schedule-header" onclick="b()">Half Day</div>
+            <div class="schedule-header" onclick="c()">2 Hour Delay</div>
+            <div class="schedule-header" onclick="d()">Exam Schedule</div>
+        </div>
+        
+        <div id="a" style="color: #FFF; font-size: 1rem">
+            Example Text A
+        </div>
+        <div id="b" style="color: #FFF; font-size: 1rem">
+            Example Text A
+        </div>
+        <div id="c" style="color: #FFF; font-size: 1rem">
+            Example Text A
+        </div>
+        <div id="d" style="color: #FFF; font-size: 1rem">
+            Example Text A
+        </div>
+        
+        
+        <script>
+        var a = document.getElementById('a');
+        var b = document.getElementById('b');
+        var c = document.getElementById('c');
+        var d = document.getElementById('d');
+        
+            function b() {
+                
+                if (b.style.display == "none")
+                {
+                    b.style.display = "block";
+                    a.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                }
+                
+                
+            }
+        </script>
     </section>
    
 
