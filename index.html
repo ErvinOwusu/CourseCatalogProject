@@ -176,46 +176,98 @@
                 border-radius: 20px; 
                 padding: 10px 20px;
             }
+            
+            td {
+                padding: 10px;
+                font-size: 1.5rem;
+                border: 2px solid white;
+            }
+            
+            tr:nth-child(even) {
+            }
+            
+            table {
+                border-collapse: collapse;
+                
+                
+            }
+            
+            #test {
+                color: white;
+            }
         </style>
         
-        <div class="schedule-container">
-            <div class="schedule-header" onclick="a()">A/B Day</div>
-            <div class="schedule-header" onclick="b()">Half Day</div>
-            <div class="schedule-header" onclick="c()">2 Hour Delay</div>
-            <div class="schedule-header" onclick="d()">Exam Schedule</div>
+        <div class="schedule-container" style="padding-bottom: 70px;">
+            <div class="schedule-header" onclick="showA()">A/B Day</div>
+            <div class="schedule-header" onclick="showB()">Half Day</div>
+            <div class="schedule-header" onclick="showC()">2 Hour Delay</div>
+            <div class="schedule-header" onclick="showD()">Exam Schedule</div>
         </div>
         
-        <div id="a" style="color: #FFF; font-size: 1rem">
-            Example Text A
+        <div id="a" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
+            <table style="margin-left: auto; margin-right: auto; width: 100%;">
+                <tr>
+                    <td> Block 1 </td>
+                    <td> 7:20 - 8:40 </td>
+                </tr>
+                <tr>
+                    <td> Block 2 </td>
+                    <td> 8:45 - 10:05 </td>
+                </tr>
+                <tr>
+                    <td> Advisory </td>
+                    <td> 10:10 - 10:30 </td>
+                </tr>
+                <tr>
+                    <td> Block 3 </td>
+                    <td> 10:35 - 12:25</td>
+                </tr>
+                <tr>
+                    <td> Block 4 </td>
+                    <td> 12:30 - 1:50 </td>
+                </tr>
+            </table>
         </div>
+        
         <div id="b" style="color: #FFF; font-size: 1rem">
-            Example Text A
+            Example Text B
         </div>
         <div id="c" style="color: #FFF; font-size: 1rem">
-            Example Text A
+            Example Text C
         </div>
         <div id="d" style="color: #FFF; font-size: 1rem">
-            Example Text A
+            Example Text D
         </div>
         
         
         <script>
-        var a = document.getElementById('a');
-        var b = document.getElementById('b');
-        var c = document.getElementById('c');
-        var d = document.getElementById('d');
         
-            function b() {
-                
-                if (b.style.display == "none")
-                {
-                    b.style.display = "block";
-                    a.style.display = "none";
-                    c.style.display = "none";
-                    d.style.display = "none";
-                }
-                
-                
+            function showA() {
+                a.style.display = "block";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            
+            function showB() {
+                a.style.display = "none";
+                b.style.display = "block";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            
+            function showC() {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "block";
+                d.style.display = "none";
+            }
+            
+            function showD() {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
             }
         </script>
     </section>
