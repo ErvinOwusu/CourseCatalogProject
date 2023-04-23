@@ -13,11 +13,13 @@
         body {
             background-color: #000210;
             background-image: url('images/hawkPattern2.png');
+            
         }
         .section1 {
             padding: 100px;
             box-sizing: border-box;
             margin: 0;
+            
         }
         .section2
         {
@@ -143,6 +145,131 @@
             <img class="zoom" style="cursor: pointer; width: 26rem;" src="images/appliedTechnology.png">
         </div>
         
+    </section>
+    
+    <section style="background-image: url('images/line background.png'); padding: 100px 200px;">
+        <style>
+            .schedule-container {
+                display: flex; 
+                flex-direction: row; 
+                color: #FFF; 
+                font-family: 'Quicksand', sans-serif; 
+                justify-content: space-evenly; 
+                font-size: 1.4rem;
+            }
+            
+            #a {
+                display: block;
+            }
+            #b {
+                display: none;
+            }
+            #c {
+                display: none;
+            }
+            #d {
+                display: none;
+            }
+            
+            .schedule-header {
+                border: 2px solid #FFF; 
+                border-radius: 20px; 
+                padding: 10px 20px;
+            }
+            
+            td {
+                padding: 10px;
+                font-size: 1.5rem;
+                border: 2px solid white;
+            }
+            
+            tr:nth-child(even) {
+            }
+            
+            table {
+                border-collapse: collapse;
+                
+                
+            }
+            
+            #test {
+                color: white;
+            }
+        </style>
+        
+        <div class="schedule-container" style="padding-bottom: 70px;">
+            <div class="schedule-header" onclick="showA()">A/B Day</div>
+            <div class="schedule-header" onclick="showB()">Half Day</div>
+            <div class="schedule-header" onclick="showC()">2 Hour Delay</div>
+            <div class="schedule-header" onclick="showD()">Exam Schedule</div>
+        </div>
+        
+        <div id="a" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
+            <table style="margin-left: auto; margin-right: auto; width: 100%;">
+                <tr>
+                    <td> Block 1 </td>
+                    <td> 7:20 - 8:40 </td>
+                </tr>
+                <tr>
+                    <td> Block 2 </td>
+                    <td> 8:45 - 10:05 </td>
+                </tr>
+                <tr>
+                    <td> Advisory </td>
+                    <td> 10:10 - 10:30 </td>
+                </tr>
+                <tr>
+                    <td> Block 3 </td>
+                    <td> 10:35 - 12:25</td>
+                </tr>
+                <tr>
+                    <td> Block 4 </td>
+                    <td> 12:30 - 1:50 </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="b" style="color: #FFF; font-size: 1rem">
+            Example Text B
+        </div>
+        <div id="c" style="color: #FFF; font-size: 1rem">
+            Example Text C
+        </div>
+        <div id="d" style="color: #FFF; font-size: 1rem">
+            Example Text D
+        </div>
+        
+        
+        <script>
+        
+            function showA() {
+                a.style.display = "block";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            
+            function showB() {
+                a.style.display = "none";
+                b.style.display = "block";
+                c.style.display = "none";
+                d.style.display = "none";
+            }
+            
+            function showC() {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "block";
+                d.style.display = "none";
+            }
+            
+            function showD() {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
+            }
+        </script>
     </section>
    
 
