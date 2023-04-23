@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Course Catalog</title>
+
+    <link rel="stylesheet" href="../STYLES/style.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/nav.css" type="text/css" />
+    <link rel="stylesheet" href="../STYLES/classStyles.css" type="text/css">
+    <link rel="stylesheet" href="../STYLES/fineArtsStyle.css" type="text/css">
+
+</head>
+
+<body>
+    <!---------------------------------------- NAVIGATION ---------------------------------------->
+    <nav class="navbar" style="padding-bottom: 0rem; background-color: rgba(255, 255, 255, 1); color: black; ">
+        <!-- Logo -->
+        <div class="logo"> <a href="../index.html"><img src="../images/hawkLogo1.png"
+                    style="width: 11rem; filter: brightness(0%);"></a> </div>
+        <!-- Hamburger Toggle -->
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Page Navigation Links -->
+        <div class="navbar-links">
+            <ul>
+                <li>About</li>
+                <li>FAQ</li>
+                <div class="dropdown">
+                    <li> External Links </li>
+
+                    <div class="dropdown-content">
+                        <!-- Link #1 -->
+                        <a href="https://region16.schoology.com/home">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/schoology.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Schoology</span>
+                            </div>
+                        </a>
+                        <!-- Link #2 -->
+                        <a href="https://drive.google.com">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/drive.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Drive</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://naviance.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/naviance.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Naviance</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://powerschool.com/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/powerschool.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Powerschool</span>
+                            </div>
+                        </a>
+                        <!-- Link #3 -->
+                        <a href="https://hawkheadlines.net/news/">
+                            <div style="display: flex; flex-direction: row; justify-content: left; color: black;">
+                                <img src="images/icons/hawkHeadlines.png" style="width: 20px;">
+                                <span style="padding-top: 5px;">Hawk Headlines</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="position: relative; text-align: center;">
+        <img src="../images/fineArtsHeader.png" width="100%">
+        <div class="header1"> FINE ARTS </div>
+    </div>
+
+    <div class="flex-a">
+        <section class="display-class-filter"
+            style="background-color: rgba(255, 255, 255, 0.05); width: 50%; padding: 40px; border: 2px solid rgba(255, 255, 255, 0.4);">
+
+            <div class="display-class-filter">
+                <div style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif;"> <i>FINE ARTS</i>
+                </div>
+                <div style="color: white; font-size: 2.3rem; font-family: 'Rubik', sans-serif; font-weight: 700;"> CLASS
+                    FILTER </div>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    CREDIT VALUE</div>
+                <label class="container"> 0.5 CREDIT
+                    <input type="checkbox" id="check1" onclick="halfCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> 1 Credit
+                    <input type="checkbox" id="check2" onclick="fullCredit()">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    GRADE LEVEL</div>
+                <label class="container"> FRESHMAN
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SOPHOMORE
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> JUNIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> SENIORS
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <hr style="width: 95%; margin-left: 0; border-color: rgba(255, 255, 255, 0.3);">
+                <br>
+                <!--
+                <div
+                    style="color: white; font-size: 1.4rem; font-family: 'Quicksand', sans-serif; padding-bottom: 9px;">
+                    DISPLAY</div>
+                <label class="container"> GRIDS
+                    <input type="checkbox" id="check4" onclick="display2()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            -->
+        </section>
+
+
+
+
+        <div style="display: inline;">
+
+            <div id="header-style" onclick="hideVisual()">VISUAL ARTS MEDIUM</div>
+
+
+
+            <section class="class-flex">
+                <div style="width: 50%;">
+
+                    <div id="visual">
+
+                        <div id="600">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Art Skills, Concepts, and Design (600)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    Beginning art students at WRHS may enroll in Art Skills, Concepts, and Design. This
+                                    course introduces the student to the basic language of the visual artist. Students
+                                    will study howthe elements and principles of design are used to communicate visual
+                                    ideas. In a studio art setting, students will use their knowledge of the elements
+                                    and principles of art to create their own two-and three dimensional artwork.
+                                    Students will experiment with different media and use a wide variety of artistic
+                                    techniques. Students will also view and analyze different artistic styles.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals600()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more600" class="lg-desc">
+                                        As a result of Art Skills, Concepts and Design the student will:
+                                        <ul>
+                                            <li>Analyze the use of elements and principles of art in a drawing, painting
+                                                or sculpture.</li>
+                                            <li>Explain different color groups/schemes using the color wheel.</li>
+                                            <li>Create artwork that utilizes the elements and principles of art to
+                                                communicate a specific idea, feeling, or mood.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="639">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Art Peer Tutors (639)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: A Teacher Recommendation </i>
+                                    </div>
+
+                                    While it may be helpful for students to have successfully completed Art Skills,
+                                    Concepts and Design it is more critical that they have an interest in the field of
+                                    teaching or working with people with special needs to enroll in Art Peer Tutors.
+                                    Students will investigate teaching methodology, study special needs issues, and gain
+                                    practical experience as a peer teacher in visual art making. Art Peer Tutors is
+                                    similar to a student teaching experience in college. Students will prepare and
+                                    implement art lessons for students with special needs. Each peer tutor will work
+                                    with a partner: the ratio of two peer tutors to one special needs student is
+                                    desired. This is a half -year course and will include working in two- and
+                                    three-dimensional art media on projects that are age and ability appropriate for
+                                    students with special needs. Tutors will meet with course instructors for a portion
+                                    of class time to study teaching methods, examine educational issues and classroom
+                                    management techniques. Students with special needs will attend scheduled classes and
+                                    participate in creating visual art. Peer tutors will teach several of the art
+                                    lessons; a visual art teacher will facilitate the classes.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals639()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more639" class="lg-desc">
+                                        As a result of Art Peer Tutors the student will:
+                                        <ul>
+                                            <li>Identify current educational philosophy for teaching students with
+                                                special needs.</li>
+                                            <li>Develop, implement, and evaluate complete lesson plans that teach the
+                                                basic skills of two and three-dimensional art making.</li>
+                                            <li>Identify age and ability appropriate materials and projects for
+                                                successful completion by students with special needs.</li>
+                                            <li>Create modifications in lessons tailored to specific students' needs.
+                                            </li>
+                                            <li>Identify academic, social and creative needs and goals for students with
+                                                special needs.</li>
+                                            <li>Evaluate cooperative teaching skills and collaboration with Life Skills
+                                                and Fine Arts teachers.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="630">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Ceramics and Sculpture 1 (630)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Art Skills </i>
+                                    </div>
+
+                                    This studio art class builds on 3-dimensional form skills introduced at the middle
+                                    school level and Art Skills, C oncepts and Design. Students will view, analyze and
+                                    create 3-dimensional artwork. Additive, subtractive, and mixed media sculptural
+                                    techniques will be used. The students will create functional ceramic objects as well
+                                    as non-functional sculptures.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals630()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more630" class="lg-desc">
+                                        As a result of Ceramics and Sculpture 1 the student will:
+                                        <ul>
+                                            <li>Compare and contrast difference between functional and non-functional
+                                                ceramics by producing forms which show this difference.</li>
+                                            <li>Create clay pieces utilizing the hand-building methods.</li>
+                                            <li>Illustrate a variety of texturing techniques to decorate objects.</li>
+                                            <li>Describe and state the purpose of ceramics in ancient cultures.</li>
+                                            <li>Create a subtractive sculpture.</li>
+                                            <li>Create a sculpture from mixed media.</li>
+                                            <li>Create a balanced mobile.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="631">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Ceramics and Sculpture 2 (631)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Ceramics and Sculpture 1 </i>
+                                    </div>
+
+                                    Ceramics and Sculpture 2 builds on the skills developed in Ceramics and Sculpture 1.
+                                    Ceramics and Sculpture 2 introduces students to the more advanced clay techniques,
+                                    larger slab construction, and armature skills. Potter's wheel techniques, glazing,
+                                    staining, and kiln preparation and its care will also be covered. Additive and
+                                    subtractive sculptural techniques will also be addressed.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals631()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more631" class="lg-desc">
+                                        As a result of Ceramics and Sculpture 2 the student will:
+                                        <ul>
+                                            <li>Create a minimum of six separate pieces using a variety of experimental
+                                                and traditional techniques.</li>
+                                            <li>Apply throwing techniques by repetition.</li>
+                                            <li>Fabricate one three-dimensional object from three wheel-thrown, slab
+                                                and/or coiled pieces.</li>
+                                            <li>Create an armature for a figure displaying an action.</li>
+                                            <li>Carve an abstract sculpture.</li>
+                                            <li>Evaluate and critique the final presentation of personal work.</li>
+                                            <li>Work safely with all equipment and materials.</li>
+                                            <li>Synthesize and further experiment with the use of form, texture,
+                                                glazing, and firing techniques as they relate to the individual creative
+                                                processes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="610">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Drawing and Painting 1 (610)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Art Skills, Concepts, and Design </i>
+                                    </div>
+
+                                    This course is for students who enjoy and want to learn the skills necessary to draw
+                                    and paint realistically. This studio art class focuses on the development of the
+                                    fundamental skills of drawing and painting. Students will be introduced to and
+                                    experiment with various drawing and painting media and techniques. Students will
+                                    also view, analyze and evaluate their own artwork and the work of various artists.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals610()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more610" class="lg-desc">
+                                        As a result of of Drawing and Painting 1 the student will:
+                                        <ul>
+                                            <li>create an expressive self-portrait.</li>
+                                            <li>draw a portrait with proper facial proportions.</li>
+                                            <li>draw from a still life and represent 3-dimensional space in a
+                                                2-dimensional picture frame.</li>
+                                            <li>experiment with various media and techniques in acrylics, watercolors,
+                                                pastels, different number drawing pencils, ink and colored pencils.</li>
+                                            <li>research, analyze and make judgments about artwork, contemporary and
+                                                historic.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="611">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Drawing and Painting 2 (611)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Drawing and Painting 1 </i>
+                                    </div>
+
+                                    Drawing and Painting 2 is offered in the spring for students who successfully
+                                    completed Drawing and Painting 1 and want to further explore drawing elements and
+                                    painting techniques. Students will build upon prior knowledge of Drawing and
+                                    Painting 1 to create drawings and paintings with dynamic creative composition and
+                                    personal expression. Students will be exposed to, and experiment with, a variety of
+                                    technologies. Assembling a portfolio of at least eight personal best works is a
+                                    requirement.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals611()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more611" class="lg-desc">
+                                        As a result of Drawing and Painting 2 the student will:
+                                        <ul>
+                                            <li>create a work of art that demonstrates understanding of color schemes
+                                                and color application.</li>
+                                            <li>synthesize the use of balance, contrast and unity in a completed
+                                                composition.</li>
+                                            <li>synthesize elements of contour line, value, and color scheme into a
+                                                completed composition.</li>
+                                            <li>demonstrate mastery of pencil drawing skills in at least 2 compositions.
+                                            </li>
+                                            <li>synthesize a variety of mixed media into at least 1 finished
+                                                composition.</li>
+                                            <li>demonstrate mastery of color application, composition, and art elements
+                                                by using several media: acrylics or watercolors, conte crayon, and
+                                                printmaking inks.</li>
+                                            <li>compile personal best work in a portfolio of 8 pieces minimum.</li>
+                                            <li>evaluate and critique a collection of personal best work and begin
+                                                assemblage of an art portfolio for college/university review.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="636">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Art: Drawing and Painting (636) <br> Advanced Art: Ceramics & Sculpture
+                                        (636)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Drawing & Painting 2 or Ceramics & Sculpture 2 </i>
+                                    </div>
+
+                                    Advanced Art is for the student who wants to pursue a career in the field of Art or
+                                    for the student who wants to take AP Studio Art. Students will build their
+                                    college/university art portfolio by working on projects that are appropriate to this
+                                    purpose. This would include original artwork in a variety of techniques and media,
+                                    preliminary sketches, the development of an idea, work drawn and painted
+                                    realistically, abstractions, and non-objective examples. Portfolio work will include
+                                    two and three-dimensional artwork depending on individual concentration decisions.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals636()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more636" class="lg-desc">
+                                        As a result of Advanced Art the student will:
+                                        <ul>
+                                            <li>Demonstrate mastery of pencil drawing skills in their compositions.</li>
+                                            <li>Achieve aesthetic and visual literacy through use of creative images in
+                                                independent drawing and painting experiences.</li>
+                                            <li>Synthesize the use of balance, contrast, and unity in a completed
+                                                composition.</li>
+                                            <li>Synthesize a variety of mixed media into at least one finished
+                                                composition.</li>
+                                            <li>Demonstrate mastery of color application, composition, and art elements
+                                                by painting in acrylics or oils.</li>
+                                            <li>Demonstrate mastery of assemblage and design in a sculpture.</li>
+                                            <li>Compile personal best workin a portfolio of 12 pieces minimum for
+                                                college entrance portfolio.</li>
+                                            <li>Research a career in the art field.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="602">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Illustration and 2-D Design (602)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Drawing and Painting 1 </i>
+                                    </div>
+
+                                    This course will introduce concepts and methods of illustration and two-dimensional
+                                    design that constitute successful pictorial and graphic communications. The emphasis
+                                    will be on the principles of design with discussion of the elements of art as being
+                                    an inherent part of visual communication. There will be an exploration of diverse
+                                    drawing and painting techniques, such as high-contrast illustration using black and
+                                    white to convey mood and emotion, cross-hatching, stippling, cross contour and
+                                    layering of multi-media. Assigned projects will encourage the learner to explore
+                                    illustration and two-dimensional art for application in a variety of print media and
+                                    further development into three-dimensional product design. Art styles and
+                                    expressions will also be studied.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals602()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more602" class="lg-desc">
+                                        As a result of Drawing and Painting the student will:
+                                        <ul>
+                                            <li>Illustrate the illusion of depth on a two-dimensional surface using
+                                                value and perspective techniques.</li>
+                                            <li>Construct a work of art using an additive and/or a subtractive process.
+                                            </li>
+                                            <li>Analyze and evaluate their own artwork and the work of others.</li>
+                                            <li>Create and present a final project based on careers related to the
+                                                illustrative arts and two-dimensional design.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 50%;">
+                    <div id="visual2">
+                        <div id="640">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Photography 1 (640)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    In this elective course students will be able to properly manipulate a 35mm DSLR
+                                    camera to take photographs. With the camera students will also explore the
+                                    characteristics of light and image formation as well as the production of a
+                                    well-composed photograph. Using Adobe Lightroom and Photoshop, the student will
+                                    learn how to balance light, hue and saturation to make photographs. Other
+                                    assignments will involve critique and analysis of photographs and an introduction to
+                                    the history of photgraphy
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals640()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more640" class="lg-desc">
+                                        As a result of Photography the student will:
+                                        <ul>
+                                            <li>Perform the steps necessary to produce a properly exposed photographic
+                                                print.</li>
+                                            <li>Use Lightroom to process and edit their images.</li>
+                                            <li>Identify and apply basic rules of photographic composition.</li>
+                                            <li>Identify two exposure controls and demonstrate the relationship between
+                                                them.</li>
+                                            <li>Identify the basic Photoshop tools and use them to edit images.</li>
+                                            <li>Use a built-in light meter to correctly expose an image.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="642">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Photography 2/SCSU Digital Photography (642)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Photography 1 </i>
+                                    </div>
+
+                                    The photography processes explored in Photography 1 will be extended in Photography
+                                    2. Students will be introduced to additional equipment,light sources, and
+                                    techniques. Students will hone their skills and techniques and be able to make a
+                                    connection between personal expression and the intentional use of photographic
+                                    materials. Student will also use digital imagery and computer technology in this
+                                    course. Students in this course have the opportunity to earn 3 credits from Southern
+                                    Connecticut State University
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals642()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more642" class="lg-desc">
+                                        As a result of Photography 1 the student will:
+                                        <ul>
+                                            <li>Manipulate different light sources to create a specific feeling or mood
+                                                in the photo.</li>
+                                            <li>Utilize modern technology including a digital camera, computer, scanner
+                                                and the photo manipulation program Adobe Lightroom & Photoshop.</li>
+                                            <li>Evaluate and critique collection of personal best work and begin
+                                                assembling photographic portfolio for college review.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="644">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Photography/ECE DMD 1002 (644)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Photography 2/SCSU Dlgital Photo </i>
+                                    </div>
+
+                                    The skills and techniques covered in Photography 2 will be extended in Advanced
+                                    Photography./ECE DMD 1002 Students will also learn various alternative forms of
+                                    photography (such as photo collage, studio lighting, advanced Photoshop techniques
+                                    and other experimental processes) as well as current digital photography and
+                                    computer technology. Students in this course have the opportunity to earn 3 credits
+                                    from UConn.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals644()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more644" class="lg-desc">
+                                        As a result of Advanced Photography the student will:
+                                        <ul>
+                                            <li>Use alternative forms of photography.</li>
+                                            <li>Utilize modern technology including a digital camera, computer, scanner
+                                                and the photo manipulation program Adobe Photoshop.</li>
+                                            <li>Manipulate different light sources to create a specific feeling or mood
+                                                in conventional photo.</li>
+                                            <li>Compile a personal best portfolio of 12 pieces minimum for college
+                                                entrance consideration.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="638">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Placement Studio Art (638)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Advanced Art, Advanced Photography or Graphic Design 3 and
+                                            teacher recommendation which includes a portfolio review with department
+                                            chairperson. (Strongly recommended students take Photography 1 for all
+                                            portfolios) </i>
+                                    </div>
+
+                                    The Advanced Placement in Studio Art program enables highly motivated students to
+                                    perform at the college level while still in high school. This college-level course
+                                    adheres to the suggested College Board Curriculum. Students can choose one portfolio
+                                    type per year to submit for grading. The AP Studio portfolio is a performance-based
+                                    exam, rather than a written exam. Students are expected to pay for and submit their
+                                    AP portfolio to the College Board in Mayfor evaluation. Students will have to keep a
+                                    sketchbook and do assignments the summer before taking this course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals638()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more638" class="lg-desc">
+                                        As a result of Advanced Placement Studio Art the student will:
+                                        <ul>
+                                            <li>Draw in a sketchbook/journal to develop ideas.</li>
+                                            <li>Submit portfolio with submissions in three distinct sections: quality,
+                                                concentration, and breadth.</li>
+                                            <li>Demonstrate quality, breadth and in-depth engagement in the process of
+                                                making art.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="651">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Graphic Design 1 (651)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    his elective course in visual communication teaches skills and concepts for the
+                                    production of commercial art. Students will utilize art programs on the Macintosh
+                                    platform to create their graphic design pieces. Elements to be studied include
+                                    typography usage and design, logo and icon design, corporate identity and page
+                                    layout.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals651()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more651" class="lg-desc">
+                                        As a result of Graphic Design 1 the student will:
+                                        <ul>
+                                            <li>Utilize graphic programs such as Adobe Illustrator, InDesign, and
+                                                Photoshop in the creation of their two and three dimensional graphic
+                                                design projects.</li>
+                                            <li>Use different graphic and typographic styles in visual communications.
+                                            </li>
+                                            <li>Critique and evaluate their own work, other students' work, and a
+                                                variety of professional commercial artwork in terms of technical
+                                                processes and conceptual aspects.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="653">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Graphic Design 2 (653)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Graphic Design 1 </i>
+                                    </div>
+
+                                    This elective course in visual communication teaches skills and concepts for the
+                                    production of commercial art beyond those learned in Graphic Design 1. Elements to
+                                    be studied include three dimensional design and industrial design. Students will
+                                    utilize art programs on the Macintosh platform to create their graphic works.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals653()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more653" class="lg-desc">
+                                        As a result of Graphic Design 2 the student will:
+                                        <ul>
+                                            <li>Utilize the graphic programs Adobe Illustrator, InDesign, and iMovie in
+                                                the creation of their graphic assignments.</li>
+                                            <li>Critique and evaluate their own work, other students' work, and a
+                                                variety of professional commercial artwork in terms of technical
+                                                processes and conceptual aspects.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="654">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Graphic Design 3 (654)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Graphic Design 2 (strongly recommended Photography 1 and Drawing
+                                            & Painting 1) </i>
+                                    </div>
+
+                                    This elective course is offered to students who show an in-depth interest in the
+                                    field of graphic design. Graphic Design 3 will strengthen skills introduced in the
+                                    previous two graphic design courses. Students will work primarily with clients in
+                                    the school, district and surrounding communities. Class projects will also be
+                                    assigned that bolster the skills they needs to serve their clients. Elements to be
+                                    studied will be portfolio design, resume design, and artwork presentation for shows
+                                    and everyday postings around the school.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals654()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more654" class="lg-desc">
+                                        As a result of Graphic Design 3 the student will:
+                                        <ul>
+                                            <li>Critique and evaluate their own work, other students work, and a variety
+                                                of professional commercial art.</li>
+                                            <li>Prepare a portfolio of graphic design work for college and/or the job
+                                                market.</li>
+                                            <li>Complete authentic projects for graphic design clients.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="598">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Placement Art History (598)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    The Advanced Placement in Art History course enables highly motivated students to
+                                    perform at the college level while still in high school. This college-level course
+                                    adheres to the suggested College Board Curriculum. In the AP course in Art History,
+                                    students will be required to think critically and should develop an understanding
+                                    and knowledge of diverse historical and cultural contexts of architecture,
+                                    sculpture, painting and other media. In this course, students examine and critically
+                                    analyze major forms of artistic expression from the past and the present from a
+                                    variety of cultures. While visual analysis is a fundamental tool of the art
+                                    historian, art history emphasizes understanding how and why works of art function in
+                                    context, considering such issues as patronage, gender, and the functions and effects
+                                    of works of art. Many colleges and universities offer advanced placement and/or
+                                    credit to students who perform successfully on the AP Art History Exam. The AP Art
+                                    History Exam is a written exam. Students are expected to pay for and take the
+                                    College Board Exam in May. Students will have to do assignments the summer before
+                                    taking this course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals598()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more598" class="lg-desc">
+                                        As a result of Advanced Placement Art History the student will:
+                                        <ul>
+                                            <li>differentiate the components of form, function, content, and/or context
+                                                of a work of art.</li>
+                                            <li>explain how artistic decisions about art making shape a work of art.
+                                            </li>
+                                            <li>describe how context influences artistic decisions about creating a work
+                                                of art.</li>
+                                            <li>analyze form, function, content, and/or context to infer or explain the
+                                                possible intentions for creating a specific work of art.</li>
+                                            <li>describe features of tradition and/or change in a single work of art or
+                                                in a group of related works.</li>
+                                            <li>explain how and why specific traditions and/or changes are demonstrated
+                                                in a single work or group of related works.</li>
+                                            <li>analyze the influence of a single work of art or group of related works
+                                                on other artistic production.</li>
+                                            <li>identify a work of art.</li>
+                                            <li>analyze how formal qualities and/or content of a work of art elicits a
+                                                response.</li>
+                                            <li>analyze how contextual variables lead to different interpretations of a
+                                                work of art.</li>
+                                            <li>justify attribution of an unknown work of art.</li>
+                                            <li>analyze relationships between works of art based on their similarities
+                                                and differences.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="header-style" onclick="hideMusic()">MUSIC</div>
+
+            <section class="class-flex">
+                <div style="width: 50%;">
+                    <div id="music">
+
+                        <div id="510">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Concert Band (YR 510), (SEM 511)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5 or 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    Concert Band is an instrumental performance ensemble through which students can
+                                    explore unique musical opportunities. Students will be challenged to develop their
+                                    individual music skills, investigate a varied repertoire of performance styles and
+                                    practices, and communicate musical ideas as part of a large ensemble. Commitment to
+                                    a more in-depth study of music is essential both during class time and for at home
+                                    practice. Attendance at all rehearsals and performances is required. Performance
+                                    opportunities include, but are not limited to, scheduled concerts, Fine Arts
+                                    department events, and community performances. This course can be repeated yearly.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals510()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more510" class="lg-desc">
+                                        As a result of Concert Band the student will:
+                                        <ul>
+                                            <li> perform musical selections independently and with others, with
+                                                expressivel technical accuracy. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="526">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Percussion Ensemble (526)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Music Theory or Teacher Permission. </i>
+                                    </div>
+
+                                    Percussion Ensemble is a performance ensemble dealing with the study of percussion
+                                    instruments. Students will learn the history, musical language, and background of
+                                    various pitched and non-pitched percussion instruments. Course requirements will
+                                    include public ensemble performance as well as several in-class solo performances.
+                                    Instruments covered will range from keyboard percussion instruments to
+                                    membranophones such as the snare drum. Students will gain a more advanced
+                                    understanding of music notation. Attendance at all rehearsals and performances is
+                                    required. Performance opportunities include, but are not limited to, scheduled
+                                    concerts, Fine Arts department events, and community performances.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals526()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more526" class="lg-desc">
+                                        As a result of Percussion Ensemble the student will:
+                                        <ul>
+                                            <li>perform, alone and with others, on percussion instruments.</li>
+                                            <li>demonstrate appropriate technique on various percussion instruments.
+                                            </li>
+                                            <li>create an accurate and appropriate musical sound using various
+                                                percussive techniques.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="518">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Musical Theater Workshop (518) <br> <span
+                                            style="color: red; text-transform: none; font-size: 1.2rem;"> (Will not run
+                                            2022-2023) </span>
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    Musical Theater Workshop is a course designed for aspiring vocalists. Students
+                                    enrolled in this course will study and learn a variety of repertoire from the
+                                    Broadway musical genre, including the storyline and context within which the music
+                                    is used. Students will be challenged to learn solo/duet/ensemble song selections in
+                                    developing an audition portfolio as well as a digital recording portfolio of their
+                                    own performance. Attendance at all rehearsals and performances is required.
+                                    Performance opportunities include, but are not limited to, scheduled concerts, Fine
+                                    Arts department events, and community performances. This course can be taken as a
+                                    hyear course or taken repeatedly as a full year course (if student schedule allows).
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals518()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more518" class="lg-desc">
+                                        As a result of Musical Theater Workshop the student will:
+                                        <ul>
+                                            <li>perform musical selections independently and with others, with
+                                                expressive technical accuracy.</li>
+                                            <li>identify their musical line, describe role, purpose, and lyrical content
+                                                within a composition.</li>
+                                            <li>create an accurate, stylistically appropriate sound with their voice.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="529">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Concert Choir (SEM 529, YR 530)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5 or 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    Students who participate in this full year performance ensemble will be challenged
+                                    to develop their vocal technique and performance practices.A wide variety of
+                                    performance literature will enable students to create strong foundations in vocal
+                                    music, identify basic forms and techniques of singing, and explore the range of
+                                    their individual vocal capacities.Attendance at all rehearsals and performances is
+                                    required. Performances include, but are not limited to, scheduled concerts and Fine
+                                    Arts events.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals529()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more529" class="lg-desc">
+                                        As a result of Concert Choir the student will:
+                                        <ul>
+                                            <li>sing unison, two, three, and four part music selections of appropriate
+                                                difficulty level a cappella and with varied accompaniments.</li>
+                                            <li>sing vocal/choral selections that represent a variety of cultures,
+                                                styles, and languages, with technical and expressive accuracy.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="540">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Music Theory (540)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Prior participation in any school and/or private instruction.
+                                        </i>
+                                    </div>
+
+                                    Music Theory is a half-year, comprehensive course of study in music. This course
+                                    will be an introduction to the basics of musical language. Students will explore
+                                    fundamental and technical aspects of musical language, its historical foundations,
+                                    and common practices. Students will be challenged to advance their individual music
+                                    skills, express musical ideas, develop a command of the written/aural language, and
+                                    create original compositions in different styles, using a variety of traditional
+                                    instruments and music technology applications.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals540()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more540" class="lg-desc">
+                                        As a result of Music Theory the student will:
+                                        <ul>
+                                            <li>identify fundamental music notation and expression symbols, describe
+                                                their meaning and function, and demonstrate their use in selected music
+                                                examples and simple original compositions.</li>
+                                            <li>describe the historical context of the foundations of musical language.
+                                            </li>
+                                            <li>describe common music technology applications, and demonstrate their use
+                                                in developing musical skills and creating compositions.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="547">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Applied Instrumental Study (547)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    Applied Instrumental Study is a course that can be repeated for multiple semesters.
+                                    Students will have the opportunity to develop and then master the skills necessary
+                                    to perform a variety of classical and contemporary guitar and/or piano music.
+                                    Students will learn the history, musical language, literature and common practices
+                                    associated with the instruments' style. The school will provide a limited amount of
+                                    instruments. (Students in need of a school guitar should speak to the instructor
+                                    prior to enrolling in this class to ensure availability).
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals547()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more547" class="lg-desc">
+                                        As a result of Applied Instrumental Study the student will:
+                                        <ul>
+                                            <li>demonstrate correct playing position and technique in various styles.
+                                            </li>
+                                            <li>identify the parts of their instrument and proper maintenance practices.
+                                            </li>
+                                            <li>create an accurate and appropriate sound on their instrument.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 50%">
+                    <div id="music2">
+
+                        <div id="525">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Jazz Improvisation (YR 525, SEM 528)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Band, Applied Instrumental studies or teacher recommendation
+                                        </i>
+                                    </div>
+
+                                    Students have the opportunity to further their musical experience as a member of a
+                                    unique rock ensemble. Students will study contemporary/rock styles, structure,
+                                    techniques, and song selections. This unique ensemble will feature instrumental
+                                    performance and singers, as well as creativity and use of music technology software
+                                    to assist in the development of original arrangement/compositions. Commitment to a
+                                    more in-depth study of music is essential both during class time and at home
+                                    practice. Attendance at all rehearsals and performances is required. Performance
+                                    opportunities include, but are not limited to, scheduled concerts, Fine Arts
+                                    department events, and community performances.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals525()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more525" class="lg-desc">
+                                        As a result of Jazz Improvisation the student will:
+                                        <ul>
+                                            <li>Perform musical selections independently and with others, with
+                                                expressive technical accuracy.</li>
+                                            <li>Identify their musical line, and describe its role and purpose in an
+                                                overall composition.</li>
+                                            <li>Create an accurate, appropriate sound on their instrument.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="546">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        ECE Music Appreciation (546)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 1</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    As its name implies, this course is designed to develop an appreciation of the art
+                                    of music, through the study of a variety of styles and examples of music covering
+                                    musical trends of the last 500 years. Although most of the focus will be on
+                                    "western" historical music trends, the range of study includes from Bach, Mozart,
+                                    and Beethoven, to Gershwin,Jackson, and Mackelmore. Students will have daily
+                                    opportunities to gain deeper understanding of the beauty and details within the
+                                    music, and find common themes that connect music across cultures and across time
+                                    periods of history. Students who meet the standard/criteria established by the UConn
+                                    Music Department will receive 3 college credits through the ECE program. Students
+                                    must register online with UConn ECE in order to be eligible.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals546()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more546" class="lg-desc">
+                                        As a result of ECE Music Appreciation the student will:
+                                        <ul>
+                                            <li>Gain understanding of the most important artistic, cultural, and
+                                                historical processes of humanity.</li>
+                                            <li>Develop listening skills necessary to discern the genres and styles of
+                                                "classical" music.</li>
+                                            <li>Become familiar with the masterworks of standard repertoire within each
+                                                genre/style studied.</li>
+                                            <li>Develop and apply these listening and cultural skills for all music in
+                                                the future, becoming critical listeners and thinkers.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="MUSI1011">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        ECE Fundamentals and Ear Training 1 (MUSI1011)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5 (3 UCONN Credits)</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Music Theory </i>
+                                    </div>
+
+                                    The goal of the ECE Fundamentals and Ear Training 1 course is to develop a student's
+                                    ability to recognize, understand and describe basic materials and processes of music
+                                    that are heard or presented in everyday music ensembles. The achievement of this
+                                    goal may be best promoted by integrated approaches to the student's development of
+                                    Music Literacy Ear training (aural skills) and rudimentary keyboard skills.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoalsMUSI1011()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="moreMUSI1011" class="lg-desc">
+                                        As a result of ECE Fundamentals and Ear Training the student will:
+                                        <ul>
+                                            <li>develop the ability to recognize, understand, and describe the basic
+                                                materials and processes of music that are heard or presented in an
+                                                everyday music ensemble. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="MUSI1012">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        ECE Fundamentals and Ear Training 2 (MUSI1012)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5 (3 UCONN Credits) </i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: ECE Fundamentals and Ear Training 1 MUSI 1011 </i>
+                                    </div>
+
+                                    The goal of the ECE Fundamentals and Ear Training 2 course is the further
+                                    development of skills in music reading, sight, signing, and writing. The ultimate
+                                    goal of the ECE Fundamentals and Ear Training course is to develop a student's
+                                    ability to write, sign, and play major scales, all three forms of minor scales,
+                                    pentatonic scale, whole-tone scale, Dorian, Phrygian, Lydian, and Mixoiydian modes.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoalsMUSI1012()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="moreMUSI1012" class="lg-desc">
+                                        As a result of ECE Fundamentals and Ear Training 2 the student will:
+                                        <ul>
+                                            <li>Notate pitch and rhythm in standard notation with correct meter
+                                                organization.</li>
+                                            <li>Recognize all intervals within an octave and all four triad types.</li>
+                                            <li>Compose simple melodies, and melodies with harmonic chord progressions.
+                                            </li>
+                                            <li>Transpose melodies for Bb, F, and Eb instruments.</li>
+                                            <li>Analyze chords of a musical composition with both roman numerals &
+                                                formal organization.</li>
+                                            <li>Express creative ideas through composing four part compositions in small
+                                                forms, such as periods, double periods, and other small forms.</li>
+                                            <li>Attend concerts of all types of music and analyze the concert for all
+                                                musical elements.</li>
+                                            <li>Sight-sing and count-sing melodies and rhythms in a variety of time
+                                                signatures.</li>
+                                            <li>Students will practice these skills on a daily basis.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="MUS11003">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        ECE Popular Music and Diversity in American Society (MUS11003)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5 (3 UCONN Credits) </i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None </i>
+                                    </div>
+
+                                    The ECE Popular Music and Diversity in American Society course is an introduction to
+                                    popular music and diversity in America: jazz, blues, Top 40 pop, rock, hip-hop, and
+                                    other genres. Musicians and their music are studied in the context of
+                                    twentieth-century and contemporary American society, emphasizing issues of race,
+                                    gender, class and resistance.
+                                    <br>
+                                    <br>
+                                    ECE Music 1003 is designed to introduce students to the most significant genres of
+                                    American popular music of the last one hundred years, and to the role of cultural
+                                    diversity in their evolution. It will emphasize pre-1940 African American genres,
+                                    the music of rural and non-mainstream urban Caucasians, and post-1945 pop and rock
+                                    music across the expanding American demographic spectrum, including newimmigrant
+                                    groups from the Carribean basin and and Central and South America. It seeks to make
+                                    students more culturally discerning and active listeners by surveying the elements
+                                    of music
+
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoalsMUS11003()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="moreMUS11003" class="lg-desc">
+                                        As a result of ECE Popular Music and Diversity in American Society the student
+                                        will:
+                                        <ul>
+                                            <li>Acquire knowledge about the rich variety of popular musics in the United
+                                                States from cultural, historical, and structual/stylistic perspectives.
+                                            </li>
+                                            <li>Gain an understanding of the ways in which these musics have expressed
+                                                and continue to express the responses of diverse groups to their
+                                                position and status in regional and national culture, including
+                                                resistance to hegemonic interpretation and appropriation.</li>
+                                            <li>Become sensitive to a variety of ways in which music may encode and
+                                                actualize social power relationships, and to how this is reflected in
+                                                music to which they choose to listen or to which they are exposed in
+                                                advertising, shopping malls, movies, etc.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="header-style" onclick="hideTheater()">THEATER AND STAGE CRAFT</div>
+
+
+            <section class="class-flex">
+                <div style="width: 50%;">
+                    <div id="theater">
+
+                        <div id="150">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Acting 1 (150)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None
+                                        </i>
+                                    </div>
+
+                                    Acting 1 introduces the student to the craft of acting. Students will develop an
+                                    awareness of what it takes to be an actor: attaining believability and truthfulness
+                                    on stage; creating characters; being familiar with areas of the stage, blocking
+                                    notation and body position; speaking publicly; and the performance of a scene.
+                                    Through theatre games and improvisational work we will strive to achieve trust,
+                                    self-discipline and an appreciation for the many facets of the actor's craft.
+                                    Students will be expected to work both in collaborative groups as well as
+                                    independently, as Acting 1 is a modified studio course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals150()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more150" class="lg-desc">
+                                        As a result of Acting 1 the student will:
+                                        <ul>
+                                            <li>Use voice and movement for conscious communication of thought, feeling,
+                                                and character.</li>
+                                            <li>Perform a scripted scene.</li>
+                                            <li>Work in an ensemble.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="152">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Acting 2 (152)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Acting 1
+                                        </i>
+                                    </div>
+
+                                    Acting 2 expands upon the actor's growth begun in Acting 1. It is a more specialized
+                                    course of study that offers more individual performance assignments. Two scenes are
+                                    studied rather than one; voice and speech work is introduced; and acting elements,
+                                    such as subtext, sense memory, emotional recall, as well as a sense of pre- and
+                                    post-scene and assimilation are introduced. The lessons are more detailed and
+                                    require more creative thought, independent, self-motivated work, and focus
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals152()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more152" class="lg-desc">
+                                        As a result of Acting 2 the student will:
+                                        <ul>
+                                            <li>Use techniques for research as they apply to the acting craft by using a
+                                                variety of media sources.</li>
+                                            <li>Perform a psycho/social (dramatic) scene.</li>
+                                            <li>Perform a comedy scene.</li>
+                                            <li>Perform a monologue.</li>
+                                            <li>Identify and explain scenic beats in a scene.</li>
+                                            <li>Use a phonetic approach to Standard American Theatre Speech.</li>
+                                            <li>Apply the Stanislavsky questions to character work.</li>
+                                            <li>Convey relationship or emotional response through action, expression,
+                                                and voice.</li>
+                                            <li>Employ a variety of comic techniques in the performance of a scene.</li>
+                                            <li>Speak clearly and expressively through appropriate articulation,
+                                                pronunciation, volume, rate, intonation, and oral phrasing.</li>
+                                            <li>Reflect upon personal and universal meanings in theatre.</li>
+                                            <li>Work successfully in an ensemble.</li>
+                                            <li>Utilize physical, emotional, and psychological resources he/she has to
+                                                bring to the acting craft.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="154">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Advanced Acting (154)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: Acting 2 & instructor interview
+                                        </i>
+                                    </div>
+
+                                    Advanced Acting is designed for advanced acting students and will explore the
+                                    techniques and styles characteristic of classical theatre, performance art, modern
+                                    American drama and current trends in regional, collegiate, Broadway and Off-Broadway
+                                    theatre. Scenes from the above types of plays will be performed by students followed
+                                    by detailed critiques and class discussion. Students in this course will be exposed
+                                    to the skills and flexibility needed for successful university work in theatre.
+                                    Advanced Acting is both a direct instruction and studio course.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals154()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more154" class="lg-desc">
+                                        As a result of Advanced Acting the student will:
+                                        <ul>
+                                            <li> Recognize the characteristics and performance requirements for the
+                                                following areas of theatre: Greek; miracle/morality plays; Elizabethan
+                                                (Shakespearean); French Neo-Classical; Restoration Comedy; Commedia
+                                                dell'Arte; Theatre of the Absurd; and Avant Garde.</li>
+                                            <li> Perform two contrasting scenes and one monologue from the above styles.
+                                            </li>
+                                            <li> Reflect upon personal and universal meanings in theatre.</li>
+                                            <li> Critique peer work according to actor studio critique conventions.</li>
+                                            <li> Demonstrate aesthetic awareness in the critique of professional theatre
+                                                productions through written analysis.</li>
+                                            <li> Make connections between historical and cultural trends and the theatre
+                                                produced as a consequence of these influences.</li>
+                                            <li> Begin work on an acting portfolio that can be used for auditions for
+                                                community theatre, personal growth, or part of the college application
+                                                process.</li>
+                                            <li> Participate in the Connecticut Drama Association Monologue Contest.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="790">
+                            <div style="padding: 40px 40px 20px 40px;">
+                                <div class="flex-row">
+                                    <div class="title">
+                                        Stage Craft 1 (790)
+                                    </div>
+                                    <div class="color-container">
+                                        <div class="green"></div>
+                                        <div class="yellow"></div>
+                                        <div class="blue"></div>
+                                        <div class="red"></div>
+                                    </div>
+                                    <div class="credit-container"> <i>C 0.5</i></div>
+                                </div>
+                                <div class="description">
+                                    <div
+                                        style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                        <i>Prerequsite: None
+                                        </i>
+                                    </div>
+
+                                    Theatre magic has as much to do with what goes on behind the scenes as it does with
+                                    the performances themselves. In Stage Craft students will actively explore various
+                                    elements that constitute the technical art of theatre production. In the first half
+                                    of the course, students will learn the basics of technical theatre convention
+                                    including lighting, sound, basic set construction techniques, painting, costuming,
+                                    make-up and properties design.
+
+                                </div>
+
+                                <div id="learningGoalsBackground" class="zoom-bright">
+                                    <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                        onclick="learningGoals790()">
+                                        <div class="lg-style"> <i>Learning Goals</i></div>
+                                        <div
+                                            style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div id="more790" class="lg-desc">
+                                        As a result of Stage Craft 1 the student will:
+                                        <ul>
+                                            <li>Learn terminology of the theater arts: lighting, sound, set
+                                                construction, costuming, make-up.</li>
+                                            <li>Synthesize knowledge of these arts into technical theatre.</li>
+                                            <li>Discover through cooperative projects that theatrical experience, like
+                                                other collaborative activities, require respect for and sensitivity to
+                                                others.</li>
+                                            <li>Analyze dramatic texts from cultural and historical perspectives to
+                                                determine production requirements.</li>
+                                            <li>Develop designs that use visual elements to convey environments that
+                                                clearly support the text.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+
+                <div style="width: 50%;">
+                    <div id="theater2">
+
+                        <div id="519">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Stage and Sound (Stage Craft 2) (519)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: Stage Craft 1
+                                            </i>
+                                        </div>
+
+                                        Stage and Sound (Stage Craft 2) is a semester elective course whose purpose is to
+                                        enhance the general skills/background of students interested in the technical
+                                        workings of theater. The following units of study are included: equipment and
+                                        organization, technical roles, history of theater, support for acting/scene/staging,
+                                        and crew/team performance.
+                                        <br>
+                                        <br>
+                                        This is a practical skill-oriented course. Student participation and development of
+                                        technical/hands-on skills is required.
+
+                                    </div>
+
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals519()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more519" class="lg-desc">
+                                            As a result of Stage and Sound the student will:
+                                            <ul>
+                                                <li>Develop and refine technical skills in order to successfully contribute
+                                                    as a member of a stage/theater crew and support performances/events.
+                                                </li>
+                                                <li>Learn what is required to develop and master comprehensive/thorough
+                                                    knowledge of the safety procedures and technical protocols necessary to
+                                                    function in various theater roles.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div id="156">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Actors' Studio (156)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: Successful completion of Advanced Acting with an 85 or above and
+                                                audition.
+                                            </i>
+                                        </div>
+
+                                        This studio course will be modeled upon a conservatory type instructional model. An
+                                        intensive course, the focus will be upon developing an acting portfolio for
+                                        university study and professional work, researching and exploring the various
+                                        "schools" of acting (Adler, Stanislavsky, Grotowski, Meisner, etc.), and beginning
+                                        the process of analyzing and directing one-act plays. In addition, we will tour
+                                        local professional theatres (Long Wharf Theatre, Hartford Stage, Yale Repertory
+                                        Theatre) and local university theatre programs to familiarize ourselves with the
+                                        study of acting. This course is run as a studio course and requires maturity,
+                                        self-motivation and a willingness to work independently.
+
+                                    </div>
+
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals156()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more156" class="lg-desc">
+                                            As a result of Actors' Studio the student will:
+                                            <ul>
+                                                <li>Work independently and efficiently, meeting deadlines and performance
+                                                    dates, in a studio setting.</li>
+                                                <li>Prepare and perform two contrasting monologues for audition.</li>
+                                                <li>Film a video portfolio of scene and monologue projects for use in
+                                                    admissions/audition processes.</li>
+                                                <li>Develop a system of vocal and physical warm-up techniques to foster
+                                                    focus for acting work.</li>
+                                                <li>Reflect upon personal and universal meanings in theatre.</li>
+                                                <li>Utilize physical, emotional, and psychological resources to bring to the
+                                                    acting craft.</li>
+                                                <li>Evaluate the pros and cons of each school of acting methodology.</li>
+                                                <li>Critique peer work according to actor studio critique conventions.</li>
+                                                <li>Make connections between historical and cultural trends and the theatre
+                                                    produced as a consequence of these influences.</li>
+                                                <li>Participate in Connecticut Drama Association Monologue Contest and
+                                                    Connecticut Drama Association Spring Play Festival.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div id="158">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Creative Dramatics: Peer Drama Tutors (158)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="green"></div>
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None
+                                            </i>
+                                        </div>
+
+                                        This course is designed for high hchool students to assist students in the Life
+                                        Skills education program. It is a unique learning experience in which peer tutors
+                                        will have opportunities to develop positive attitudes and relationships with
+                                        students with disabilities. They will tutor students with disabilities in creative
+                                        dramatics while including interdisciplinary lessons that touch on academic skills,
+                                        social skills, behavior and other life skills.
+
+                                    </div>
+
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals158()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more158" class="lg-desc">
+                                            As a result of Creative Dramatics: Peer Drama Tutors the student will:
+                                            <ul>
+                                                <li>guide students with special needs to use voice and movement for
+                                                    conscious communication of thought, feeling and character.</li>
+                                                <li>work in an ensemble.</li>
+                                                <li>identify current educational philosophy for teaching students with
+                                                    special needs.</li>
+                                                <li>develop, implement, and evaluate complete lesson plans that teach the
+                                                    basic skills necessary for performance.</li>
+                                                <li>identify age and ability appropriate materials and projects for
+                                                    successful completion of students with special needs.</li>
+                                                <li>create modifications in lessons tailored to specific students' needs.
+                                                </li>
+                                                <li>identify academic, social and creative needs and goals for the students
+                                                    with special needs.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div id="155">
+                                <div style="padding: 40px 40px 20px 40px;">
+                                    <div class="flex-row">
+                                        <div class="title">
+                                            Movement for the Stage (155)
+                                        </div>
+                                        <div class="color-container">
+                                            <div class="green"></div>
+                                            <div class="yellow"></div>
+                                            <div class="blue"></div>
+                                            <div class="red"></div>
+                                        </div>
+                                        <div class="credit-container"> <i>C 0.5</i></div>
+                                    </div>
+                                    <div class="description">
+                                        <div
+                                            style="font-size: 1rem; padding: 9px 0 9px 0; font-weight: bolder; color:rgba(255, 255, 255, 0.7); text-decoration: underline;">
+                                            <i>Prerequsite: None
+                                            </i>
+                                        </div>
+
+                                        Movement for the Stage will explore the techniques and styles used in creating
+                                        character and situations for the stage through specialized movement. Students will
+                                        be experimenting with varying movement styles and the movement requirements specific
+                                        to types of theatre: Greek; Elizabethan (Shakespearean); Restoration Comedy;
+                                        Commedia dell' Arte; Theatre of the Absurd; performance art; and modern dance. In
+                                        addition, students will be introduced to the basic principles of space, shape, time,
+                                        dynamics, and effort as they apply to movement. Students will be expected to come to
+                                        class prepared to move each day. No dance experience is necessary.
+
+                                    </div>
+
+                                    <div id="learningGoalsBackground" class="zoom-bright">
+                                        <div style="display: flex; flex-direction: row; justify-content: space-between;"
+                                            onclick="learningGoals155()">
+                                            <div class="lg-style"> <i>Learning Goals</i></div>
+                                            <div
+                                                style="color: #FFF; font-size: 2rem; font-weight: bold; padding-right: 20px;">
+                                                +
+                                            </div>
+                                        </div>
+                                        <div id="more155" class="lg-desc">
+                                            As a result of Movement for the Stage the student will:
+                                            <ul>
+                                                <li>Interpret theme, character and situation through movement.</li>
+                                                <li>Recognize the requirements for the following areas of theatre: Greek; Elizabethan (Shakespearean); Restoration Comedy; Commedia dell' Arte; Theatre of the Absurd; performance art; and modern dance.</li>
+                                                <li>Perform basic movement explorations.</li>
+                                                <li>Utilize the physical, emotional, and psychological resources he/she has to bring to the acting craft.</li>
+                                                <li>Choreograph movement pieces that reflect unity of time, space, shape and effort.</li>
+                                                <li>Demonstrate their research findings through the production of original movement pieces.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <center><img src="../images/theater.png" style="width: 60%;"></center>
+
+
+            <script type="text/javascript" src="../SCRIPTS/fineArtsScript.js"></script>
+            <script type="text/javascript" src="../SCRIPTS/fineArtsScript2.js"></script>
+
+        </div>
+</body>

@@ -1,103 +1,384 @@
-/* 0.5 */
-var c600 = document.getElementById('c600');
-var c639 = document.getElementById('c639');
-var c642 = document.getElementById('c642');
-var c648 = document.getElementById('c648');
-var c653 = document.getElementById('c653');
-var c510 = document.getElementById('c510');
-var c511 = document.getElementById('c511');
-var c510 = document.getElementById('c510');
-var c526 = document.getElementById('c526');
-var c518 = document.getElementById('c518');
-var c529 = document.getElementById('c529');
-var c530 = document.getElementById('c530');
-var c540 = document.getElementById('c540');
-var c547 = document.getElementById('c547');
-var c525 = document.getElementById('c525');
-var c546 = document.getElementById('c546');
-var MUSI1011 = document.getElementById('MUSI1011');
-var MUSI1012 = document.getElementById('MUSI1012');
-var MUSI1003 = document.getElementById('MUSI1003');
-
-/* 1 */
-var c654 = document.getElementById('c654');
-var c630 = document.getElementById('c630');
-var c638 = document.getElementById('c638');
-var c654 = document.getElementById('c654');
-var c598 = document.getElementById('c598');
-var c510 = document.getElementById('c510');
-var c511 = document.getElementById('c511');
-var c529 = document.getElementById('c529');
-
-
-/* CHECK BOXES */
-var checkHalf = document.getElementById('check1');
-var checkFull = document.getElementById('check2');
-
-function halfCredit() {
-    if (checkHalf.checked == true) {
-        c654.style.display = "none";
-        c630.style.display = "none";
-        c638.style.display = "none";
-        c654.style.display = "none";
-        c598.style.display = "none";
-        c510.style.display = "none";
-        c511.style.display = "none";
-        c529.style.display = "none";
+function learningGoals600() {
+    if (more600.style.display === "inline") {
+        more600.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
     }
     else {
-        c654.style.display = "block";
-        c630.style.display = "block";
-        c638.style.display = "block";
-        c654.style.display = "block";
-        c598.style.display = "block";
-        c510.style.display = "block";
-        c511.style.display = "block";
-        c529.style.display = "block";
+        more600.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
-function fullCredit() {
-    if (checkFull.checked == true) {
-        c600.style.display = "none";
-        c639.style.display = "none";
-        c642.style.display = "none";
-        c648.style.display = "none";
-        c653.style.display = "none";
-        c510.style.display = "none";
-        c511.style.display = "none";
-        c510.style.display = "none";
-        c526.style.display = "none";
-        c518.style.display = "none";
-        c529.style.display = "none";
-        c530.style.display = "none";
-        c540.style.display = "none";
-        c547.style.display = "none";
-        c525.style.display = "none";
-        c546.style.display = "none";
-        cMUSI1011.style.display = "none";
-        cMUSI1012.style.display = "none";
-        cMUSI1003.style.display = "none";
+function learningGoals639() {
+    if (more639.style.display === "inline") {
+        more639.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
     }
     else {
-        c600.style.display = "block";
-        c639.style.display = "block";
-         c642.style.display = "block";
-         c648.style.display = "block";
-         c653.style.display = "block";
-         c510.style.display = "block";
-         c511.style.display = "block";
-         c510.style.display = "block";
-         c526.style.display = "block";
-         c518.style.display = "block";
-         c529.style.display = "block";
-         c530.style.display = "block";
-         c540.style.display = "block";
-         c547.style.display = "block";
-         c525.style.display = "block";
-         c546.style.display = "block";
-         cMUSI1011.style.display = "block";
-         cMUSI1012.style.display = "block";
-         cMUSI1003.style.display = "block";
+        more639.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals630() {
+    if (more630.style.display === "inline") {
+        more630.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more630.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals631() {
+    if (more631.style.display === "inline") {
+        more631.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more631.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals610() {
+    if (more610.style.display === "inline") {
+        more610.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more610.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals611() {
+    if (more611.style.display === "inline") {
+        more611.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more611.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals636() {
+    if (more636.style.display === "inline") {
+        more636.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more636.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals602() {
+    if (more602.style.display === "inline") {
+        more602.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more602.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals640() {
+    if (more640.style.display === "inline") {
+        more640.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more640.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals642() {
+    if (more642.style.display === "inline") {
+        more642.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more642.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals644() {
+    if (more644.style.display === "inline") {
+        more644.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more644.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals638() {
+    if (more638.style.display === "inline") {
+        more638.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more638.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals651() {
+    if (more651.style.display === "inline") {
+        more651.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more651.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals653() {
+    if (more653.style.display === "inline") {
+        more653.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more653.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals654() {
+    if (more654.style.display === "inline") {
+        more654.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more654.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals598() {
+    if (more598.style.display === "inline") {
+        more598.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more598.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals510() {
+    if (more510.style.display === "inline") {
+        more510.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more510.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals518() {
+    if (more526.style.display === "inline") {
+        more526.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more526.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals518() {
+    if (more518.style.display === "inline") {
+        more518.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more518.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals529() {
+    if (more529.style.display === "inline") {
+        more529.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more529.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals540() {
+    if (more540.style.display === "inline") {
+        more540.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more540.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals547() {
+    if (more547.style.display === "inline") {
+        more547.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more547.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals525() {
+    if (more525.style.display === "inline") {
+        more525.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more525.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals546() {
+    if (more546.style.display === "inline") {
+        more546.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more546.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoalsMUSI1011() {
+    if (moreMUSI1011.style.display === "inline") {
+        moreMUSI1011.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        moreMUSI1011.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoalsMUSI1012() {
+    if (moreMUSI1012.style.display === "inline") {
+        moreMUSI1012.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        moreMUSI1012.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoalsMUS11003() {
+    if (moreMUS11003.style.display === "inline") {
+        moreMUS11003.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        moreMUS11003.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals150() {
+    if (more150.style.display === "inline") {
+        more150.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more150.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals152() {
+    if (more152.style.display === "inline") {
+        more152.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more152.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals154() {
+    if (more154.style.display === "inline") {
+        more154.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more154.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals790() {
+    if (more790.style.display === "inline") {
+        more790.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more790.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals519() {
+    if (more519.style.display === "inline") {
+        more519.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more519.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals156() {
+    if (more156.style.display === "inline") {
+        more156.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more156.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals158() {
+    if (more158.style.display === "inline") {
+        more158.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more158.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals155() {
+    if (more155.style.display === "inline") {
+        more155.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more155.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
