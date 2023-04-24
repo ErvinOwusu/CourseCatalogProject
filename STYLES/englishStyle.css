@@ -18,16 +18,24 @@
     display: none;
 }
 
+#more193 {
+    display: none;
+}
+
 #more190 {
     display: none;
 }
 
-#more162 {
+#more1392 {
     display: none;
 }
 
-#more165 {
+#more140 {
     display: none;
+}
+
+#more162 {
+    display: none; 
 }
 
 #more169 {
@@ -46,77 +54,6 @@
     display: none;
 }
 
-#more170 {
+#more165 {
     display: none;
-}
-
-#grid113 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid123 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid133 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid138 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid139 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid190 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid162 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid165 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid169 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid147 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid187 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-#grid722 {
-    width: 100%;
-    font-size: .7rem;
-}
-
-.four-squares {
-    width: 40px;
-    padding: 5px;
-    border-radius: 10px;
-    transition: background-color .2s;
-}
-
-.four-squares:hover {
-    background-color: rgba(255, 255, 255, 0.3);
 }

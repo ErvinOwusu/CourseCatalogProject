@@ -66,6 +66,34 @@ function learningGoals138() {
 }
 
 function learningGoals139() {
+    if (more139.style.display === "inline")
+    {
+        more139.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
+    }
+    else
+    {
+        more139.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals193() {
+    if (more193.style.display === "inline")
+    {
+        more193.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
+    }
+    else
+    {
+        more193.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
+function learningGoals190() {
     if (more190.style.display === "inline")
     {
         more190.style.display = "none";
@@ -79,26 +107,31 @@ function learningGoals139() {
     }
 }
 
-function learningGoals139() {
-    if (more139.style.display === "inline")
+function learningGoals140() {
+    if (more140.style.display === "inline")
     {
-        more139.style.display = "none";
+        more140.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
-        more139.style.display = "inline";
+        more140.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
-
-function learningGoals190() {
-    if (more190.style.display === "inline")
+function learningGoals1392() {
+    if (more1392.style.display === "inline")
     {
-        more190.style.display = "none";
+        more1392.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
-        more190.style.display = "inline";
+        more1392.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
@@ -106,10 +139,13 @@ function learningGoals162() {
     if (more162.style.display === "inline")
     {
         more162.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more162.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
@@ -117,10 +153,13 @@ function learningGoals165() {
     if (more165.style.display === "inline")
     {
         more165.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more165.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
@@ -128,10 +167,13 @@ function learningGoals169() {
     if (more169.style.display === "inline")
     {
         more169.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more169.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
@@ -139,10 +181,13 @@ function learningGoals147() {
     if (more147.style.display === "inline")
     {
         more147.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more147.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
 
@@ -150,32 +195,27 @@ function learningGoals187() {
     if (more187.style.display === "inline")
     {
         more187.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more187.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
+
 
 function learningGoals722() {
     if (more722.style.display === "inline")
     {
         more722.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+        
     }
     else
     {
         more722.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
-
-function learningGoals170() {
-    if (more170.style.display === "inline")
-    {
-        more170.style.display = "none";
-    }
-    else
-    {
-        more170.style.display = "inline";
-    }
-}
-
