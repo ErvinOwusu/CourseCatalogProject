@@ -196,3 +196,15 @@ function learningGoals045() {
         learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
+
+function learningGoals036() {
+    if (more036.style.display === "inline") {
+        more036.style.display = "none";
+        learningGoalsBackground.style.padding = "2px 2px 2px 20px";
+    }
+    else {
+        more036.style.display = "inline";
+        learningGoalsBackground.style.padding = "2px 2px 15px 20px";
+    }
+}
+
