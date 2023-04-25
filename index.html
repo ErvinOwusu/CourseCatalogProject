@@ -35,6 +35,25 @@
             align-self: center;
             padding: 5px;
         }
+
+        @media (max-width: 1301px)
+        {
+            img {
+                width: 8rem;
+            }
+        }
+
+        .img2 {
+            width: 26rem;
+        }
+
+        @media (max-width: 1301px)
+        {
+            .img2 {
+            width: 22rem;
+        }
+        }
+
         .header {
             font-family: 'Quicksand', sans-serif; 
             font-size: 5rem; 
@@ -53,7 +72,26 @@
             filter: brightness(130%);
             transform: scale(1.02);
         }
+
+        @media (max-width: 800px) {
+            .img-mobile {
+                display: none;
+            }
+
+            .img2 {
+                width: 17rem;
+            }
+        }
+
+        @media (min-width: 801px)
+        {
+            .img-mobile2 {
+                display: none;
+            }
+        }
     </style>
+
+    
 </head>
 
 
@@ -133,16 +171,27 @@
         </center>
 
         <div style="display: flex; flex-direction: row; justify-content: center;">
-            <a href="CLASSES/fineArts.html"><img class="zoom" style="cursor: pointer;" src="images/fineArts.png"> </a><!-- Fine Arts -->
-            <a href="CLASSES/english.html"><img class="zoom" src="images/english.png"></a>  <!-- English -->
-            <a href="CLASSES/history.html"><img class="zoom" src="images/history.png"></a> <!-- History -->
-            <a href="CLASSES/math.html"><img class="zoom" src="images/mathetmatics.png"></a> <!-- Mathematics & Applied Tech -->
-            <a href="CLASSES/science.html"><img class="zoom" src="images/science.png"></a> <!-- Science --> 
-            <a href="CLASSES/worldLanguage.html"><img class="zoom" src="images/worldLanguage.png"></a> <!-- World Language -->
+            <div class="img-mobile"><a href="CLASSES/fineArts.html"><img class="zoom"  src="images/fineArts.png"> </a></div><!-- Fine Arts -->
+            <div class="img-mobile"><a href="CLASSES/english.html"><img class="zoom" src="images/english.png"></a></div>  <!-- English -->
+            <div class="img-mobile"><a href="CLASSES/history.html"><img class="zoom" src="images/history.png"></a></div> <!-- History -->
+            <div class="img-mobile"><a href="CLASSES/math.html"><img class="zoom" src="images/mathetmatics.png"></a></div> <!-- Mathematics & Applied Tech -->
+            <div class="img-mobile"><a href="CLASSES/science.html"><img class="zoom" src="images/science.png"></a></div> <!-- Science --> 
+            <div class="img-mobile"><a href="CLASSES/worldLanguage.html"><img class="zoom" src="images/worldLanguage.png"></a></div> <!-- World Language -->
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <center>
+                <div class="img-mobile2"><a href="CLASSES/fineArts.html"><img class="zoom" style="width: 23rem;" src="images/mobilefineArts.png"> </a></div><!-- Fine Arts -->
+                <div class="img-mobile2"><a href="CLASSES/english.html"><img class="zoom" style="width: 23rem;" src="images/mobileEnglish.png"></a></div>  <!-- English -->
+                <div class="img-mobile2"><a href="CLASSES/history.html"><img class="zoom" style="width: 23rem;" src="images/mobileHistory.png"></a></div> <!-- History -->
+                <div class="img-mobile2"><a href="CLASSES/math.html"><img class="zoom" style="width: 23rem;" src="images/mobileMath.png"></a></div> <!-- Mathematics & Applied Tech -->
+                <div class="img-mobile2"><a href="CLASSES/science.html"><img class="zoom" style="width: 23rem;" src="images/mobileScience.png"></a></div> <!-- Science -->
+                <div class="img-mobile2"><a href="CLASSES/worldLanguage.html"><img class="zoom" style="width: 23rem;" src="images/languageMobile.png"></a></div> <!-- World Language -->
+            </center>
         </div>
         <div style="display: flex; flex-direction: row; justify-content: center;">
-            <a href="CLASSES/appliedTech.html"><img class="zoom" style="cursor: pointer; width: 26rem;" src="images/appliedTechnology.png"></a>
-            <img class="zoom" style="cursor: pointer; width: 26rem;" src="images/appliedTechnology.png">
+            <a href="CLASSES/appliedTech.html"><img class="zoom img2" src="images/appliedTechnology.png"></a>
+            <img class="zoom img2" src="images/appliedTechnology.png">
         </div>
         
     </section>
