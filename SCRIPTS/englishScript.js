@@ -65,16 +65,16 @@ function learningGoals138() {
     }
 }
 
-function learningGoals139() {
-    if (more139.style.display === "inline")
+function learningGoals1391() {
+    if (more1391.style.display === "inline")
     {
-        more139.style.display = "none";
+        more1391.style.display = "none";
         learningGoalsBackground.style.padding = "2px 2px 2px 20px";
         
     }
     else
     {
-        more139.style.display = "inline";
+        more1391.style.display = "inline";
         learningGoalsBackground.style.padding = "2px 2px 15px 20px";
     }
 }
