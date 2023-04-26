@@ -79,19 +79,8 @@
             }
 
             .img2 {
-                width: 24rem;
+                width: 23rem;
             }
-            
-            .header {
-            font-family: 'Quicksand', sans-serif; 
-            font-size: 4rem; 
-            text-align: center; 
-            color: white; 
-            font-weight: bold; 
-            padding-top: 30px; 
-            text-shadow: 2px 2px 1px #515151;
-            line-height: 65px;
-        }
         }
 
         @media (min-width: 801px)
@@ -170,7 +159,7 @@
     <script type="text/javascript" src="SCRIPTS/javascript.js"></script>
 
     <section class="section1">
-        <div class="header"> <div style="font-size: 1.5rem;"> <div style="line-height: 40px;">WOODLAND REGIONAL HIGH SCHOOL </div></div> COURSE CATALOG </div>
+        <div class="header"> <div style="font-size: 1.5rem;"> WOODLAND REGIONAL HIGH SCHOOL </div> COURSE CATALOG </div>
         
         <center>
             <!--
@@ -192,11 +181,7 @@
 
         <div style="display: flex; flex-direction: column; justify-content: center;">
             <center>
-                <div class="img-mobile2">
-                <a href="CLASSES/fineArts.html">
-                <img src="images/mobileFineArts.png" class="zoom" style="width: 23rem;">
-                </a>
-                </div>
+                <div class="img-mobile2"><a href="CLASSES/fineArts.html"><img class="zoom" style="width: 23rem;" src="images/mobilefineArts.png"> </a></div><!-- Fine Arts -->
                 <div class="img-mobile2"><a href="CLASSES/english.html"><img class="zoom" style="width: 23rem;" src="images/mobileEnglish.png"></a></div>  <!-- English -->
                 <div class="img-mobile2"><a href="CLASSES/history.html"><img class="zoom" style="width: 23rem;" src="images/mobileHistory.png"></a></div> <!-- History -->
                 <div class="img-mobile2"><a href="CLASSES/math.html"><img class="zoom" style="width: 23rem;" src="images/mobileMath.png"></a></div> <!-- Mathematics & Applied Tech -->
@@ -238,6 +223,12 @@
                 border: 2px solid #FFF; 
                 border-radius: 20px; 
                 padding: 10px 20px;
+                transition: background-color .2s;
+            }
+
+            .schedule-header:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                cursor: pointer;
             }
             
             td {
@@ -283,7 +274,14 @@
                 </tr>
                 <tr>
                     <td> Block 3 </td>
-                    <td> 10:35 - 12:25</td>
+                    <td> 
+                        10:35 - 12:25
+                        <div style="font-size: 1.2rem; padding: 20px 30px">
+                            <div> 1st Lunch: 10:35 - 11:00 </div>
+                            <div> 2nd Lunch: XX:XX - XX:XX </div>
+                            <div> 3rd Lunch: 12:00 - 12:25</div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td> Block 4 </td>
