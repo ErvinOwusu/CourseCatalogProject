@@ -206,6 +206,7 @@
                 font-size: 1.4rem;
             }
             
+            
             #a {
                 display: block;
             }
@@ -249,7 +250,25 @@
             #test {
                 color: white;
             }
+            
+            .title {
+                font-size: 4rem;
+                color: white;
+                text-align: center;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 600;
+                padding-bottom: 20px;
+            }
+            
+            .desc {
+                font-size: 1.6rem;
+                padding-bottom: 10px;
+            }
         </style>
+        
+        <div class="title">
+            SCHEDULES
+        </div>
         
         <div class="schedule-container" style="padding-bottom: 70px;">
             <div class="schedule-header" onclick="showA()">A/B Day</div>
@@ -259,6 +278,7 @@
         </div>
         
         <div id="a" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
+            <div class="desc"> REGULAR DAY SCHEDULE (A/B) </div>
             <table style="margin-left: auto; margin-right: auto; width: 100%;">
                 <tr>
                     <td> Block 1 </td>
@@ -278,7 +298,7 @@
                         10:35 - 12:25
                         <div style="font-size: 1.2rem; padding: 20px 30px">
                             <div> 1st Lunch: 10:35 - 11:00 </div>
-                            <div> 2nd Lunch: XX:XX - XX:XX </div>
+                            <div> 2nd Lunch: 11:15 - 11:40 </div>
                             <div> 3rd Lunch: 12:00 - 12:25</div>
                         </div>
                     </td>
@@ -290,11 +310,54 @@
             </table>
         </div>
         
-        <div id="b" style="color: #FFF; font-size: 1rem">
-            Example Text B
+        <div id="b" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
+            <div class="desc"> HALF DAY SCHEDULE (A/B) </div>
+            <table style="margin-left: auto; margin-right: auto; width: 100%;">
+                <tr>
+                    <td> Block 1 </td>
+                    <td> 7:20 - 8:17 </td>
+                </tr>
+                <tr>
+                    <td> Block 2 </td>
+                    <td> 8:22 - 9:18 </td>
+                </tr>
+                <tr>
+                    <td> Block 3 </td>
+                    <td> 9:23 - 10:19 </td>
+                </tr>
+                <tr>
+                    <td> Block 4 </td>
+                    <td> 10:24 - 11:20 </td>
+                </tr>
+            </table>
         </div>
         <div id="c" style="color: #FFF; font-size: 1rem">
-            Example Text C
+            <div class="desc"> 2 Hour Delay (A/B) </div>
+            <table style="margin-left: auto; margin-right: auto; width: 100%;">
+                <tr>
+                    <td> Block 1 </td>
+                    <td> 9:20 - 10:16 </td>
+                </tr>
+                <tr>
+                    <td> Block 2 </td>
+                    <td> 10:21 - 11:17 </td>
+                </tr>
+                <tr>
+                    <td> Block 3 </td>
+                    <td> 
+                        11:22 - 12:49
+                        <div style="font-size: 1.2rem; padding: 20px 30px">
+                            <div> 1st Lunch: 11:22 - 11:47 </div>
+                            <div> 2nd Lunch: 11:54 - 12:19 </div>
+                            <div> 3rd Lunch: 12:24 - 12:49 </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Block 4 </td>
+                    <td> 12:54 - 1:50 </td>
+                </tr>
+            </table>
         </div>
         <div id="d" style="color: #FFF; font-size: 1rem">
             Example Text D
