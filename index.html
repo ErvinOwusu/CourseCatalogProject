@@ -255,7 +255,7 @@
                 font-size: 4rem;
                 color: white;
                 text-align: center;
-                font-family: 'Rubik', sans-serif;
+                font-family: 'Quicksand', sans-serif;
                 font-weight: 600;
                 padding-bottom: 20px;
             }
@@ -264,10 +264,29 @@
                 font-size: 1.6rem;
                 padding-bottom: 10px;
             }
+            
+            #expandA {
+                display: none;
+            }
+            
+            #expandB {
+                display: none;
+            }
+            
+            .lunch-style {
+                font-size: 1.3rem;
+                color: rgba(255, 255, 255, 0.6);
+                transition: color .2s;
+            }
+            
+            .lunch-style:hover {
+                color: rgba(255, 255, 255, 1);
+                cursor: pointer;
+            }
         </style>
         
         <div class="title">
-            SCHEDULES
+            <div style="font-size: 1.9rem;"> WRHS </div>SCHEDULES
         </div>
         
         <div class="schedule-container" style="padding-bottom: 70px;">
@@ -296,7 +315,8 @@
                     <td> Block 3 </td>
                     <td> 
                         10:35 - 12:25
-                        <div style="font-size: 1.2rem; padding: 20px 30px">
+                        <div class="lunch-style" onclick="lunchA()"> View Lunch Schedule ▼ </div>
+                        <div id="expandA" style="font-size: 1.2rem; padding: 20px 30px">
                             <div> 1st Lunch: 10:35 - 11:00 </div>
                             <div> 2nd Lunch: 11:15 - 11:40 </div>
                             <div> 3rd Lunch: 12:00 - 12:25</div>
@@ -331,7 +351,7 @@
                 </tr>
             </table>
         </div>
-        <div id="c" style="color: #FFF; font-size: 1rem">
+        <div id="c" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
             <div class="desc"> 2 Hour Delay (A/B) </div>
             <table style="margin-left: auto; margin-right: auto; width: 100%;">
                 <tr>
@@ -346,7 +366,8 @@
                     <td> Block 3 </td>
                     <td> 
                         11:22 - 12:49
-                        <div style="font-size: 1.2rem; padding: 20px 30px">
+                        <div class="lunch-style" onclick="lunchB()"> View Lunch Schedule ▼ </div>
+                        <div id="expandB" style="font-size: 1.2rem; padding: 20px 30px">
                             <div> 1st Lunch: 11:22 - 11:47 </div>
                             <div> 2nd Lunch: 11:54 - 12:19 </div>
                             <div> 3rd Lunch: 12:24 - 12:49 </div>
@@ -392,6 +413,32 @@
                 b.style.display = "none";
                 c.style.display = "none";
                 d.style.display = "block";
+            }
+            
+            function lunchA() {
+                if (expandA.style.display == "block")
+                {
+                    expandA.style.display = "none";
+                    doucment.getElementById('triangle').innerHTML = "View Lunch Schedule ▼";
+                }
+                else
+                {
+                    expandA.style.display = "block";
+                    doucment.getElementById('triangle').innerHTML = "View Lunch Schedule ▲";
+                }
+            }
+            
+            function lunchB() {
+                if (expandB.style.display == "block")
+                {
+                    expandB.style.display = "none";
+                    doucment.getElementById('triangle').innerHTML = "View Lunch Schedule ▼";
+                }
+                else
+                {
+                    expandB.style.display = "block";
+                    doucment.getElementById('triangle').innerHTML = "View Lunch Schedule ▲";
+                }
             }
         </script>
     </section>
