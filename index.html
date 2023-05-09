@@ -118,6 +118,7 @@
         <!-- Page Navigation Links -->
         <div class="navbar-links">
             <ul>
+                <li>Schedule</li>
                 <li>About</li>
                 <li>FAQ</li>
                 <div class="dropdown">
@@ -203,8 +204,13 @@
         
     </section>
     
-    <section style="background-image: url('images/line background.png'); padding: 100px 200px;">
+    <section class="schedule-section">
         <style>
+        
+        .schedule-section {
+            background-image: url('images/line background.png'); 
+            padding: 100px 200px;
+        }
             .schedule-container {
                 display: flex; 
                 flex-direction: row; 
@@ -214,6 +220,14 @@
                 font-size: 1.4rem;
             }
             
+            @media (max-width: 800px) {
+                .schedule-section {
+                    display: none;
+                }
+                
+                
+                
+            }
             
             #a {
                 display: block;
@@ -388,10 +402,25 @@
                 </tr>
             </table>
         </div>
-        <div id="d" style="color: #FFF; font-size: 1rem">
-            Example Text D
+        <div id="d" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
+            <div class="desc"> EXAM SCHEDULE </div>
+            <table style="margin-left: auto; margin-right: auto; width: 100%;">
+                <tr>
+                    <td> Block 1 </td>
+                    <td> 7:20 - 8:50 </td>
+                </tr>
+                <tr>
+                    <td> 25 Minute Break </td>
+                    <td> 8:55 - 9:10 </td>
+                </tr>
+                <tr>
+                    <td> Block 2 </td>
+                    <td> 9:15 - 10:45 </td>
+                </tr>
+            </table>
         </div>
         
+
         
         <script>
         
