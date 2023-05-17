@@ -222,10 +222,16 @@
             
             @media (max-width: 800px) {
                 .schedule-section {
-                    display: none;
+                    padding: 40px;
                 }
                 
-                
+                .schedule-header {
+                    border: 2px solid #FFF; 
+                    border-radius: 20px; 
+                    padding: 0px;
+                    transition: background-color .2s;
+                    font-size: 1rem;
+                }
                 
             }
             
@@ -305,7 +311,33 @@
                 color: rgba(255, 255, 255, 1);
                 cursor: pointer;
             }
+            
+            #current-time {
+                color: #FFF;
+                text-align: center;
+                font-size: 3rem;
+                font-family: 'Rubik', sans-serif;
+                font-weight: bold;
+            }
         </style>
+        
+        
+        
+        <div id="current-time">
+            12:00:00
+        </div>
+        
+        <script>
+            let time = document.getElementById('current-time');
+            
+            
+            setInterval(() =>{
+                let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+            },1000)
+            
+        </script>
+        
         
         <div class="title">
             <div style="font-size: 1.9rem;"> WRHS </div>SCHEDULES
