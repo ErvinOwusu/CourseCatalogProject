@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="STYLES/nav.css" type="text/css" />
 
     <style>
-        body {
+            body {
             background-color: #000210;
             background-image: url('images/hawkPattern2.png');
             
@@ -320,6 +320,7 @@
                 font-family: 'Rubik', sans-serif;
                 font-weight: bold;
             }
+            
         </style>
         
         
@@ -345,10 +346,10 @@
         </div>
         
         <div class="schedule-container" style="padding-bottom: 70px;">
-            <div class="schedule-header" onclick="showA()">A/B Day</div>
-            <div class="schedule-header" onclick="showB()">Half Day</div>
-            <div class="schedule-header" onclick="showC()">2 Hour Delay</div>
-            <div class="schedule-header" onclick="showD()">Exam Schedule</div>
+            <div class="schedule-header" onclick="showA()" id="descA">A/B Day</div>
+            <div class="schedule-header" onclick="showB()" id="descB">Half Day</div>
+            <div class="schedule-header" onclick="showC()" id="descC">2 Hour Delay</div>
+            <div class="schedule-header" onclick="showD()" id="descD">Exam Schedule</div>
         </div>
         
         <div id="a" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
@@ -386,7 +387,7 @@
         </div>
         
         <div id="b" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
-            <div class="desc"> HALF DAY SCHEDULE (A/B) </div>
+            <div class="desc" id="descB"> HALF DAY SCHEDULE (A/B) </div>
             <table style="margin-left: auto; margin-right: auto; width: 100%;">
                 <tr>
                     <td> Block 1 </td>
@@ -407,7 +408,7 @@
             </table>
         </div>
         <div id="c" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
-            <div class="desc"> 2 Hour Delay (A/B) </div>
+            <div class="desc" id="descC"> 2 Hour Delay (A/B) </div>
             <table style="margin-left: auto; margin-right: auto; width: 100%;">
                 <tr>
                     <td> Block 1 </td>
@@ -436,7 +437,7 @@
             </table>
         </div>
         <div id="d" style="color: #FFF; font-size: 1rem; font-family: 'Quicksand', sans-serif;">
-            <div class="desc"> EXAM SCHEDULE </div>
+            <div class="desc" id="descD"> EXAM SCHEDULE </div>
             <table style="margin-left: auto; margin-right: auto; width: 100%;">
                 <tr>
                     <td> Block 1 </td>
@@ -462,6 +463,11 @@
                 b.style.display = "none";
                 c.style.display = "none";
                 d.style.display = "none";
+                
+                descA.style.background = "rgba(255, 255, 255, 0.5)";
+                descB.style.background = "none";
+                descC.style.background = "none";
+                descD.style.background = "none";
             }
             
             function showB() {
@@ -469,6 +475,11 @@
                 b.style.display = "block";
                 c.style.display = "none";
                 d.style.display = "none";
+                
+                descA.style.background = "none";
+                descB.style.background = "rgba(255, 255, 255, 0.5)";
+                descC.style.background = "none";
+                descD.style.background = "none";
             }
             
             function showC() {
@@ -476,6 +487,11 @@
                 b.style.display = "none";
                 c.style.display = "block";
                 d.style.display = "none";
+                
+                descA.style.background = "none";
+                descB.style.background = "none";
+                descC.style.background = "rgba(255, 255, 255, 0.5)";
+                descD.style.background = "none";
             }
             
             function showD() {
@@ -483,6 +499,11 @@
                 b.style.display = "none";
                 c.style.display = "none";
                 d.style.display = "block";
+                
+                descA.style.background = "none";
+                descB.style.background = "none";
+                descC.style.background = "none";
+                descD.style.background = "rgba(255, 255, 255, 0.5)";
             }
             
             function lunchA() {
